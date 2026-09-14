@@ -8,7 +8,9 @@
     "jurisdictions": ["federal", "all-states"],
     "monitor": false,
     "expectedUpdate": "amendment-driven",
-    "retrievedAt": "2026-09-14T00:00:00+08:00"
+    "retrievedAt": "2026-09-14T00:00:00+08:00",
+    "checksumAlgorithm": "sha256",
+    "checksum": "4b13d6b956ebba64e8ca80209f838439b2956a193fa37957e6446531752f96f9"
   },
   {
     "id": "bkpp-hka-2026",
@@ -19,7 +21,9 @@
     "jurisdictions": ["federal", "all-states"],
     "monitor": false,
     "expectedUpdate": "amendment-driven",
-    "retrievedAt": "2026-09-14T00:00:00+08:00"
+    "retrievedAt": "2026-09-14T00:00:00+08:00",
+    "checksumAlgorithm": "sha256",
+    "checksum": "415023261014e30880b0fbb7a40c47a9655605183ef976204489d760fed769a3"
   },
   {
     "id": "bkpp-annual-holidays",

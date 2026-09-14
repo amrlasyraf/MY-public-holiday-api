@@ -1,11 +1,14 @@
 import Ajv2020 from "ajv/dist/2020";
 import addFormats from "ajv-formats";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import federal2026 from "../data/holidays/2026/federal.json";
 import state2026 from "../data/holidays/2026/state.json";
 import federal2027 from "../data/holidays/2027/federal.json";
 import state2027 from "../data/holidays/2027/state.json";
 import jurisdictions from "../data/jurisdictions.json";
+import releases from "../data/releases.json";
 import schema from "../schemas/holiday.schema.json";
 
 const datasets = [federal2026, state2026, federal2027, state2027];
@@ -38,6 +41,16 @@ describe("holiday data integrity", () => {
       for (const code of [...(rule.only ?? []), ...(rule.except ?? [])]) {
         expect(validCodes.has(code), `${holiday.id}: ${code}`).toBe(true);
       }
+    }
+  });
+
+  it("pins every published data file to its release checksum", () => {
+    for (const release of releases) {
+      for (const file of release.files) {
+        const contents = readFileSync(new URL(`../${file.path}`, import.meta.url));
+        expect(createHash("sha256").update(contents).digest("hex"), file.path).toBe(file.sha256);
+      }
+      expect(records.filter(({ date }) => date.startsWith(`${release.year}-`))).toHaveLength(release.recordCount);
     }
   });
 });

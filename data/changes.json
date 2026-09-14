@@ -1,0 +1,22 @@
+[
+  {
+    "id": "chg-2027-baseline",
+    "type": "baseline_import",
+    "occurredAt": "2026-09-14T00:00:00+08:00",
+    "year": 2027,
+    "releaseId": "2027.1",
+    "sourceId": "bkpp-hka-2027",
+    "recordCount": 52,
+    "summary": "Initial project baseline imported from the official 2027 federal and state schedule."
+  },
+  {
+    "id": "chg-2026-baseline",
+    "type": "baseline_import",
+    "occurredAt": "2026-09-14T00:00:00+08:00",
+    "year": 2026,
+    "releaseId": "2026.1",
+    "sourceId": "bkpp-hka-2026",
+    "recordCount": 51,
+    "summary": "Initial project baseline imported from the official 2026 federal and state schedule."
+  }
+]

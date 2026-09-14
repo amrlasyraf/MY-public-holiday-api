@@ -1,0 +1,24 @@
+[
+  {
+    "id": "2027.1",
+    "year": 2027,
+    "recordedAt": "2026-09-14T00:00:00+08:00",
+    "sourceId": "bkpp-hka-2027",
+    "recordCount": 52,
+    "files": [
+      { "path": "data/holidays/2027/federal.json", "sha256": "1cd744224519f1b48c5b19b24778f678f57eedbf146cd9e5b07492cfd1cb1846" },
+      { "path": "data/holidays/2027/state.json", "sha256": "e0039e0a63c850ae60683c5bd7a0ac3b3368da72131f06b75baa083b6e2577ac" }
+    ]
+  },
+  {
+    "id": "2026.1",
+    "year": 2026,
+    "recordedAt": "2026-09-14T00:00:00+08:00",
+    "sourceId": "bkpp-hka-2026",
+    "recordCount": 51,
+    "files": [
+      { "path": "data/holidays/2026/federal.json", "sha256": "7b8ab2857b092079d369b907a356bfd2cc861282b5bad593ff759340d0378b2b" },
+      { "path": "data/holidays/2026/state.json", "sha256": "9b23d4bedef397b4ecdfea7ca3bb61c721badaad75e9dd9ed59464a313b78dc8" }
+    ]
+  }
+]
