@@ -9,6 +9,21 @@ async function holidays(path: string): Promise<HolidayResponse> {
 }
 
 describe("holiday API", () => {
+  it("serves the public website with security headers", async () => {
+    const response = await app.request("/");
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toContain("text/html");
+    expect(response.headers.get("content-security-policy")).toContain("default-src 'self'");
+    expect(await response.text()).toContain("Malaysia's holidays, without the guesswork.");
+  });
+
+  it("publishes an OpenAPI document", async () => {
+    const response = await app.request("/openapi.json");
+    const body = await response.json() as { openapi: string; paths: Record<string, unknown> };
+    expect(body.openapi).toBe("3.1.0");
+    expect(body.paths).toHaveProperty("/v1/holidays");
+  });
+
   it("requires a year", async () => {
     const response = await app.request("/v1/holidays");
     expect(response.status).toBe(400);

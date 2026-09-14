@@ -4,6 +4,8 @@ An evidence-first API for Malaysian public holidays, including late and special 
 
 This project is open source. Public development makes corrections and source provenance inspectable, but credentials, private contact information, unpublished operational notes and private notification destinations must never be committed.
 
+The Worker also serves a responsive website and interactive holiday explorer at `/`, plus an OpenAPI 3.1 document at `/openapi.json`.
+
 ## Current status
 
 This repository is an initial local MVP. It contains:

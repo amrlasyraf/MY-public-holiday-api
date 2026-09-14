@@ -5,6 +5,8 @@ import federal2027 from "../data/holidays/2027/federal.json";
 import state2027 from "../data/holidays/2027/state.json";
 import jurisdictions from "../data/jurisdictions.json";
 import sources from "../data/sources.json";
+import { openApiDocument } from "./openapi";
+import { siteHtml } from "./site";
 
 type Applicability = { all: true; except?: string[] } | { only: string[] };
 
@@ -46,7 +48,19 @@ function appliesTo(holiday: Holiday, jurisdictionCode: string): boolean {
 
 export const app = new Hono();
 
-app.get("/", (c) => c.json({ name: "Malaysia Public Holiday API", version: "0.2.0" }));
+app.use("*", async (c, next) => {
+  await next();
+  c.header("X-Content-Type-Options", "nosniff");
+  c.header("Referrer-Policy", "strict-origin-when-cross-origin");
+  c.header("X-Frame-Options", "DENY");
+  c.header("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
+  c.header("Content-Security-Policy", "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self' data:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'");
+});
+
+app.get("/", (c) => c.html(siteHtml));
+app.get("/docs", (c) => c.html(siteHtml));
+app.get("/openapi.json", (c) => c.json(openApiDocument));
+app.get("/v1", (c) => c.json({ name: "Malaysia Public Holiday API", version: "0.3.0", documentation: "/docs", openapi: "/openapi.json" }));
 app.get("/health", (c) => c.json({ status: "ok" }));
 app.get("/v1/sources", (c) => c.json({ data: sources }));
 app.get("/v1/jurisdictions", (c) => c.json({ data: jurisdictions }));
