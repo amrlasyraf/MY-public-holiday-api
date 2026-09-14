@@ -1,0 +1,64 @@
+name: Official source monitor
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: official-source-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Check official sources
+        id: monitor
+        shell: bash
+        run: |
+          set +e
+          npm run monitor
+          status=$?
+          set -e
+          if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
+            exit "$status"
+          fi
+          echo "changed=$([ "$status" -eq 2 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+          if [ "$status" -eq 2 ]; then
+            signature=$(node -e "const r=require('./output/monitor/report.json'); process.stdout.write(r.signature)")
+            echo "signature=$signature" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Upload monitor evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: official-source-monitor-${{ github.run_id }}
+          path: output/monitor/
+          retention-days: 30
+      - name: Open a deduplicated review issue
+        if: steps.monitor.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SIGNATURE: ${{ steps.monitor.outputs.signature }}
+        shell: bash
+        run: |
+          title="Holiday source change: $SIGNATURE"
+          existing=$(gh issue list --state all --search "$SIGNATURE in:title" --json title --jq ".[] | select(.title == \"$title\") | .title")
+          if [ -z "$existing" ]; then
+            gh issue create --title "$title" --body-file output/monitor/report.md
+          fi

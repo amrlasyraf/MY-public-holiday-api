@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bkpp-annual-holidays",
+    "name": "BKPP annual public holiday schedules",
+    "url": "https://www.kabinet.gov.my/hari-kelepasan-am/",
+    "allowedHosts": ["www.kabinet.gov.my", "kabinet.gov.my"],
+    "includeUrlPattern": "\\/HKA[-_][0-9]{4}\\.pdf(?:$|\\?)|\\/hka_[0-9]{4}\\.pdf(?:$|\\?)",
+    "minimumLinks": 3,
+    "trustTier": 1
+  },
+  {
+    "id": "bkpp-acts-gazettes",
+    "name": "BKPP public-holiday acts and gazettes",
+    "url": "https://www.kabinet.gov.my/akta-dan-warta/",
+    "allowedHosts": ["www.kabinet.gov.my", "kabinet.gov.my"],
+    "includeUrlPattern": "\\.pdf(?:$|\\?)",
+    "minimumLinks": 10,
+    "trustTier": 1
+  }
+]

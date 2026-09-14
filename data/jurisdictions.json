@@ -1,0 +1,18 @@
+[
+  { "code": "MY-01", "slug": "johor", "name": "Johor", "kind": "state" },
+  { "code": "MY-02", "slug": "kedah", "name": "Kedah", "kind": "state" },
+  { "code": "MY-03", "slug": "kelantan", "name": "Kelantan", "kind": "state" },
+  { "code": "MY-04", "slug": "melaka", "name": "Melaka", "kind": "state" },
+  { "code": "MY-05", "slug": "negeri-sembilan", "name": "Negeri Sembilan", "kind": "state" },
+  { "code": "MY-06", "slug": "pahang", "name": "Pahang", "kind": "state" },
+  { "code": "MY-07", "slug": "penang", "name": "Pulau Pinang", "kind": "state" },
+  { "code": "MY-08", "slug": "perak", "name": "Perak", "kind": "state" },
+  { "code": "MY-09", "slug": "perlis", "name": "Perlis", "kind": "state" },
+  { "code": "MY-10", "slug": "selangor", "name": "Selangor", "kind": "state" },
+  { "code": "MY-11", "slug": "terengganu", "name": "Terengganu", "kind": "state" },
+  { "code": "MY-12", "slug": "sabah", "name": "Sabah", "kind": "state" },
+  { "code": "MY-13", "slug": "sarawak", "name": "Sarawak", "kind": "state" },
+  { "code": "MY-14", "slug": "kuala-lumpur", "name": "W.P. Kuala Lumpur", "kind": "federal-territory" },
+  { "code": "MY-15", "slug": "labuan", "name": "W.P. Labuan", "kind": "federal-territory" },
+  { "code": "MY-16", "slug": "putrajaya", "name": "W.P. Putrajaya", "kind": "federal-territory" }
+]

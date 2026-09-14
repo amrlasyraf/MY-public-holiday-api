@@ -1,0 +1,21 @@
+{
+  "year": 2027,
+  "sourceId": "bkpp-hka-2027",
+  "holidays": [
+    { "id": "my-2027-cny-1", "date": "2027-02-06", "nameMs": "Tahun Baharu Cina", "nameEn": "Chinese New Year", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-cny-2-federal", "date": "2027-02-07", "nameMs": "Tahun Baharu Cina (Hari Kedua)", "nameEn": "Chinese New Year - Day 2", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true, "except": ["MY-03", "MY-11"] }, "sourcePage": 1 },
+    { "id": "my-2027-aidilfitri-1", "date": "2027-03-10", "nameMs": "Hari Raya Puasa", "nameEn": "Hari Raya Aidilfitri", "classification": "federal", "status": "provisional", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-aidilfitri-2", "date": "2027-03-11", "nameMs": "Hari Raya Puasa (Hari Kedua)", "nameEn": "Hari Raya Aidilfitri - Day 2", "classification": "federal", "status": "provisional", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-labour-day", "date": "2027-05-01", "nameMs": "Hari Pekerja", "nameEn": "Labour Day", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-aidiladha-1", "date": "2027-05-17", "nameMs": "Hari Raya Qurban", "nameEn": "Hari Raya Aidiladha", "classification": "federal", "status": "provisional", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-aidiladha-2-federal", "date": "2027-05-18", "nameMs": "Hari Raya Qurban (Hari Kedua)", "nameEn": "Hari Raya Aidiladha - Day 2", "classification": "federal", "status": "provisional", "appliesTo": { "only": ["MY-03", "MY-11"] }, "sourcePage": 1 },
+    { "id": "my-2027-wesak", "date": "2027-05-20", "nameMs": "Hari Wesak", "nameEn": "Wesak Day", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-awal-muharam", "date": "2027-06-06", "nameMs": "Awal Muharam (Maal Hijrah)", "nameEn": "Awal Muharram", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-agong-birthday", "date": "2027-06-07", "nameMs": "Hari Keputeraan Rasmi Seri Paduka Baginda Yang di-Pertuan Agong", "nameEn": "Official Birthday of the Yang di-Pertuan Agong", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-maulidur-rasul", "date": "2027-08-15", "nameMs": "Hari Keputeraan Nabi Muhammad S.A.W. (Maulidur Rasul)", "nameEn": "Birthday of Prophet Muhammad", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-national-day", "date": "2027-08-31", "nameMs": "Hari Kebangsaan", "nameEn": "National Day", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-malaysia-day", "date": "2027-09-16", "nameMs": "Hari Malaysia", "nameEn": "Malaysia Day", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 },
+    { "id": "my-2027-deepavali", "date": "2027-10-28", "nameMs": "Hari Deepavali", "nameEn": "Deepavali", "classification": "federal", "status": "provisional", "appliesTo": { "all": true, "except": ["MY-13"] }, "sourcePage": 1 },
+    { "id": "my-2027-christmas", "date": "2027-12-25", "nameMs": "Hari Krismas", "nameEn": "Christmas Day", "classification": "federal", "status": "confirmed", "appliesTo": { "all": true }, "sourcePage": 1 }
+  ]
+}

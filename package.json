@@ -1,0 +1,25 @@
+{
+  "name": "malaysia-public-holiday-api",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "monitor": "node --experimental-strip-types scripts/monitor.ts",
+    "monitor:update-baseline": "node --experimental-strip-types scripts/monitor.ts --update-baseline",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.9.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "typescript": "^5.9.2",
+    "vitest": "^5.0.0",
+    "wrangler": "^4.131.2"
+  }
+}

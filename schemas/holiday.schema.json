@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/schemas/holiday.schema.json",
+  "title": "Malaysia public holiday source record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "date", "nameMs", "nameEn", "classification", "status", "appliesTo", "sourcePage"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^my-[0-9]{4}-[a-z0-9-]+$" },
+    "date": { "type": "string", "format": "date" },
+    "nameMs": { "type": "string", "minLength": 1 },
+    "nameEn": { "type": "string", "minLength": 1 },
+    "classification": { "enum": ["federal", "state", "special"] },
+    "status": { "enum": ["confirmed", "announced", "provisional", "cancelled"] },
+    "sourcePage": { "type": "integer", "minimum": 1 },
+    "appliesTo": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["all"],
+          "additionalProperties": false,
+          "properties": {
+            "all": { "const": true },
+            "except": { "$ref": "#/$defs/jurisdictionCodes" }
+          }
+        },
+        {
+          "type": "object",
+          "required": ["only"],
+          "additionalProperties": false,
+          "properties": {
+            "only": { "$ref": "#/$defs/jurisdictionCodes" }
+          }
+        }
+      ]
+    }
+  },
+  "$defs": {
+    "jurisdictionCodes": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^MY-(0[1-9]|1[0-6])$" }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-14T13:14:05.547Z",
+  "sources": {
+    "bkpp-annual-holidays": {
+      "sourceId": "bkpp-annual-holidays",
+      "sourceUrl": "https://www.kabinet.gov.my/hari-kelepasan-am/",
+      "checkedAt": "2026-09-14T13:14:05.547Z",
+      "hash": "6c95f4d42ba984d90b3d79d314d3ea61f9541f699733feba816677dce1ef660b",
+      "links": [
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/hka_2023.pdf",
+          "title": "hka_2023.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/hka_2024.pdf",
+          "title": "hka_2024.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/hka_2025.pdf",
+          "title": "hka_2025.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2025/08/HKA-2026.pdf",
+          "title": "HKA-2026.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2026/08/HKA_2027.pdf",
+          "title": "HKA_2027.pdf"
+        }
+      ]
+    },
+    "bkpp-acts-gazettes": {
+      "sourceId": "bkpp-acts-gazettes",
+      "sourceUrl": "https://www.kabinet.gov.my/akta-dan-warta/",
+      "checkedAt": "2026-09-14T13:14:05.547Z",
+      "hash": "666b657547d2f05d59327f70ae1702884181df676dd810150bf562e729f12cf5",
+      "links": [
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/10122020_eWarta_Persekutuan.pdf",
+          "title": "10122020_eWarta_Persekutuan.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/1948_06_17_holidayordinance_sabahcap56.pdf",
+          "title": "1948_06_17_holidayordinance_sabahcap56.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/1951_12_31_act369.pdf",
+          "title": "1951_12_31_act369.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/1951_12_31_akta369.pdf",
+          "title": "1951_12_31_akta369.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/2005_12_18_labuan_pindaan2_1984.pdf",
+          "title": "2005_12_18_labuan_pindaan2_1984.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/2012_11_22_labuan_pindaan_no2_1984.pdf",
+          "title": "2012_11_22_labuan_pindaan_no2_1984.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/2013_11_28_pub474_475.pdf",
+          "title": "2013_11_28_pub474_475.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20191220_warta_cuti_24_dis_sabah.pdf",
+          "title": "20191220_warta_cuti_24_dis_sabah.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20200513_Warta_HKA_2020.pdf",
+          "title": "20200513_Warta_HKA_2020.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20200513_Warta_YdPA_2020.pdf",
+          "title": "20200513_Warta_YdPA_2020.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20200709_warta_hka2021.pdf",
+          "title": "20200709_warta_hka2021.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20210624_warta_hka2022.pdf",
+          "title": "20210624_warta_hka2022.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20211202_PUB_618.pdf",
+          "title": "20211202_PUB_618.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20211202_PUB_619.pdf",
+          "title": "20211202_PUB_619.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20220725_warta_hka2023.pdf",
+          "title": "20220725_warta_hka2023.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20230420_PUB_154.pdf",
+          "title": "20230420_PUB_154.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20230420_PUB_155.pdf",
+          "title": "20230420_PUB_155.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20230810_HARI_KELEPASAN_2024.pdf",
+          "title": "20230810_HARI_KELEPASAN_2024.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20230929_hari_kelepasan_am.pdf",
+          "title": "20230929_hari_kelepasan_am.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/20240812_WJW24.pdf",
+          "title": "20240812_WJW24.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/sarawak_public_holidays_ord_chapter8.pdf",
+          "title": "sarawak_public_holidays_ord_chapter8.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2024/11/warta_hari_kemerdekaan_sarawak_2016.pdf",
+          "title": "warta_hari_kemerdekaan_sarawak_2016.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2025/03/20241218-warta-17853.pdf",
+          "title": "20241218-warta-17853.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2025/08/15082025-P.U.-B-305-2025-Semenanjung.pdf",
+          "title": "15082025-P.U.-B-305-2025-Semenanjung.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2025/08/15082025-P.U.-B-306-2025-WP-Labuan.pdf",
+          "title": "15082025-P.U.-B-306-2025-WP-Labuan.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2025/09/GN-33499-GN-33501-TS-28-8-2025-JABATAN-PERDANA-MENTERIBHG-KABINETPERLEMBAGAAN-PERHUBUNGAN-ANTARA-KERAJAAN-AGJ971.pdf",
+          "title": "GN-33499-GN-33501-TS-28-8-2025-JABATAN-PERDANA-MENTERIBHG-KABINETPERLEMBAGAAN-PERHUBUNGAN-ANTARA-KERAJAAN-AGJ971.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2026/03/PUB-111_2026.pdf",
+          "title": "PUB-111_2026.pdf"
+        },
+        {
+          "url": "https://www.kabinet.gov.my/storage/2026/03/PUB-112_2026.pdf",
+          "title": "PUB-112_2026.pdf"
+        }
+      ]
+    }
+  }
+}

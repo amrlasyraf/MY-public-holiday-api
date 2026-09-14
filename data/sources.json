@@ -1,0 +1,54 @@
+[
+  {
+    "id": "bkpp-hka-2027",
+    "name": "Jadual Hari Kelepasan Am Persekutuan dan Negeri 2027",
+    "authority": "Bahagian Kabinet, Perlembagaan dan Perhubungan Antara Kerajaan, Jabatan Perdana Menteri",
+    "url": "https://www.kabinet.gov.my/storage/2026/08/HKA_2027.pdf",
+    "tier": 1,
+    "jurisdictions": ["federal", "all-states"],
+    "monitor": false,
+    "expectedUpdate": "amendment-driven",
+    "retrievedAt": "2026-09-14T00:00:00+08:00"
+  },
+  {
+    "id": "bkpp-hka-2026",
+    "name": "Jadual Hari Kelepasan Am Persekutuan dan Negeri 2026",
+    "authority": "Bahagian Kabinet, Perlembagaan dan Perhubungan Antara Kerajaan, Jabatan Perdana Menteri",
+    "url": "https://www.kabinet.gov.my/storage/2025/08/HKA-2026.pdf",
+    "tier": 1,
+    "jurisdictions": ["federal", "all-states"],
+    "monitor": false,
+    "expectedUpdate": "amendment-driven",
+    "retrievedAt": "2026-09-14T00:00:00+08:00"
+  },
+  {
+    "id": "bkpp-annual-holidays",
+    "name": "BKPP annual public holiday schedules",
+    "authority": "Bahagian Kabinet, Perlembagaan dan Perhubungan Antara Kerajaan, Jabatan Perdana Menteri",
+    "url": "https://www.kabinet.gov.my/hari-kelepasan-am/",
+    "tier": 1,
+    "jurisdictions": ["federal", "all-states"],
+    "monitor": true,
+    "expectedUpdate": "annual-from-august"
+  },
+  {
+    "id": "bkpp-acts-gazettes",
+    "name": "BKPP public-holiday acts and gazettes",
+    "authority": "Bahagian Kabinet, Perlembagaan dan Perhubungan Antara Kerajaan, Jabatan Perdana Menteri",
+    "url": "https://www.kabinet.gov.my/akta-dan-warta/",
+    "tier": 1,
+    "jurisdictions": ["federal", "peninsular-malaysia", "labuan", "sabah", "sarawak"],
+    "monitor": true,
+    "expectedUpdate": "event-driven"
+  },
+  {
+    "id": "jtksm-calendar",
+    "name": "JTKSM public holiday calendar and employment guidance",
+    "authority": "Jabatan Tenaga Kerja Semenanjung Malaysia",
+    "url": "https://jtksm.mohr.gov.my/en/kalendar",
+    "tier": 2,
+    "jurisdictions": ["peninsular-malaysia", "labuan"],
+    "monitor": true,
+    "expectedUpdate": "event-driven"
+  }
+]

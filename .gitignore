@@ -1,0 +1,16 @@
+node_modules/
+.wrangler/
+dist/
+coverage/
+output/
+.dev.vars
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+private/
+ops/private/
+tmp/
