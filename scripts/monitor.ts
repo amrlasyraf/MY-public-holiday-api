@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { collectRssSnapshot, type ArticleFingerprint } from "./rss-monitor.ts";
 
 export type MonitorConfig = {
   id: string;
@@ -11,6 +12,7 @@ export type MonitorConfig = {
   includeUrlPattern: string;
   minimumLinks: number;
   trustTier: number;
+  rss?: { archiveUrl: string; includeTextPattern: string; maxArchivePages: number; minimumArchivePosts: number };
   tableRows?: {
     titleCell: number;
     dateCell: number;
@@ -19,7 +21,7 @@ export type MonitorConfig = {
   };
 };
 
-export type MonitoredLink = { title: string; url: string; publishedDateLabel?: string };
+export type MonitoredLink = { title: string; url: string; publishedDateLabel?: string; kind?: "article" | "pdf" };
 type DocumentFingerprint = { sha256: string; bytes: number };
 export type SourceSnapshot = {
   sourceId: string;
@@ -29,6 +31,10 @@ export type SourceSnapshot = {
   links: MonitoredLink[];
   documents?: Record<string, DocumentFingerprint>;
   indexDocumentCount?: number;
+  articles?: Record<string, ArticleFingerprint>;
+  feedItemCount?: number;
+  archivePostCount?: number;
+  feedItems?: { url: string; guid: string }[];
 };
 
 type Baseline = {
@@ -156,8 +162,8 @@ export function compareSnapshots(
     return !next || next.title !== link.title || next.publishedDateLabel !== link.publishedDateLabel;
   });
   const contentChanged = current.links.flatMap((link) => {
-    const old = previous?.documents?.[link.url];
-    const next = current.documents?.[link.url];
+    const old = previous?.documents?.[link.url] ?? previous?.articles?.[link.url];
+    const next = current.documents?.[link.url] ?? current.articles?.[link.url];
     return old && next && old.sha256 !== next.sha256
       ? [{ ...link, previousSha256: old.sha256, currentSha256: next.sha256 }]
       : [];
@@ -275,7 +281,7 @@ function markdownReport(checkedAt: string, signature: string, changes: SourceCha
     lines.push(...(change.added.length ? change.added.map(describeLink) : ["- None"]));
     lines.push("", "### Removed links or previous metadata", "");
     lines.push(...(change.removed.length ? change.removed.map(describeLink) : ["- None"]));
-    lines.push("", "### Changed PDF content", "");
+    lines.push("", "### Changed article or PDF content", "");
     lines.push(...(change.contentChanged.length ? change.contentChanged.map((document) =>
       `- [${document.title}](${document.url}): SHA-256 ${document.previousSha256} → ${document.currentSha256}`
     ) : ["- None"]));
@@ -316,9 +322,24 @@ async function run(): Promise<void> {
   const errors: string[] = [];
   const unbaselinedDocuments: string[] = [];
   const downloads = new Map<string, DocumentFingerprint>();
+  const fingerprintPdf = async (url: string, config: MonitorConfig) => {
+    const fingerprint = downloads.get(url) ?? await fetchPdfFingerprint(url, config);
+    downloads.set(url, fingerprint);
+    return fingerprint;
+  };
 
   for (const config of configs) {
     try {
+      if (config.rss) {
+        const snapshot = await collectRssSnapshot(config, checkedAt, fingerprintPdf);
+        currentSources[config.id] = snapshot;
+        const change = compareSnapshots(config, baseline.sources[config.id], snapshot);
+        if (change) changes.push(change);
+        for (const url of Object.keys(snapshot.documents ?? {})) {
+          if (!baseline.sources[config.id]?.documents?.[url]) unbaselinedDocuments.push(url);
+        }
+        continue;
+      }
       const snapshot = snapshotFromHtml(config, await fetchHtml(config), checkedAt);
       if (snapshot.links.length < config.minimumLinks) {
         throw new Error(`Expected at least ${config.minimumLinks} official links, found ${snapshot.links.length}`);
@@ -326,8 +347,7 @@ async function run(): Promise<void> {
       snapshot.documents = {};
       for (const link of snapshot.links) {
         try {
-          const fingerprint = downloads.get(link.url) ?? await fetchPdfFingerprint(link.url, config);
-          downloads.set(link.url, fingerprint);
+          const fingerprint = await fingerprintPdf(link.url, config);
           snapshot.documents[link.url] = fingerprint;
           if (!baseline.sources[config.id]?.documents?.[link.url]) unbaselinedDocuments.push(link.url);
         } catch (error) {
@@ -343,15 +363,22 @@ async function run(): Promise<void> {
   }
 
   const signature = changeSignature(changes);
+  const warnings = Object.values(currentSources).flatMap((source) => Object.entries(source.articles ?? {})
+    .filter(([, article]) => article.relevant && article.unverifiedPdfUrls.length)
+    .map(([url, article]) => `${url}: linked PDFs require manual retrieval/authority review: ${article.unverifiedPdfUrls.join(", ")}`));
 
   await mkdir(outputDirectory, { recursive: true });
   const report = { version: 2, checkedAt, signature, changed: changes.length > 0, changes, errors,
-    unbaselinedDocuments, sources: currentSources };
+    unbaselinedDocuments, sources: currentSources, warnings };
   await writeFile(path.join(outputDirectory, "report.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
   const initializationNote = unbaselinedDocuments.length
     ? `\n## PDF fingerprints without a previous baseline\n\n${unbaselinedDocuments.map((url) => `- ${url}`).join("\n")}\n\nThese are first observations, not proof that content is unchanged.\n`
     : "";
-  await writeFile(path.join(outputDirectory, "report.md"), markdownReport(checkedAt, signature, changes, errors) + initializationNote, "utf8");
+  const rssSummary = Object.values(currentSources).filter((source) => source.articles).map((source) =>
+    `- ${source.sourceId}: ${source.feedItemCount} feed items; ${source.archivePostCount} archive posts checked; ${Object.values(source.articles!).filter((article) => article.relevant).length} holiday-related candidates.`).join("\n");
+  await writeFile(path.join(outputDirectory, "report.md"), markdownReport(checkedAt, signature, changes, errors) + initializationNote +
+    (rssSummary ? `\n## RSS and archive coverage\n\n${rssSummary}\n` : "") +
+    (warnings.length ? `\n## Manual evidence retrieval needed\n\n${warnings.map((warning) => `- ${warning}`).join("\n")}\n` : ""), "utf8");
 
   if (errors.length) {
     console.error(`Monitor failed for ${errors.length} source(s). See output/monitor/report.md.`);

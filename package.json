@@ -19,6 +19,7 @@
     "@types/node": "^24.10.0",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
+    "fast-xml-parser": "^5.11.1",
     "typescript": "^5.9.2",
     "vitest": "^5.0.0",
     "wrangler": "^4.131.2"

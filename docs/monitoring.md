@@ -2,7 +2,7 @@
 
 ## What is monitored
 
-For researched expansion candidates across all states and federal territories, see [Official announcement source research](announcement-sources.md). Perlis is now enabled as a pilot; the other expansion candidates remain unconfigured.
+For researched expansion candidates across all states and federal territories, see [Official announcement source research](announcement-sources.md). Perlis, Johor and Kedah are enabled as pilots; the other expansion candidates remain unconfigured.
 
 The first monitor set covers the two most important Tier 1 BKPP indexes:
 
@@ -20,6 +20,16 @@ Initial Perlis observation: 14 unique eligible PDF URLs in table rows, of which 
 The monitor fingerprints normalized official PDF links and downloads each linked PDF to compare its SHA-256 checksum. It detects revised documents even when the URL and title stay the same. Visitor counters, timestamps, scripts, styling and unrelated index-page text do not affect the link fingerprint.
 
 PDF checks compare bytes, not meaning: metadata-only changes can also trigger review. They do not extract holiday details or automatically publish records. Downloads are sequential, deduplicated within a run, limited to 25 MiB per PDF and 20 seconds per request (including reading the body), and restricted to HTTPS on configured official hosts, including redirects. HTTP errors, partial responses, non-PDF bodies and incomplete downloads fail the run and prevent baseline updates. No document copies are committed or included in artifacts.
+
+## Johor and Kedah RSS archives
+
+Both official feeds contain only ten recent entries. Every hourly run also reconciles all published posts through each site's public WordPress REST API, ordered by ID, with 100 posts per page. This avoids depending on a persistent last-seen cursor and catches older articles missed during an outage as long as they remain published. The adapter checks feed identities against the archive and fails on missing pagination headers, duplicate posts, inconsistent totals, missing feed articles or incomplete retrieval. Each source is limited to ten pages (1,000 posts), with at least ten posts expected; exceeding these bounds requires configuration review. Responses are limited to 8 MiB and 20 seconds, including reading the body. Robots rules were checked on 26 September 2026 for the feed and archive routes.
+
+Candidates match the same holiday keywords in article titles, article text or resource URLs. Their text and resource URLs are hashed, and linked PDFs on approved HTTPS hosts are downloaded and fingerprinted. Johor PDF-viewer URLs are unpacked. Other PDF hosts appear as manual-review warnings. Content edits, candidate additions and removals trigger review; unrelated additions and markup-only changes do not. Reports include feed/archive counts and candidate counts. Dates from posts are publication dates, never inferred holiday dates.
+
+The committed baseline remembers reviewed monitoring state. Pending changes recur with the same issue signature until reviewed; scheduled runs never accept them automatically. Initial onboarding recorded 18 Johor posts (two candidates) and 263 Kedah posts (eight candidates), plus three linked PDFs. This establishes future change detection, not validation of those historical announcements. The initial candidate inventory is retained in [RSS onboarding](rss-onboarding.md) for separate authority/date review, including 2026 announcements. No holiday records were added by onboarding.
+
+Keyword matching is discovery only: incidental mentions, denials and cancellations can match. Image-only announcements, text inside PDFs without matching surrounding keywords, non-post pages, documents without a PDF URL suffix, and posts deleted before a check can be missed. Same-URL image byte changes are not monitored. This does not claim complete ad-hoc holiday coverage or perform Jev verification.
 
 ## Local commands
 
@@ -53,7 +63,7 @@ After inspecting every added, removed, retitled or content-changed document and 
 npm run monitor:update-baseline
 ```
 
-The baseline is public metadata containing only official URLs, hashes and retrieval timestamps. Review its diff before committing it.
+The baseline contains public source metadata: official URLs, titles, item identities, publication/modification dates, retrieval timestamps and content hashes. It contains no full article bodies. Review its diff before committing it.
 
 ## GitHub automation
 

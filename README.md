@@ -47,7 +47,7 @@ GET http://localhost:8787/health
 npm run monitor
 ```
 
-The monitor compares official PDF links and downloaded PDF content checksums with the reviewed baseline, including revisions at unchanged URLs. It writes evidence under the ignored `output/monitor/` directory and never edits holiday data. Read [docs/monitoring.md](docs/monitoring.md) before accepting a detected change.
+The monitor checks two BKPP indexes, selected Perlis statements, and Johor/Kedah RSS feeds with full published-post archive reconciliation. It compares article text, official PDF links and downloaded PDF checksums with the baseline, including revisions at unchanged URLs. It writes evidence under the ignored `output/monitor/` directory and never edits holiday data. Read [docs/monitoring.md](docs/monitoring.md) before accepting a detected change.
 
 ## Data principle
 

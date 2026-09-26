@@ -64,5 +64,25 @@
     "jurisdictions": ["perlis"],
     "monitor": true,
     "expectedUpdate": "event-driven"
+  },
+  {
+    "id": "johor-announcements",
+    "name": "Johor official announcements - RSS and archive discovery",
+    "authority": "Pejabat Setiausaha Kerajaan Johor",
+    "url": "https://www.johor.gov.my/feed",
+    "tier": 2,
+    "jurisdictions": ["johor"],
+    "monitor": true,
+    "expectedUpdate": "event-driven"
+  },
+  {
+    "id": "kedah-announcements",
+    "name": "Kedah official announcements - RSS and archive discovery",
+    "authority": "Pejabat Setiausaha Kerajaan Negeri Kedah",
+    "url": "https://www.kedah.gov.my/index.php/feed/",
+    "tier": 2,
+    "jurisdictions": ["kedah"],
+    "monitor": true,
+    "expectedUpdate": "event-driven"
   }
 ]

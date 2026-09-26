@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-26T14:10:27.899Z",
+  "updatedAt": "2026-09-26T14:18:17.947Z",
   "sources": {
     "bkpp-annual-holidays": {
       "sourceId": "bkpp-annual-holidays",
@@ -305,6 +305,3048 @@
           "bytes": 291921
         }
       }
+    },
+    "johor-announcements": {
+      "sourceId": "johor-announcements",
+      "sourceUrl": "https://www.johor.gov.my/feed",
+      "checkedAt": "2026-09-26T14:18:17.947Z",
+      "hash": "37f1df0e2797b3b9617cf8a50964826d67cbe989d5bca8bf00d5b2243115ce86",
+      "links": [
+        {
+          "url": "https://www.johor.gov.my/archives/259260",
+          "title": "Kenyataan Akhbar: Cuti Peristiwa JDT Menjuarai Liga Super dan Piala Malaysia Tahun 2023",
+          "publishedDateLabel": "2023-12-09T13:48:57Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/259675",
+          "title": "Kenyataan Akhbar: Pengumuman Cuti Peristiwa 25 Ogos 2024",
+          "publishedDateLabel": "2024-08-22T11:25:41Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.johor.gov.my/wp-content/uploads/2024/08/20240822-Kenyataan-Cuti-Peristiwa-Piala-FA.pdf",
+          "title": "PDF: 20240822-Kenyataan-Cuti-Peristiwa-Piala-FA.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "articles": {
+        "https://www.johor.gov.my/archives/259260": {
+          "id": 259260,
+          "title": "Kenyataan Akhbar: Cuti Peristiwa JDT Menjuarai Liga Super dan Piala Malaysia Tahun 2023",
+          "publishedAt": "2023-12-09T13:48:57Z",
+          "modifiedAt": "2024-01-14T09:34:38Z",
+          "sha256": "560d756d45af8a6add9f98392fa434a2321f29f4f1fb8635102090cce6b27594",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259281": {
+          "id": 259281,
+          "title": "Pendaftaran dan pengemaskinian maklumat individu di Pangkalan Data Utama (PADU)",
+          "publishedAt": "2023-12-28T05:44:13Z",
+          "modifiedAt": "2024-05-15T04:44:11Z",
+          "sha256": "777229b0a86b06304105beaba658a4ebce24cfae5788d991c30e5ce6f7cb4326",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259355": {
+          "id": 259355,
+          "title": "Anda Boleh Berwakaf serendah RM1 di Jariah Wakaf Johor",
+          "publishedAt": "2024-01-29T15:20:47Z",
+          "modifiedAt": "2024-05-15T04:44:26Z",
+          "sha256": "42c1fc85adaf8c56b89c0bd794016f2a859e1f97067cac55a89824dca6503729",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259423": {
+          "id": 259423,
+          "title": "Lawatan Penanda Aras EKSA ke Majlis Perbandaran Pasir Gudang",
+          "publishedAt": "2024-03-20T05:28:01Z",
+          "modifiedAt": "2024-06-19T07:13:25Z",
+          "sha256": "d088e9419f2533b1d49b4b04d0135cbe32f465dd9aa75fd32e7dca01f07c093c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259560": {
+          "id": 259560,
+          "title": "Lawatan Penanda Aras EKSA Ke Setiausaha Kerajaan Perak",
+          "publishedAt": "2024-05-27T02:23:07Z",
+          "modifiedAt": "2024-06-20T03:06:58Z",
+          "sha256": "4d2546b294db2c1d93d0b8e4b132dffc3840573331ae1172eafa892d749b2e91",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259675": {
+          "id": 259675,
+          "title": "Kenyataan Akhbar: Pengumuman Cuti Peristiwa 25 Ogos 2024",
+          "publishedAt": "2024-08-22T11:25:41Z",
+          "modifiedAt": "2024-10-13T02:57:13Z",
+          "sha256": "41915a832eefbdfce060bcef5e77b7acbe4ec3c8da6668a3b7a43dfb78b05412",
+          "relevant": true,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2024/08/20240822-Kenyataan-Cuti-Peristiwa-Piala-FA.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259806": {
+          "id": 259806,
+          "title": "Pertandingan Amalan Ekosistem Kondusif Sektor Awam",
+          "publishedAt": "2025-01-20T02:08:45Z",
+          "modifiedAt": "2025-01-20T02:10:36Z",
+          "sha256": "b91ece1a8f92a4e2af89779587c6a343410309c8550e7344a42048cd72f52f8c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259905": {
+          "id": 259905,
+          "title": "Pemakaian Samping Kain Benang Johor Bagi Acara Rasmi Kerajaan Negeri Johor",
+          "publishedAt": "2025-06-04T02:55:07Z",
+          "modifiedAt": "2025-06-04T02:55:17Z",
+          "sha256": "fd2fb517cde5ac149f128503a1b79024d8333ecf406485be09653107dede3ac9",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2025/06/Edaran-Pemakluman-Pemakaian-Samping-Kain-Johor.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259909": {
+          "id": 259909,
+          "title": "Permohonan Penggunaan Perkataan Johor / JB / J dalam Nama Syarikat Swasta dan Pertubuhan Bukan Kerajaan",
+          "publishedAt": "2025-06-04T03:09:34Z",
+          "modifiedAt": "2025-06-04T03:09:44Z",
+          "sha256": "be7c18e802ddad5860d34f9469643181666d9ca90ee3a7e994c295a4355aa1d6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/259965": {
+          "id": 259965,
+          "title": "Tawaran Sebut Harga: ICT@Johor SH/11/2025",
+          "publishedAt": "2025-07-21T04:06:22Z",
+          "modifiedAt": "2025-08-25T03:45:10Z",
+          "sha256": "8c07b9d65580616c227788822cdd3c6ca83b153a7924f6564e0a30aaa0dc08c0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260140": {
+          "id": 260140,
+          "title": "Borang Mengutip Tol Enakmen Mengutip Tol 1974 Peraturan-Peraturan Tol Pindaan 2025",
+          "publishedAt": "2025-11-17T03:35:02Z",
+          "modifiedAt": "2025-11-28T08:13:26Z",
+          "sha256": "810384cb66b7e2be7c410e263120faae6d5117970c5d7323ecb8d3e0b578dbbc",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2025/11/Borang-Mengutip-Tol-Enakmen-Mengutip-Tol-1974-Peraturan-Peraturan-Tol-Pindaan-2025_c.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260202": {
+          "id": 260202,
+          "title": "Pakaian Seragam dan Cara Berpakaian Bagi Perkhidmatan Awam Johor",
+          "publishedAt": "2026-01-28T09:42:24Z",
+          "modifiedAt": "2026-01-28T09:42:27Z",
+          "sha256": "d0551b23d0d40664f8120c565234000f5e2e9d92f09fd41e286b2eee732a4881",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/01/ARAHAN-SETIAUSAHA-KERAJAAN-JOHOR-NO-1-TAHUN-2026-PAKAIAN-SERAGAM-DAN-CARA-BERPAKAIAN-BAGI-PERKHIDMATAN-AWAM-JOHOR_c.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260305": {
+          "id": 260305,
+          "title": "Protokol Penggantungan Gambar Potret Rasmi Diraja",
+          "publishedAt": "2026-03-17T05:02:53Z",
+          "modifiedAt": "2026-03-17T05:02:56Z",
+          "sha256": "d3d75f0d3db6e2a0c6bd9165cab4f1b32b2299ca9f716561310466a80811bb4d",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/03/v3-protokol_.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260484": {
+          "id": 260484,
+          "title": "Jawatan Kosong : ICT@Johor",
+          "publishedAt": "2026-09-02T00:32:50Z",
+          "modifiedAt": "2026-09-02T00:32:53Z",
+          "sha256": "5017dc71a90cbaf1a3700588657a77d8079867a4345682368d405e25a6afdd88",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/02092026_ICT_Iklan.pdf",
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/02092026_ICT_JwtnKosong.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260499": {
+          "id": 260499,
+          "title": "Jawatan Kosong : Jabatan Agama Islam Negeri Johor (S9)",
+          "publishedAt": "2026-09-17T06:46:15Z",
+          "modifiedAt": "2026-09-17T06:46:20Z",
+          "sha256": "cc2e50cde19e49b2bd1133286d1af527dfe4effad42c3441cd788c39c64566a1",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/Iklan_jainj17092026.pdf",
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/Poster-Iklan-PHEI-Gred-S9.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260500": {
+          "id": 260500,
+          "title": "Jawatan Kosong : Jabatan Agama Islam Negeri Johor (MySTEP)",
+          "publishedAt": "2026-09-17T06:48:05Z",
+          "modifiedAt": "2026-09-17T06:49:35Z",
+          "sha256": "2691501c5fc67320b44e4d6ed3ca4db83cd6c5ab203ebf9d9ccb9a4fde7595c9",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/Iklanmystep_jainj17092026.pdf",
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/Poster-Iklan-MyStep.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260507": {
+          "id": 260507,
+          "title": "Jawatan Kosong : Jabatan Kebajikan Masyarakat Negeri Johor",
+          "publishedAt": "2026-09-21T04:50:00Z",
+          "modifiedAt": "2026-09-21T04:56:39Z",
+          "sha256": "f5230cec67e5bdf09848718ab6533218286f2bd6a389bed2dc1bf6f543dcdbc4",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/IKLAN-JAWATAN-KOSONG-Pembantu-Keselamatan-KP1-rpkk.pdf",
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/IKLAN-JAWATAN-KOSONG-Pembantu-Penyediaan-Makanan-N1-rpkk.pdf",
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/JKM_21092026.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.johor.gov.my/archives/260510": {
+          "id": 260510,
+          "title": "Jawatan Kosong : Muzium DiRaja Abu Bakar Istana Besar Johor",
+          "publishedAt": "2026-09-23T09:09:54Z",
+          "modifiedAt": "2026-09-23T09:09:57Z",
+          "sha256": "cc271ef48ac7d4e864ec76db3a1f709b7dfaabe5d33a3397ba2be9c9a0d21d55",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.johor.gov.my/wp-content/uploads/2026/09/Iklan-Muzium-Diraja_.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        }
+      },
+      "documents": {
+        "https://www.johor.gov.my/wp-content/uploads/2024/08/20240822-Kenyataan-Cuti-Peristiwa-Piala-FA.pdf": {
+          "sha256": "6190f91c0421158fb7c94ed786659b25fbe5e7f0434470469618708813d05081",
+          "bytes": 1399816
+        }
+      },
+      "feedItemCount": 10,
+      "archivePostCount": 18,
+      "feedItems": [
+        {
+          "url": "https://www.johor.gov.my/archives/260510",
+          "guid": "https://www.johor.gov.my/?p=260510"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260507",
+          "guid": "https://www.johor.gov.my/?p=260507"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260500",
+          "guid": "https://www.johor.gov.my/?p=260500"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260499",
+          "guid": "https://www.johor.gov.my/?p=260499"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260484",
+          "guid": "https://www.johor.gov.my/?p=260484"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260305",
+          "guid": "https://www.johor.gov.my/?p=260305"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260202",
+          "guid": "https://www.johor.gov.my/?p=260202"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/260140",
+          "guid": "https://www.johor.gov.my/?p=260140"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/259965",
+          "guid": "https://www.johor.gov.my/?p=259965"
+        },
+        {
+          "url": "https://www.johor.gov.my/archives/259909",
+          "guid": "https://www.johor.gov.my/?p=259909"
+        }
+      ]
+    },
+    "kedah-announcements": {
+      "sourceId": "kedah-announcements",
+      "sourceUrl": "https://www.kedah.gov.my/index.php/feed/",
+      "checkedAt": "2026-09-26T14:18:17.947Z",
+      "hash": "e4d03f8fd7c378534b1eef0cead3810624c24ce02d791f9c812f0806f244b57a",
+      "links": [
+        {
+          "url": "https://www.kedah.gov.my/index.php/2024/01/04/kerajaan-negeri-kedah-lulus-cuti-peristiwa-sempena-thaipusam/",
+          "title": "KERAJAAN NEGERI KEDAH LULUS CUTI PERISTIWA SEMPENA THAIPUSAM",
+          "publishedDateLabel": "2024-01-04T12:22:27Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2024/03/24/rakyat-kedah-diminta-guna-air-secara-berhemah/",
+          "title": "RAKYAT KEDAH DIMINTA GUNA AIR SECARA BERHEMAH",
+          "publishedDateLabel": "2024-03-24T01:01:42Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2025/01/23/hari-kelepasan-am-negeri-kedah-tahun-2025/",
+          "title": "Hari Kelepasan Am Negeri Kedah Tahun 2025",
+          "publishedDateLabel": "2025-01-23T03:04:54Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2025/03/27/kerajaan-negeri-rai-atlet-dan-pegawai-negeri-kedah/",
+          "title": "KERAJAAN NEGERI RAI ATLET DAN PEGAWAI NEGERI KEDAH",
+          "publishedDateLabel": "2025-03-27T01:18:00Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2025/05/13/persefahaman-agama-dan-budaya-dapat-meletakkan-negeri-ke-arah-lebih-maju-dan-harmoni/",
+          "title": "PERSEFAHAMAN AGAMA DAN BUDAYA DAPAT MELETAKKAN NEGERI KE ARAH LEBIH MAJU DAN HARMONI",
+          "publishedDateLabel": "2025-05-13T01:29:50Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/01/01/hari-kelepasan-negeri-kedah-am-bagi-tahun-2026/",
+          "title": "HARI KELEPASAN AM NEGERI KEDAH BAGI TAHUN 2026",
+          "publishedDateLabel": "2026-01-01T08:14:07Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/01/21/hari-tahipusam-sebagai-cuti-peristiwa-di-negeri-kedah-darul-aman-tahun-2026/",
+          "title": "HARI THAIPUSAM SEBAGAI CUTI PERISTIWA DI NEGERI KEDAH DARUL AMAN TAHUN 2026",
+          "publishedDateLabel": "2026-01-21T01:36:49Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/03/16/hari-kelepasan-am-tambahan-cuti-hari-raya-aidilfitri-2026/",
+          "title": "HARI KELEPASAN AM TAMBAHAN SEMPENA HARI RAYA AIDILFITRI 2026",
+          "publishedDateLabel": "2026-03-16T08:07:40Z",
+          "kind": "article"
+        },
+        {
+          "url": "https://www.kedah.gov.my/wp-content/uploads/2026/01/Cuti-Peristiwa-Thaipusam-Negeri-Kedah-Darul-Aman-2026.pdf",
+          "title": "PDF: Cuti-Peristiwa-Thaipusam-Negeri-Kedah-Darul-Aman-2026.pdf",
+          "kind": "pdf"
+        },
+        {
+          "url": "https://www.kedah.gov.my/wp-content/uploads/2026/03/HARI-KELEPASAN-AM-TAMBAHAN-SEMPENA-HARI-RAYA-AIDILFITRI-TAHUN-2026.pdf",
+          "title": "PDF: HARI-KELEPASAN-AM-TAMBAHAN-SEMPENA-HARI-RAYA-AIDILFITRI-TAHUN-2026.pdf",
+          "kind": "pdf"
+        }
+      ],
+      "articles": {
+        "https://www.kedah.gov.my/index.php/2024/04/18/kemeriahan-rumah-terbuka-suk-negeri-kedah/": {
+          "id": 1481,
+          "title": "KEMERIAHAN RUMAH TERBUKA SUK NEGERI KEDAH",
+          "publishedAt": "2024-04-18T07:01:00Z",
+          "modifiedAt": "2024-12-26T03:44:31Z",
+          "sha256": "6fbeb001ede6b1766173b3b9f2e281500b8f7a8dba9597cb81b7d0d210fe581d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/20/pesta-songkran-akan-diketengahkan-sebagai-produk-pelancongan-negeri/": {
+          "id": 1511,
+          "title": "PESTA SONGKRAN AKAN DIKETENGAHKAN SEBAGAI PRODUK PELANCONGAN NEGERI",
+          "publishedAt": "2024-04-20T08:39:21Z",
+          "modifiedAt": "2024-12-26T03:41:29Z",
+          "sha256": "74b10acee2f4559ed87b4d3bb9d7c2a384bd05c48343a9757bc2ae24074ac820",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/21/kira-kira-2400-hadir-konvensyen-dan-penyerahan-watikah-mkk/": {
+          "id": 1519,
+          "title": "KIRA-KIRA 2,400 HADIR KOVENSYEN DAN PENYERAHAN WATIKAH MKK",
+          "publishedAt": "2024-04-21T07:15:37Z",
+          "modifiedAt": "2024-12-26T03:43:18Z",
+          "sha256": "a2692aef59aa0ce34e9e81f189c438de039c107eff73cad8b0f844cea6a12e26",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/22/lsank-buddies-tingkatkan-kesedaran-awam-cintakan-sumber-air/": {
+          "id": 1525,
+          "title": "LSANK BUDDIES TINGKATKAN KESEDARAN AWAM CINTAKAN SUMBER AIR",
+          "publishedAt": "2024-04-22T07:42:27Z",
+          "modifiedAt": "2024-12-26T03:55:36Z",
+          "sha256": "0a7ea6301bc0727e106888f2afaaecced28a0c5afefd3dcc6fbb3aebbebc1193",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/01/peningkatan-kes-covid-19-sanusi-ingatkan-rakyat-berjaga-jaga/": {
+          "id": 4257,
+          "title": "PENINGKATAN KES COVID-19, SANUSI INGATKAN RAKYAT BERJAGA-JAGA",
+          "publishedAt": "2024-01-01T02:35:12Z",
+          "modifiedAt": "2024-12-17T07:39:04Z",
+          "sha256": "bcf160b8d088707ed7bed37e04b295ab08ddf606cb64f0a91941ea590176c78c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/02/perkhidmatan-awam-negeri-perlu-melahirkan-tadbir-urus-yang-baik/": {
+          "id": 4260,
+          "title": "PERKHIDMATAN AWAM NEGERI PERLU MELAHIRKAN TADBIR URUS YANG BAIK",
+          "publishedAt": "2024-01-02T01:18:13Z",
+          "modifiedAt": "2024-12-17T07:50:54Z",
+          "sha256": "8087f0396613079f9662f5313f1dc6cce70c80ef1c86038ebe1c4f4d4ebe435c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/04/kerajaan-negeri-kedah-lulus-cuti-peristiwa-sempena-thaipusam/": {
+          "id": 4263,
+          "title": "KERAJAAN NEGERI KEDAH LULUS CUTI PERISTIWA SEMPENA THAIPUSAM",
+          "publishedAt": "2024-01-04T12:22:27Z",
+          "modifiedAt": "2024-12-17T07:52:52Z",
+          "sha256": "783c1810f19a6ce108ebfadb94fb4542d474802415913bf888d514b636b69f67",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/08/padang-terap-akan-dijadikan-daerah-bandaraya-getah-dan-pelancongan-eko/": {
+          "id": 4266,
+          "title": "PADANG TERAP AKAN DIJADIKAN DAERAH BANDARAYA GETAH DAN PELANCONGAN EKO",
+          "publishedAt": "2024-01-08T01:59:08Z",
+          "modifiedAt": "2024-12-17T08:00:35Z",
+          "sha256": "4d329837239bb82005ab933cfe135c53db08a4d6baac810e785bf5f0eb0b73ca",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/08/galeri-rundingan-baling-kini-dibuka/": {
+          "id": 4271,
+          "title": "GALERI RUNDINGAN BALING KINI DIBUKA",
+          "publishedAt": "2024-01-08T02:03:12Z",
+          "modifiedAt": "2024-12-17T08:04:31Z",
+          "sha256": "b5d862fe55a00b203cc8a8f3f0a3c3f8caba6cd74e3dafa8275353cceace24ec",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/09/penjawat-awam-merupakan-pelaksana-menggerak-seluruh-sistem-operasi-kerajaan/": {
+          "id": 4274,
+          "title": "PENJAWAT AWAM MERUPAKAN PELAKSANA MENGGERAK SELURUH SISTEM OPERASI KERAJAAN",
+          "publishedAt": "2024-01-09T06:12:18Z",
+          "modifiedAt": "2024-12-17T08:10:06Z",
+          "sha256": "93666b008f21ba0303cf88c87e6fb284695d12d3e0598777e1ef8b5ece1f0324",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/09/baling-bercahaya-tarikan-baharu-pelancongan-daerah-baling/": {
+          "id": 4278,
+          "title": "“BALING BERCAHAYA” TARIKAN BAHARU PELANCONGAN DAERAH BALING",
+          "publishedAt": "2024-01-09T07:57:17Z",
+          "modifiedAt": "2024-12-17T08:15:43Z",
+          "sha256": "7640de06a196285ddb2164b1ac54454d425ad6d8ca3dd5ec06e7f4465790b677",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/24/kembalikan-kegemilangan-pekan-rabu/": {
+          "id": 4281,
+          "title": "KEMBALIKAN KEGEMILANGAN PEKAN RABU",
+          "publishedAt": "2024-01-24T06:53:07Z",
+          "modifiedAt": "2024-12-17T08:18:34Z",
+          "sha256": "dcf5078ea564b54263bf3319cb2e3acad5c881111b6055cefc75c648dea308e3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/01/31/susuri-sungai-merbok-imbas-kembali-zaman-kerajaan-kedah-tua/": {
+          "id": 4284,
+          "title": "SUSURI SUNGAI MERBOK IMBAS KEMBALI ZAMAN KERAJAAN KEDAH TUA",
+          "publishedAt": "2024-01-31T12:59:53Z",
+          "modifiedAt": "2024-12-17T08:25:49Z",
+          "sha256": "7be58257cc6e6d8235665de75a7d87a02e751ffa1a4cdfb5b529324442492246",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/02/13/raja-muda-kedah-dan-raja-puan-muda-kedah-mengadakan-lawatan-ke-ulu-muda/": {
+          "id": 4287,
+          "title": "RAJA MUDA KEDAH DAN RAJA PUAN MUDA KEDAH MENGADAKAN LAWATAN KE ULU MUDA",
+          "publishedAt": "2024-02-13T07:41:37Z",
+          "modifiedAt": "2024-12-18T03:02:57Z",
+          "sha256": "45959555c3bbc9cf58c9b13afdc98dee7e7f6a6075c3a64c13a672c8d03b466c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/02/13/kubang-pasu-daerah-pertama-menghasilkan-dokumen-pelan-pembangunan-daerah-kubang-pasu-2035/": {
+          "id": 4290,
+          "title": "KUBANG PASU DAERAH PERTAMA MENGHASILKAN DOKUMEN PELAN PEMBANGUNAN DAERAH KUBANG PASU 2035",
+          "publishedAt": "2024-02-13T07:45:37Z",
+          "modifiedAt": "2024-12-18T03:09:16Z",
+          "sha256": "431f59925f9515933b4fdff4bfab514defa7bbc60af4a1444d05c0699af00822",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/02/19/jangan-terpengaruh-ekstremis-yang-menghasut-memecahbelahkan-perpaduan-masyarakat/": {
+          "id": 4293,
+          "title": "JANGAN TERPENGARUH EKSTREMIS YANG MENGHASUT MEMECAHBELAHKAN PERPADUAN MASYARAKAT",
+          "publishedAt": "2024-02-19T07:31:19Z",
+          "modifiedAt": "2024-12-18T03:11:33Z",
+          "sha256": "e3a66992901aa5f434e76f2996ee31130796567d9d0bdbc5a8fe72d1abbe8afb",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/02/25/raja-muda-kedah-hadir-majlis-bacaan-yasin-nisfu-syaaban-1445-hijrah/": {
+          "id": 4296,
+          "title": "RAJA MUDA KEDAH HADIR MAJLIS BACAAN YASIN NISFU SYA’ABAN 1445 HIJRAH",
+          "publishedAt": "2024-02-25T07:24:37Z",
+          "modifiedAt": "2024-12-18T03:12:56Z",
+          "sha256": "d50c2df9537a163a7c2578e43bc1cf5924da62e9188bd408b4240e8fcd93f7e9",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/05/kedah-siapsedia-hadapi-cabaran-ekonomi-global-menjelang-2040/": {
+          "id": 4299,
+          "title": "KEDAH SIAPSEDIA HADAPI CABARAN EKONOMI GLOBAL MENJELANG 2040",
+          "publishedAt": "2024-03-05T06:38:12Z",
+          "modifiedAt": "2024-12-18T03:17:53Z",
+          "sha256": "2732531b94de4000a99c5c327fbeccb000e506ec8ea6f2ef399422f446ed43de",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/05/kerajaan-negeri-komited-tangani-masalah-keciciran-pembelajaran-pelajar-sekolah/": {
+          "id": 4302,
+          "title": "KERAJAAN NEGERI KOMITED TANGANI MASALAH KECICIRAN PEMBELAJARAN PELAJAR SEKOLAH",
+          "publishedAt": "2024-03-05T06:43:41Z",
+          "modifiedAt": "2024-12-18T03:20:21Z",
+          "sha256": "7ff9c9818aff41f1add9ab7b0613dc23ec7562371ee87eff7218b151a0ed8e8b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/05/kedah-bakal-terima-pelaburan-rm50-bilion-dari-8-syarikat-china/": {
+          "id": 4305,
+          "title": "KEDAH BAKAL TERIMA PELABURAN RM50 BILION DARI 8 SYARIKAT CHINA",
+          "publishedAt": "2024-03-05T06:52:20Z",
+          "modifiedAt": "2024-12-18T03:32:43Z",
+          "sha256": "13d42183433354f87f3a143eb826f232851c63aefaa0ecc1ebc1a6818582c3f0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/07/task-beri-sumbangan-bts-dan-ihya-ramadhan-kepada-300-orang-penerima/": {
+          "id": 4308,
+          "title": "TASK BERI SUMBANGAN BTS DAN IHYA’ RAMADHAN KEPADA 300 ORANG PENERIMA",
+          "publishedAt": "2024-03-07T01:53:43Z",
+          "modifiedAt": "2024-12-18T03:42:33Z",
+          "sha256": "b6ff92355969ee1775c984716a754c9f03176732a86da6109dbed86c80628d09",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/07/pelbagai-program-dirangka-oleh-kerajaan-untuk-kesejahteraan-golongan-belia-di-kedah/": {
+          "id": 4311,
+          "title": "PELBAGAI PROGRAM DIRANGKA OLEH KERAJAAN UNTUK KESEJAHTERAAN GOLONGAN BELIA DI KEDAH",
+          "publishedAt": "2024-03-07T02:05:29Z",
+          "modifiedAt": "2024-12-18T03:48:25Z",
+          "sha256": "ab7c706d775eb36f3451007c8ff3cddbe61871176de3173835061e0640a76ac8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/07/kerajaan-negeri-beri-tumpuan-meningkatkan-mutu-perkhidmatan-pemain-industri-pelancongan/": {
+          "id": 4314,
+          "title": "KERAJAAN NEGERI BERI TUMPUAN MENINGKATKAN MUTU PERKHIDMATAN PEMAIN INDUSTRI PELANCONGAN",
+          "publishedAt": "2024-03-07T02:18:11Z",
+          "modifiedAt": "2024-12-18T03:50:17Z",
+          "sha256": "9b7831aaaffc1840d85b6f75c7b59679976ce9ba3a86baab46486ea44237558d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/10/pelbagai-inisiatif-kerajaan-negeri-diketengahkan-untuk-pemain-sektor-pertanian/": {
+          "id": 4317,
+          "title": "PELBAGAI INISIATIF KERAJAAN NEGERI DIKETENGAHKAN UNTUK PEMAIN SEKTOR PERTANIAN",
+          "publishedAt": "2024-03-10T01:20:59Z",
+          "modifiedAt": "2024-12-18T04:00:17Z",
+          "sha256": "32c41e4d2b0764d1978b0afc9bfd1e7386a7e2c1c9972122f233df824293264c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/24/rakyat-kedah-diminta-guna-air-secara-berhemah/": {
+          "id": 4320,
+          "title": "RAKYAT KEDAH DIMINTA GUNA AIR SECARA BERHEMAH",
+          "publishedAt": "2024-03-24T01:01:42Z",
+          "modifiedAt": "2024-12-18T04:01:38Z",
+          "sha256": "1dd0fee17b3c41f6fbcd1adafd4849464c725e1d09d0b8992d2a8effc2b90560",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/27/kekalkan-prestasi-dan-tingkatkan-produktiviti-dalam-memanfaatkan-ramadan/": {
+          "id": 4323,
+          "title": "KEKALKAN PRESTASI DAN TINGKATKAN PRODUKTIVITI DALAM MEMANFAATKAN RAMADAN",
+          "publishedAt": "2024-03-27T01:17:37Z",
+          "modifiedAt": "2024-12-26T03:02:11Z",
+          "sha256": "7f8bdb51d2e04dc33762b0531195343e3d68ba6f95822193db0099902970d277",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/27/raja-muda-kedah-berkenan-berbuka-puasa-bersama-kakitangan-maik/": {
+          "id": 4326,
+          "title": "RAJA MUDA KEDAH BERKENAN BERBUKA PUASA BERSAMA KAKITANGAN MAIK",
+          "publishedAt": "2024-03-27T01:20:21Z",
+          "modifiedAt": "2024-12-26T03:11:45Z",
+          "sha256": "f9deabe8a152148548f12a504a69d64cf342c8644355c657b71eb1cd888cf6a3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/03/28/raja-muda-kedah-berkenan-hadir-majlis-nuzul-al-quran-peringkat-negeri-kedah/": {
+          "id": 4329,
+          "title": "RAJA MUDA KEDAH BERKENAN HADIR MAJLIS NUZUL AL-QURAN PERINGKAT NEGERI KEDAH",
+          "publishedAt": "2024-03-28T12:46:30Z",
+          "modifiedAt": "2024-12-26T03:15:20Z",
+          "sha256": "5a0bb3260eaf4a4251d28e9fda25c2d4d32e383d0ad9df21ea08e25a26455365",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/01/lznk-agihan-infak-ayam-segar-fakir-dan-miskin-sempena-aidilfitri-1445h-2024m/": {
+          "id": 4332,
+          "title": "LZNK AGIHAN INFAK AYAM SEGAR FAKIR DAN MISKIN SEMPENA AIDILFITRI 1445H/2024M",
+          "publishedAt": "2024-04-01T12:40:22Z",
+          "modifiedAt": "2024-12-26T03:23:54Z",
+          "sha256": "2f54f34b0bef839d1b544c47f3c79d34e629f379ee160df9c22ebcdbc75d4b9e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/07/transformasi-pendigitalan-lznk-bantu-meningkatkan-kutipan-zakat-negeri-kedah/": {
+          "id": 4335,
+          "title": "TRANSFORMASI PENDIGITALAN LZNK BANTU MENINGKATKAN KUTIPAN ZAKAT NEGERI KEDAH",
+          "publishedAt": "2024-04-07T01:31:47Z",
+          "modifiedAt": "2024-12-26T03:30:24Z",
+          "sha256": "1cf7d09704282576af37fb74622a6ad6c463c861de0365ef9bec335d689445f6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/07/sultan-kedah-hadir-majlis-sah-khatam-al-quran-di-masjid-zahir/": {
+          "id": 4338,
+          "title": "SULTAN KEDAH HADIR MAJLIS SAH KHATAM AL-QURAN DI MASJID ZAHIR",
+          "publishedAt": "2024-04-07T01:37:52Z",
+          "modifiedAt": "2024-12-26T03:37:48Z",
+          "sha256": "ba7066878c1c8d969b261dbb436e7e266c67fe4863665b0cba349aff83545f4a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/24/teknologi-digital-lebih-memudahkan-budaya-membaca-dikalangan-masyarakat/": {
+          "id": 4350,
+          "title": "TEKNOLOGI DIGITAL LEBIH MEMUDAHKAN BUDAYA MEMBACA DIKALANGAN MASYARAKAT",
+          "publishedAt": "2024-04-24T01:52:48Z",
+          "modifiedAt": "2024-12-26T04:02:25Z",
+          "sha256": "94b70cf1230a7f823b0e63b9c1b5f0dee38686261e5e13e8ed5709a1120545ba",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/04/30/pkb-dan-retd-korea-meterai-mou-pembinaan-lrt-di-langkawi/": {
+          "id": 4353,
+          "title": "PKB DAN RETD KOREA METERAI MOU PEMBINAAN LRT DI LANGKAWI",
+          "publishedAt": "2024-04-30T01:43:59Z",
+          "modifiedAt": "2024-12-30T07:32:32Z",
+          "sha256": "90485143d9c623eb44e204b1e84152b6bb392621887f2bb9d93b954d778ad0eb",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/05/07/jawatankuasa-khas-rentas-sempadan-malaysia-thailand-perlu-diwujudkan/": {
+          "id": 4356,
+          "title": "JAWATANKUASA KHAS RENTAS SEMPADAN MALAYSIA-THAILAND PERLU DIWUJUDKAN",
+          "publishedAt": "2024-05-07T12:36:45Z",
+          "modifiedAt": "2024-12-30T07:37:32Z",
+          "sha256": "6bc256b5b504d5af8710727e85d5c82de9d94d3ca2839b7bcd3294c7ecdef4f3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/05/12/terus-komited-mendalami-budaya-al-quran-bukan-sekadar-retorik-sahaja/": {
+          "id": 4359,
+          "title": "TERUS KOMITED MENDALAMI BUDAYA AL-QURAN BUKAN SEKADAR RETORIK SAHAJA",
+          "publishedAt": "2024-05-12T01:18:08Z",
+          "modifiedAt": "2024-12-30T07:52:17Z",
+          "sha256": "be6dc5dcaabc146869d3ab4615c8400c844add470328700ca63c7a8766ffe68c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/06/06/tmk-2025-bakal-dilancarkan-pada-julai-ini/": {
+          "id": 4362,
+          "title": "TMK 2025 BAKAL DILANCARKAN PADA JULAI INI",
+          "publishedAt": "2024-06-06T12:20:35Z",
+          "modifiedAt": "2024-12-30T07:56:13Z",
+          "sha256": "63350cc653ba42e040941a27815036bcf8368026ced12ac9ed3a64fa1bebd31a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/06/16/kerajaan-negeri-komited-bantu-golongan-susah-miliki-rumah-sendiri/": {
+          "id": 4365,
+          "title": "KERAJAAN NEGERI KOMITED BANTU GOLONGAN SUSAH MILIKI RUMAH SENDIRI",
+          "publishedAt": "2024-06-16T01:42:43Z",
+          "modifiedAt": "2024-12-31T07:18:29Z",
+          "sha256": "82c31f74751edf3c8c1bc251ee827c5ce55d013db75b22fc7b2d52cbd2532fb0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/06/13/pesawah-terkesan-dengan-kenaikan-harga-diesel/": {
+          "id": 4368,
+          "title": "PESAWAH TERKESAN DENGAN KENAIKAN HARGA DIESEL",
+          "publishedAt": "2024-06-13T01:27:05Z",
+          "modifiedAt": "2024-12-31T07:21:14Z",
+          "sha256": "892223399854656cc0036098f24891c89341a3fecb785895203d921ea53af847",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/07/01/sultan-kedah-pelopor-kepada-the-greater-kedah/": {
+          "id": 4371,
+          "title": "SULTAN KEDAH PELOPOR KEPADA “THE GREATER KEDAH”",
+          "publishedAt": "2024-07-01T01:55:49Z",
+          "modifiedAt": "2025-01-01T02:59:30Z",
+          "sha256": "6bda130a0f9d078ec83ca1a6f8cc370296c30eb7083d966829de5727668a53d6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/07/15/durian-agro-tourism-fest-mampu-mengangkat-bandar-baharu-sebagai-pelancongan-agro-sempena-tmk-2025/": {
+          "id": 4374,
+          "title": "DURIAN AGRO TOURISM FEST MAMPU MENGANGKAT BANDAR BAHARU SEBAGAI PELANCONGAN AGRO SEMPENA TMK 2025",
+          "publishedAt": "2024-07-15T07:32:35Z",
+          "modifiedAt": "2025-01-01T03:01:31Z",
+          "sha256": "a2a1418f2e8762ec87d499b940c0d52d6f7c201289ea77ef40c163d8ce058622",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/07/21/lebih-3200-peluang-pekerjaan-dalam-pelbagai-sektor-swasta-untuk-rakyat-kedah/": {
+          "id": 4377,
+          "title": "LEBIH 3,200 PELUANG PEKERJAAN DALAM PELBAGAI SEKTOR SWASTA UNTUK RAKYAT KEDAH",
+          "publishedAt": "2024-07-21T02:21:54Z",
+          "modifiedAt": "2025-01-01T03:05:52Z",
+          "sha256": "6b654ace5a44186934ed855e5c8b6255d2cad28ec3fccf7b4f8d6f559ad38721",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/07/31/sultan-kedah-berkenan-berangkat-ke-majlis-bacaan-yasin-sempena-sambutan-hari-pahlawan/": {
+          "id": 4380,
+          "title": "SULTAN KEDAH BERKENAN BERANGKAT KE MAJLIS BACAAN YASIN SEMPENA SAMBUTAN HARI PAHLAWAN",
+          "publishedAt": "2024-07-31T01:23:07Z",
+          "modifiedAt": "2025-01-01T03:15:10Z",
+          "sha256": "89a2cc9a80b5c14b6655c17398cec581165d0e141ab9982fb00c8a596e5af1c6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/08/04/hargai-dan-teguhkan-perpaduan-bagi-melahirkan-jiwa-merdeka-sanusi/": {
+          "id": 4383,
+          "title": "HARGAI DAN TEGUHKAN PERPADUAN BAGI MELAHIRKAN JIWA MERDEKA – SANUSI",
+          "publishedAt": "2024-08-04T01:37:02Z",
+          "modifiedAt": "2025-01-01T03:22:07Z",
+          "sha256": "106ca5e52220a378542d4ac5ac1418bfccdef1b4ce6ecde4cce5955bb9750b14",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/08/10/kedah-lancar-tahun-melawat-kedah-2025/": {
+          "id": 4386,
+          "title": "KEDAH LANCAR TAHUN MELAWAT KEDAH 2025",
+          "publishedAt": "2024-08-10T09:00:43Z",
+          "modifiedAt": "2025-01-01T03:27:44Z",
+          "sha256": "212ea17397ab37d4112889f07bb3b4d9a6da0d56fb0aebf7de2c0be76f16621c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/09/19/kedah-sasar-15-emas-temasya-para-sukma-ke-21-sarawak/": {
+          "id": 4390,
+          "title": "KEDAH SASAR 15 EMAS TEMASYA PARA SUKMA KE-21 SARAWAK",
+          "publishedAt": "2024-09-19T05:05:04Z",
+          "modifiedAt": "2025-01-01T03:35:47Z",
+          "sha256": "ffc9231dfe303d9e0e363a8f47a1c4b965ad3cff4f687f6f00e400ad3fef2d81",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/09/26/kerajaan-negeri-beri-jaminan-tunaikan-sumbangan-kepada-mangsa-banjir-di-kedah-sanusi/": {
+          "id": 4393,
+          "title": "KERAJAAN NEGERI BERI JAMINAN TUNAIKAN SUMBANGAN KEPADA MANGSA BANJIR DI KEDAH – SANUSI",
+          "publishedAt": "2024-09-26T01:30:35Z",
+          "modifiedAt": "2025-01-01T03:38:36Z",
+          "sha256": "39f1ed092b869a74f26ef950e1d9a7e167ae2b95205bb4d146275d7b9c8eb5fa",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/10/06/penyediaan-rancangan-pemajuan-perlu-mengambilkira-pendekatan-people-centric-dan-bandar-pintar-sanusi/": {
+          "id": 4396,
+          "title": "PENYEDIAAN RANCANGAN PEMAJUAN PERLU MENGAMBILKIRA PENDEKATAN ‘PEOPLE CENTRIC’ DAN BANDAR PINTAR – SANUSI",
+          "publishedAt": "2024-10-06T01:01:17Z",
+          "modifiedAt": "2025-01-01T07:50:50Z",
+          "sha256": "9586dc2d7f87705f8a0767a8a85ef94ff70bcc69235f3b8dbdd1537e9d8c129b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/10/28/penyusunan-strategi-dan-pendekatan-perlu-diusahakan-bagi-mencapai-the-greater-kedah-sanusi/": {
+          "id": 4399,
+          "title": "PENYUSUNAN, STRATEGI DAN PENDEKATAN PERLU DIUSAHAKAN BAGI MENCAPAI THE GREATER KEDAH – SANUSI",
+          "publishedAt": "2024-10-28T02:58:34Z",
+          "modifiedAt": "2025-01-01T07:54:55Z",
+          "sha256": "f5df552091bb48e8aec0c66c0a1bfc270414ca6339fe1145330e9875c8d21a3e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/10/14/sultan-kedah-berangkat-hadir-ke-majlis-istiadat-konvokesyen-unishams-ke-26/": {
+          "id": 4402,
+          "title": "SULTAN KEDAH BERANGKAT HADIR KE MAJLIS ISTIADAT KONVOKESYEN UNISHAMS KE-26",
+          "publishedAt": "2024-10-14T02:39:58Z",
+          "modifiedAt": "2025-01-01T07:58:33Z",
+          "sha256": "820eaea1ecb5490dc4b39e6ea1f7c544e0544dc3fe038f4ab792fed6ecc3c238",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/10/22/pemuliharaan-khazanah-alam-semulajadi-dapat-memastikan-kelestarian-alam-sekitar-kekal-terpelihara/": {
+          "id": 4405,
+          "title": "PEMULIHARAAN KHAZANAH ALAM SEMULAJADI DAPAT MEMASTIKAN KELESTARIAN ALAM SEKITAR KEKAL TERPELIHARA",
+          "publishedAt": "2024-10-22T01:34:09Z",
+          "modifiedAt": "2025-01-01T08:01:45Z",
+          "sha256": "40dc7805e469f041d59e1c8e81a5eafaaa609ff9169294a5a51fc947e14dd5ac",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/11/03/sesi-penyerahan-agihan-lebihan-hasil-dan-bantuan-bencana-lsank-kepada-kerajaan-negeri-kedah/": {
+          "id": 4408,
+          "title": "SESI PENYERAHAN AGIHAN LEBIHAN HASIL DAN BANTUAN BENCANA LSANK KEPADA KERAJAAN NEGERI KEDAH",
+          "publishedAt": "2024-11-03T06:46:04Z",
+          "modifiedAt": "2025-01-01T08:21:45Z",
+          "sha256": "2bed2f0d67146c4f8fe048995ce23741aad8404cf191af04e99787d079e269e6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/11/10/kerajaan-negeri-pertimbang-beri-hakmilik-tanah-kepada-persekutuan-bangunkan-pusat-pelancongan/": {
+          "id": 4411,
+          "title": "KERAJAAN NEGERI PERTIMBANG BERI HAKMILIK TANAH KEPADA PERSEKUTUAN BANGUNKAN PUSAT PELANCONGAN",
+          "publishedAt": "2024-11-10T02:38:37Z",
+          "modifiedAt": "2025-01-02T02:10:05Z",
+          "sha256": "0abb86e03cd3e42bae28883222b6c8b3e86e9b1aaabbe9af5fcf91024a3fce83",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/11/25/bajet-2025-kedah-umum-peruntukan-keseluruhan-bernilai-rm1-26-bilion/": {
+          "id": 4417,
+          "title": "BAJET 2025 : KEDAH UMUM PERUNTUKAN KESELURUHAN BERNILAI RM1.26 BILION",
+          "publishedAt": "2024-11-25T07:21:43Z",
+          "modifiedAt": "2025-01-02T02:13:59Z",
+          "sha256": "ce1cda841ba3fa7407ba40ff6cfaffc13007ee6de09d99928cfe8d39105cb75a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/11/25/pelbagai-inisiatif-dilaksana-kerajaan-negeri-bagi-memperkasa-sekolah-agamapondok-dan-tahfiz/": {
+          "id": 4422,
+          "title": "PELBAGAI INISIATIF DILAKSANA KERAJAAN NEGERI BAGI MEMPERKASA SEKOLAH AGAMA,PONDOK DAN TAHFIZ",
+          "publishedAt": "2024-11-25T07:29:02Z",
+          "modifiedAt": "2025-01-02T02:20:57Z",
+          "sha256": "be5999b4e3220c4dbc0ef5d0ad5d2b7ffd0ea950d45a4eea0855191e9bc382b5",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/11/26/program-kerjaya-dan-latihan-teknikal-mampu-meningkatkan-peluang-pekerjaan-kepada-rakyat-kedah/": {
+          "id": 4425,
+          "title": "PROGRAM KERJAYA DAN LATIHAN TEKNIKAL MAMPU MENINGKATKAN PELUANG PEKERJAAN KEPADA RAKYAT KEDAH",
+          "publishedAt": "2024-11-26T07:18:42Z",
+          "modifiedAt": "2025-01-02T02:24:36Z",
+          "sha256": "ad0d6e71870460deae46eb61157168da2a8d658caeebfdbd6f62ca34fbccf1f5",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2024/12/31/rakyat-kedah-banjiri-dataran-zero-sempena-sambutan-tmk-2025/": {
+          "id": 4428,
+          "title": "RAKYAT KEDAH BANJIRI DATARAN ZERO SEMPENA SAMBUTAN TMK 2025",
+          "publishedAt": "2024-12-31T03:00:40Z",
+          "modifiedAt": "2025-01-02T02:26:55Z",
+          "sha256": "840a31941d22f9c668b9d65c8cccfb49a70935da68fbd3d05197132e71d5be90",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/01/01/kedah-yakin-tarik-kedatangan-6-juta-pelancong-sempena-tmk-2025/": {
+          "id": 4431,
+          "title": "KEDAH YAKIN TARIK KEDATANGAN 6 JUTA PELANCONG SEMPENA TMK 2025",
+          "publishedAt": "2025-01-01T02:27:20Z",
+          "modifiedAt": "2025-01-02T02:28:24Z",
+          "sha256": "6880879046f07c688fde341843190f07f1e7485d9fc2cfb1fb30f830d6e235e7",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/01/23/hari-kelepasan-am-negeri-kedah-tahun-2025/": {
+          "id": 4600,
+          "title": "Hari Kelepasan Am Negeri Kedah Tahun 2025",
+          "publishedAt": "2025-01-23T03:04:54Z",
+          "modifiedAt": "2025-01-23T03:04:54Z",
+          "sha256": "bcb60d05b5d473bcf5fa56bd4be82853f97b0f9761f89d995dcc3223cf430ec3",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/16/ptg-menjalankan-semakan-kadar-baharu-cukai-tanah-dan-akan-berkuatkuasa-januari-2026/": {
+          "id": 4985,
+          "title": "PTG MENJALANKAN SEMAKAN KADAR BAHARU CUKAI TANAH DAN AKAN BERKUATKUASA JANUARI 2026",
+          "publishedAt": "2025-02-16T03:11:54Z",
+          "modifiedAt": "2025-02-16T03:11:54Z",
+          "sha256": "8d822364f801085e9cae0f2aa8a2d0ceba9150f62cf31112f27975eadfc84d9a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/16/hargai-kepelbagaian-budaya-dalam-melahirkan-keharmonian-masyarakat-majmuk/": {
+          "id": 4989,
+          "title": "HARGAI KEPELBAGAIAN BUDAYA DALAM MELAHIRKAN KEHARMONIAN MASYARAKAT MAJMUK",
+          "publishedAt": "2025-02-16T03:23:20Z",
+          "modifiedAt": "2025-02-16T03:23:20Z",
+          "sha256": "f9283fb41532763454d86b7ee2d6c28967424d5db7b02921b28458fee5044c45",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/17/pembangunan-kampung-perlu-selari-dalam-merapatkan-jurang-bandar-dan-luar-bandar/": {
+          "id": 4997,
+          "title": "PEMBANGUNAN KAMPUNG PERLU SELARI DALAM MERAPATKAN JURANG BANDAR DAN LUAR BANDAR",
+          "publishedAt": "2025-02-17T01:40:50Z",
+          "modifiedAt": "2025-02-17T01:40:50Z",
+          "sha256": "b948d3cb6cb833cfeffa78dd1c6b002e623cad895942462bf0ea23bac2d805c0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/17/rakyat-negeri-kedah-diberi-hak-kesaksamaan-tidak-mengira-kaum-dan-agama-sanusi/": {
+          "id": 5001,
+          "title": "RAKYAT NEGERI KEDAH DIBERI HAK KESAKSAMAAN TIDAK MENGIRA KAUM DAN AGAMA – SANUSI",
+          "publishedAt": "2025-02-17T02:43:22Z",
+          "modifiedAt": "2025-02-17T02:43:22Z",
+          "sha256": "c205ec68effb4d53c464188d4362c79eea41059a924d92a845aff3432b709861",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/23/al-quran-satu-mukjizat-kurniaan-allah-kepada-manusia-sebagai-manual-panduan-hidup/": {
+          "id": 5033,
+          "title": "AL-QURAN SATU MUKJIZAT KURNIAAN ALLAH KEPADA MANUSIA SEBAGAI MANUAL PANDUAN HIDUP",
+          "publishedAt": "2025-02-23T01:16:28Z",
+          "modifiedAt": "2025-02-23T01:16:28Z",
+          "sha256": "6938357d39df3547fd721f99f1f43e50bf97653f7e7c6146211eb5349dc46edd",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/23/pelajar-universiti-luar-negara-meriahkan-pesta-angin-timur-antarabangsa-kubang-pasu/": {
+          "id": 5037,
+          "title": "PELAJAR UNIVERSITI LUAR NEGARA MERIAHKAN PESTA ANGIN TIMUR ANTARABANGSA KUBANG PASU",
+          "publishedAt": "2025-02-23T01:23:04Z",
+          "modifiedAt": "2025-02-23T01:23:04Z",
+          "sha256": "e5f6a4ccd6b9f226deaaa3e3ed722c36beedefad9c8f50422e66cbfce64b761f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/25/ptg-seragamkan-semula-semua-perkara-berkaitan-tanah-di-negeri-kedah/": {
+          "id": 5043,
+          "title": "PTG SERAGAMKAN SEMULA SEMUA PERKARA BERKAITAN TANAH DI NEGERI KEDAH",
+          "publishedAt": "2025-02-25T03:17:23Z",
+          "modifiedAt": "2025-02-25T03:17:23Z",
+          "sha256": "d6764d2e25bb61de64c3131c002283f2c5fc406ea86030c28e680716a6f7adec",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/25/pesta-ayaq-bandar-baharu-pemangkin-kepada-mempromosikan-pelancongan-daerah/": {
+          "id": 5048,
+          "title": "PESTA AYAQ BANDAR BAHARU PEMANGKIN KEPADA MEMPROMOSIKAN PELANCONGAN DAERAH",
+          "publishedAt": "2025-02-25T06:25:45Z",
+          "modifiedAt": "2025-02-25T06:25:45Z",
+          "sha256": "0d80f738eb289b1d6d88234b5199edffb3eb8c06ee17f6c570ddfd32a9a377a8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/25/program-akrab-mampu-tingkatkan-kualiti-perkhidmatan-awam/": {
+          "id": 5053,
+          "title": "PROGRAM AKRAB MAMPU TINGKATKAN KUALITI PERKHIDMATAN AWAM",
+          "publishedAt": "2025-02-25T06:31:11Z",
+          "modifiedAt": "2025-02-25T06:31:11Z",
+          "sha256": "0fb26e239db76ccb88d7db33765aa9c42dc3a546e416eb443af1f4251832ac68",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/02/27/mpkp-lancar-pelan-antirasuah-negeri-kedah-park-2025-2029/": {
+          "id": 5142,
+          "title": "MPKP LANCAR PELAN ANTIRASUAH NEGERI KEDAH (PARK) 2025-2029",
+          "publishedAt": "2025-02-27T00:27:21Z",
+          "modifiedAt": "2025-02-27T00:29:05Z",
+          "sha256": "98c43eb022b3d024a1a5d34a88994f0401a2fa7882fa6babaf7e08df326fae98",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/01/selamat-menyambut-bulan-ramadan-1446-h/": {
+          "id": 5171,
+          "title": "Selamat Menyambut Bulan Ramadan 1446 H",
+          "publishedAt": "2025-03-01T12:53:30Z",
+          "modifiedAt": "2025-03-01T12:53:30Z",
+          "sha256": "bdc72afbec84cd2eb4c20e195e39f99722cc96afaa915b8ab26f6d1ebd4b0d17",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/05/kedah-tetap-kadar-zakat-fitrah-rm7-dan-rm14/": {
+          "id": 5188,
+          "title": "KEDAH TETAP KADAR ZAKAT FITRAH RM7 DAN RM14",
+          "publishedAt": "2025-03-05T01:12:22Z",
+          "modifiedAt": "2025-03-05T01:12:22Z",
+          "sha256": "80c1cbdc05e072356f2b4ac82f0fa665a501d7614d0e56315f3477929eaf6011",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/09/sultan-kedah-sumbang-1200-kotak-kurniaan-melibatkan-semua-daerah-di-negeri-kedah/": {
+          "id": 5195,
+          "title": "SULTAN KEDAH SUMBANG 1,200 KOTAK KURNIAAN MELIBATKAN SEMUA DAERAH DI NEGERI KEDAH",
+          "publishedAt": "2025-03-09T06:58:05Z",
+          "modifiedAt": "2025-03-09T06:58:05Z",
+          "sha256": "cb70add58a6a607bed15671f2e32fafa6d8b22951c44d2aa9ecc4c471573e4f6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/09/lebih-2000-pengunjung-sertai-iftar-ramadhan-experience-kedah/": {
+          "id": 5199,
+          "title": "LEBIH 2,000 PENGUNJUNG SERTAI “IFTAR RAMADHAN EXPERIENCE KEDAH”",
+          "publishedAt": "2025-03-09T07:02:20Z",
+          "modifiedAt": "2025-03-09T07:02:20Z",
+          "sha256": "a61b2be81db46b9f9d1d0eb11d0a524c28df433f71b928659937f92c7f9415fe",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/18/raja-muda-kedah-berkenan-hadir-ke-majlis-nuzul-al-quran-peringkat-negeri-kedah/": {
+          "id": 5205,
+          "title": "RAJA MUDA KEDAH BERKENAN HADIR KE MAJLIS NUZUL AL-QURAN PERINGKAT NEGERI KEDAH",
+          "publishedAt": "2025-03-18T01:23:11Z",
+          "modifiedAt": "2025-03-18T01:23:11Z",
+          "sha256": "ed1b368d4d5ff223ac0d4d1a268245c2f135480d0cd2aaa8b5d19eb2c3fe79ef",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/19/jabatan-mufti-kedah-lancar-sambutan-jubli-perak-sempena-ulangtahun-ke-25/": {
+          "id": 5209,
+          "title": "JABATAN MUFTI KEDAH LANCAR SAMBUTAN JUBLI PERAK SEMPENA ULANGTAHUN KE-25",
+          "publishedAt": "2025-03-19T01:08:48Z",
+          "modifiedAt": "2025-03-19T01:08:48Z",
+          "sha256": "9d6437e71460dcc9205e51d1847b5227d39cffdca4ee61671640553f3293e490",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/20/mb-kedah-rai-hampir-450-pengetua-mudir-sekolah-agama-dan-ngo-negeri-kedah/": {
+          "id": 5214,
+          "title": "MB KEDAH RAI HAMPIR 450 PENGETUA, MUDIR SEKOLAH AGAMA DAN NGO NEGERI KEDAH",
+          "publishedAt": "2025-03-20T01:49:21Z",
+          "modifiedAt": "2025-03-20T01:49:21Z",
+          "sha256": "a89e6e36f88fd777d6dda239cd1be7135a757d43a478b5e0f8a9693db475499d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/23/bakipt-sesi-pertama-tahun-2025/": {
+          "id": 5218,
+          "title": "Bantuan Awal Kemasukan Ke Institusi Pengajian Tinggi (BAKIPT) Sesi Pengajian Tahun 2025",
+          "publishedAt": "2025-03-23T00:29:36Z",
+          "modifiedAt": "2025-03-23T00:41:07Z",
+          "sha256": "737afd4a76952c365f4560c68c072eb931bf824cf4294387e7f191da67e10f97",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/23/pknk-dan-srm-utama-selambau-meterai-perjanjian-pembangunan-loji-tenaga-solar-berskala-besar/": {
+          "id": 5228,
+          "title": "PKNK DAN SRM UTAMA SELAMBAU METERAI PERJANJIAN PEMBANGUNAN LOJI TENAGA SOLAR BERSKALA BESAR",
+          "publishedAt": "2025-03-23T02:03:41Z",
+          "modifiedAt": "2025-03-23T02:03:41Z",
+          "sha256": "9a88ad0efa41ff65e6c1a1423ec3c050b632179bc75412c918691f5fe23125fd",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/23/kerajaan-negeri-komited-pelihara-perpaduan-dalam-masyarakat-majmuk-menurut-pandangan-islam/": {
+          "id": 5232,
+          "title": "KERAJAAN NEGERI KOMITED PELIHARA PERPADUAN DALAM MASYARAKAT MAJMUK MENURUT PANDANGAN ISLAM",
+          "publishedAt": "2025-03-23T02:10:33Z",
+          "modifiedAt": "2025-03-23T02:10:33Z",
+          "sha256": "2007806061090119b8a472a4705c4464aa5f6cc0fa8d4cc110bb228eaadd9247",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/26/sultan-kedah-berkenan-menyempurnakan-majlis-agihan-zakat-tahun-2025/": {
+          "id": 5252,
+          "title": "SULTAN KEDAH BERKENAN MENYEMPURNAKAN MAJLIS AGIHAN ZAKAT TAHUN 2025",
+          "publishedAt": "2025-03-26T01:00:15Z",
+          "modifiedAt": "2025-03-26T01:00:15Z",
+          "sha256": "cc00b7f9ed689aab59a0231f42be2b3b360a6017455fa3075d1d854aa6baff67",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/03/27/kerajaan-negeri-rai-atlet-dan-pegawai-negeri-kedah/": {
+          "id": 5256,
+          "title": "KERAJAAN NEGERI RAI ATLET DAN PEGAWAI NEGERI KEDAH",
+          "publishedAt": "2025-03-27T01:18:00Z",
+          "modifiedAt": "2025-03-27T01:18:00Z",
+          "sha256": "7ec6e7bfd2636f68316db03e1bf2030eca87ce68aacc1162f26a2c0309b64765",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/04/10/kedah-sasar-100-ribu-pengunjung-meriahkan-luna-lights-wonderland/": {
+          "id": 5295,
+          "title": "KEDAH SASAR 100 RIBU PENGUNJUNG MERIAHKAN LUNA LIGHTS WONDERLAND",
+          "publishedAt": "2025-04-10T02:00:59Z",
+          "modifiedAt": "2025-04-10T02:00:59Z",
+          "sha256": "648ed9348b217821cbbc3d3a1ce010831b858d5075679a8fc13aa4a2e7bd175d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/04/21/8-wat-siam-di-kedah-dapat-peruntukan-rm70-ribu-sempena-sambutan-pesta-songkran-2025/": {
+          "id": 5338,
+          "title": "8 WAT SIAM DI KEDAH DAPAT PERUNTUKAN RM70 RIBU SEMPENA SAMBUTAN PESTA SONGKRAN 2025",
+          "publishedAt": "2025-04-21T01:22:39Z",
+          "modifiedAt": "2025-04-21T01:22:39Z",
+          "sha256": "c2c8bda0cc84abf85892e04c869dbaf163954eab1f6be20a34258791b3b60adf",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/04/21/inisiatif-tanam-padi-lima-kali-dua-tahun-mampu-jamin-kestabilan-beras-negara-sultan-kedah/": {
+          "id": 5342,
+          "title": "INISIATIF TANAM PADI LIMA KALI DUA TAHUN MAMPU JAMIN KESTABILAN BERAS NEGARA – SULTAN KEDAH",
+          "publishedAt": "2025-04-21T01:27:50Z",
+          "modifiedAt": "2025-04-21T01:27:50Z",
+          "sha256": "6cebe22440bad57337c533d661d43d9d7cf24c75bb1ff785d07079c21c84e6af",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/04/23/kerajaan-negeri-sentiasa-cakna-dalam-menambah-baik-pembangunan-belia-di-negeri-kedah/": {
+          "id": 5346,
+          "title": "KERAJAAN NEGERI SENTIASA CAKNA DALAM MENAMBAH BAIK PEMBANGUNAN BELIA DI NEGERI KEDAH",
+          "publishedAt": "2025-04-23T01:28:36Z",
+          "modifiedAt": "2025-04-23T01:28:36Z",
+          "sha256": "eb21fdf0f716dd44ce27ecb0c7b4701e3be7246522f5449d55f55644453517f3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/04/23/sambutan-perayaan-pelbagai-bangsa-beri-impak-positif-kepada-perpaduan-kaum-di-kedah/": {
+          "id": 5349,
+          "title": "SAMBUTAN PERAYAAN PELBAGAI BANGSA BERI IMPAK POSITIF KEPADA PERPADUAN KAUM DI KEDAH",
+          "publishedAt": "2025-04-23T01:31:34Z",
+          "modifiedAt": "2025-04-23T01:31:34Z",
+          "sha256": "e78c4295a6712a5bfa839d0d42d0eaf067161c75488cdf3f12ca271e7dc0546f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/04/damcamp-2025-bentuk-jati-diri-masyarakat-mencintai-khazanah-alam/": {
+          "id": 5365,
+          "title": "DAMCAMP 2025 BENTUK JATI DIRI MASYARAKAT MENCINTAI KHAZANAH ALAM",
+          "publishedAt": "2025-05-04T01:30:06Z",
+          "modifiedAt": "2025-05-04T01:30:06Z",
+          "sha256": "22c7e246c8fbf8d35542a08a8454934f3113dd06292b5f6ae8dce76eb18a9670",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/04/harumanis-daman-cetus-fenomena-luar-biasa-dengan-penghasilan-produk-berkualiti-tinggi/": {
+          "id": 5369,
+          "title": "HARUMANIS D’AMAN CETUS FENOMENA LUAR BIASA DENGAN PENGHASILAN PRODUK BERKUALITI TINGGI",
+          "publishedAt": "2025-05-04T01:34:13Z",
+          "modifiedAt": "2025-05-04T01:34:13Z",
+          "sha256": "c3fa8c5475060708a78b53676232a39f4bece9d362caf3945ba09ec2f36c29a8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/13/jemaah-haji-kedah-diharap-dapat-melaksanakan-kesemua-ibadah-haji-dengan-sempurna-sultan-kedah/": {
+          "id": 5393,
+          "title": "JEMAAH HAJI KEDAH DIHARAP DAPAT MELAKSANAKAN KESEMUA IBADAH HAJI DENGAN SEMPURNA – SULTAN KEDAH",
+          "publishedAt": "2025-05-13T01:22:39Z",
+          "modifiedAt": "2025-05-13T01:22:39Z",
+          "sha256": "a447f07e62cea21b39a07402857bbb2bd52f6b3b13025f50f52b86f6227abdcb",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/13/persefahaman-agama-dan-budaya-dapat-meletakkan-negeri-ke-arah-lebih-maju-dan-harmoni/": {
+          "id": 5397,
+          "title": "PERSEFAHAMAN AGAMA DAN BUDAYA DAPAT MELETAKKAN NEGERI KE ARAH LEBIH MAJU DAN HARMONI",
+          "publishedAt": "2025-05-13T01:29:50Z",
+          "modifiedAt": "2025-05-13T01:29:50Z",
+          "sha256": "6e7bb9b7eeb66818abf54d88ad08ff1499ad0f45b996e8d675bc764610d4b93e",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/13/kerajaan-negeri-akan-terus-merealisasikan-aspirasi-tuanku-demi-kejayaan-dan-kesejahteraan-negeri-ini/": {
+          "id": 5401,
+          "title": "KERAJAAN NEGERI AKAN TERUS MEREALISASIKAN ASPIRASI TUANKU DEMI KEJAYAAN DAN KESEJAHTERAAN NEGERI INI",
+          "publishedAt": "2025-05-13T01:33:42Z",
+          "modifiedAt": "2025-05-13T01:39:33Z",
+          "sha256": "71776db33a1c6590bdd54c29198b9b0bd3b9e43ba721db971250a6de4def59ce",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/19/program-bersama-komuniti-pendang-tarik-penglibatan-masyarakat-sempena-tmk-2025/": {
+          "id": 5419,
+          "title": "PROGRAM BERSAMA KOMUNITI PENDANG TARIK PENGLIBATAN MASYARAKAT SEMPENA TMK-2025",
+          "publishedAt": "2025-05-19T23:54:48Z",
+          "modifiedAt": "2025-05-19T23:54:48Z",
+          "sha256": "9d2306f66920ff62b3806af7ffd62d9fd4ecba60822c3dd3c354bb289908dbc2",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/05/22/sultan-kedah-mencemar-duli-merasmikan-mybos-25-langkawi/": {
+          "id": 5424,
+          "title": "SULTAN KEDAH MENCEMAR DULI MERASMIKAN MYBOS ’25 LANGKAWI",
+          "publishedAt": "2025-05-22T00:41:45Z",
+          "modifiedAt": "2025-05-22T00:41:45Z",
+          "sha256": "a397c624d673da712d88d196d948ba4fa59fee1ba62315b61affe0779b93eab5",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/03/kedah-serius-dalam-mengenalpasti-atlet-muda-dalam-sukan-e-sport/": {
+          "id": 5446,
+          "title": "KEDAH SERIUS DALAM MENGENALPASTI ATLET MUDA DALAM SUKAN E-SPORT",
+          "publishedAt": "2025-06-03T00:21:14Z",
+          "modifiedAt": "2025-06-03T00:21:14Z",
+          "sha256": "00655a7f93df63a36486418f0b83aca7dab81491d8fe416c5356e1d10fe68caf",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/11/slu-buka-peluang-beri-cadangan-dan-pandangan-terhadap-pakej-dasar-baru-ltb/": {
+          "id": 5462,
+          "title": "SLU BUKA PELUANG BERI CADANGAN DAN PANDANGAN TERHADAP PAKEJ DASAR BARU LTB",
+          "publishedAt": "2025-06-11T06:43:11Z",
+          "modifiedAt": "2025-06-11T06:43:11Z",
+          "sha256": "d23d5621ae2dec76495f90b7552f7003fc19c2406c38f2ce246bd6d6a9a7fcd3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/16/jelajah-penerangan-akan-memberi-kefahaman-sebenar-kerajaan-negeri-kepada-masyarakat/": {
+          "id": 5487,
+          "title": "JELAJAH PENERANGAN AKAN MEMBERI KEFAHAMAN SEBENAR KERAJAAN NEGERI KEPADA MASYARAKAT",
+          "publishedAt": "2025-06-16T03:15:44Z",
+          "modifiedAt": "2025-06-16T03:15:44Z",
+          "sha256": "14cd861536d8486244437945438cd9a00f8742e1d8047c0f7d8510f75be03d58",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/16/550-bot-laju-kawalan-jauh-wakili-6-negara-sertai-kedah-international-rc-powerboat-race-2025/": {
+          "id": 5491,
+          "title": "550 BOT LAJU KAWALAN JAUH WAKILI 6 NEGARA SERTAI KEDAH INTERNATIONAL RC POWERBOAT RACE 2025",
+          "publishedAt": "2025-06-16T03:23:54Z",
+          "modifiedAt": "2025-06-16T03:23:54Z",
+          "sha256": "87475792585d0bd7af3709247f2a3a8d69a283818b676340d3f2b78ca70a1b3f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/19/daulat-tuanku-sambutan-hari-keputeraan-kebawah-duli-yang-maha-mulia-tuanku-sultan-negeri-kedah-darul-aman/": {
+          "id": 5610,
+          "title": "Daulat Tuanku – SAMBUTAN HARI KEPUTERAAN KEBAWAH DULI YANG MAHA MULIA TUANKU SULTAN NEGERI KEDAH DARUL AMAN",
+          "publishedAt": "2025-06-19T06:59:09Z",
+          "modifiedAt": "2025-06-19T07:00:01Z",
+          "sha256": "b6a6b57d783140223af548e2edfb33e27a1b71e847d092f103de42e9d8385f69",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/30/datf-2025-dapat-mempromosikan-pelbagai-produk-tempatan-berasaskan-durian/": {
+          "id": 5676,
+          "title": "DATF 2025 DAPAT MEMPROMOSIKAN PELBAGAI PRODUK TEMPATAN BERASASKAN DURIAN",
+          "publishedAt": "2025-06-30T01:09:57Z",
+          "modifiedAt": "2025-06-30T01:09:57Z",
+          "sha256": "f37b755612eaf09a43ad871bf02db89c831aaf32368c30bce79a653bd6b0d59f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/06/27/selamat-menyambut-awal-muharram-1447h/": {
+          "id": 5687,
+          "title": "Selamat Menyambut Awal Muharram 1447H",
+          "publishedAt": "2025-06-27T02:27:25Z",
+          "modifiedAt": "2025-06-30T02:29:07Z",
+          "sha256": "77468173e7a01692c9ca9254467bdd7195c91a184b0e282f739973e9e405fc8a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/08/hmapk-2025-pupuk-kecintaan-masyarakat-terhadap-sejarah-warisan-dan-kebudayaan-negeri/": {
+          "id": 5765,
+          "title": "HMAPK 2025 PUPUK KECINTAAN MASYARAKAT TERHADAP SEJARAH, WARISAN DAN KEBUDAYAAN NEGERI",
+          "publishedAt": "2025-07-08T01:55:01Z",
+          "modifiedAt": "2025-07-08T01:55:01Z",
+          "sha256": "50d741954699370cce8d75c6604a01250355b972d7ca9e9ddb7f627723b03009",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/10/sukan-harus-dijadikan-medium-untuk-akrabkan-hubungan-persahabatan-sanusi/": {
+          "id": 5795,
+          "title": "‎SUKAN HARUS DIJADIKAN MEDIUM UNTUK AKRABKAN HUBUNGAN PERSAHABATAN – SANUSI",
+          "publishedAt": "2025-07-10T03:03:47Z",
+          "modifiedAt": "2025-07-10T03:03:47Z",
+          "sha256": "41193e2affff78f95e23484eb8e2ec6e3ba6df08639fd4306eff7ce0b7ce1062",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/15/kerajaan-negeri-serah-kunci-rumah-mutiara-bandar-puteri-jaya-fasa-7/": {
+          "id": 5799,
+          "title": "‎KERAJAAN NEGERI SERAH KUNCI RUMAH MUTIARA BANDAR PUTERI JAYA FASA 7",
+          "publishedAt": "2025-07-15T02:06:54Z",
+          "modifiedAt": "2025-07-15T02:06:54Z",
+          "sha256": "6e4064eb571f25ee542111d0d5ccd6edb4b1db1891ec1e560485e958bd592d30",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/30/kedah-berselawat-2-0/": {
+          "id": 5835,
+          "title": "MAJLIS KEDAH BERSELAWAT 2.0 – 1 OGOS 2025",
+          "publishedAt": "2025-07-30T02:33:49Z",
+          "modifiedAt": "2025-07-31T03:43:08Z",
+          "sha256": "71910f38e0fdb0d2f44678cabdc260484f8ee416ff57626670db6ff123da4dd6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/30/sambutan-hari-pahlawan-peringkat-negeri-kedah-2025/": {
+          "id": 5842,
+          "title": "SAMBUTAN HARI PAHLAWAN PERINGKAT NEGERI KEDAH 2025",
+          "publishedAt": "2025-07-30T08:33:22Z",
+          "modifiedAt": "2025-07-30T08:33:22Z",
+          "sha256": "81dc694167eea1e351d184e2bb38099883b2d1159e182a982e7eda33f9cbd4a5",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/26/pelbagai-pakej-pelancongan-menarik-ditawarkan-sempena-matta-fair-kedah-2025/": {
+          "id": 5848,
+          "title": "‎PELBAGAI PAKEJ PELANCONGAN MENARIK DITAWARKAN SEMPENA MATTA FAIR KEDAH 2025",
+          "publishedAt": "2025-07-26T03:53:58Z",
+          "modifiedAt": "2025-07-31T04:20:43Z",
+          "sha256": "81fa99701151c7d5b8bf74a70a0e1ccc07537bfcdc1d85e35e61571ca171d55c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/07/29/sultan-kedah-berkenan-berangkat-ke-majlis-bacaan-yasin-sempena-sambutan-hari-pahlawan-2/": {
+          "id": 5852,
+          "title": "SULTAN KEDAH BERKENAN BERANGKAT KE MAJLIS BACAAN YASIN SEMPENA SAMBUTAN HARI PAHLAWAN",
+          "publishedAt": "2025-07-29T04:22:22Z",
+          "modifiedAt": "2025-07-31T04:29:19Z",
+          "sha256": "1c878144e59226c9a34eb44baa2c530d1169f38f87c3a59776798f639f4de267",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/03/tok-temasya-oghang-kedah-2025-angkat-seni-budaya-tempatan/": {
+          "id": 5870,
+          "title": "TOK – TEMASYA OGHANG KEDAH 2025 ANGKAT SENI BUDAYA TEMPATAN",
+          "publishedAt": "2025-08-03T06:17:22Z",
+          "modifiedAt": "2025-08-07T06:17:42Z",
+          "sha256": "1ad9a4f29e6e4f827db3d498f3636b1d5f9278740b915a2a907a2f2ce121d220",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/14/kerajaan-negeri-sedia-beri-bantuan-dan-bimbingan-kepada-petani-tingkatkan-produktiviti-dan-hasil/": {
+          "id": 5925,
+          "title": "KERAJAAN NEGERI SEDIA BERI BANTUAN DAN BIMBINGAN KEPADA PETANI TINGKATKAN PRODUKTIVITI DAN HASIL",
+          "publishedAt": "2025-08-14T07:54:41Z",
+          "modifiedAt": "2025-08-17T08:02:33Z",
+          "sha256": "4510f57727e8741ddbd2ab508732102efb444258c1af8fc91b959c72bf8b5708",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/15/pknk-komited-perkukuh-ekositem-industri-kuala-ketil/": {
+          "id": 5938,
+          "title": "PKNK KOMITED PERKUKUH EKOSITEM INDUSTRI KUALA KETIL",
+          "publishedAt": "2025-08-15T03:23:53Z",
+          "modifiedAt": "2025-08-25T03:30:19Z",
+          "sha256": "19e017ba8031268cc0bfd0cc32dbd06f705cac875a7cb1091bfacaba2cbe8612",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/18/lawanseni-kanvas-keselamatan-negara-daya-tarikan-baharu-pelancongan-di-kedah/": {
+          "id": 5943,
+          "title": "LAWANSENI KANVAS KESELAMATAN NEGARA DAYA TARIKAN BAHARU PELANCONGAN DI KEDAH",
+          "publishedAt": "2025-08-18T03:35:33Z",
+          "modifiedAt": "2025-08-25T04:17:14Z",
+          "sha256": "413f30ffb758e095da61ec23e6308018a8dde8ab76d22e9188c3e8cd753b0d75",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/18/pokok-mengkundor-berusia-100-tahun-mampu-jadi-tarikan-pelancong-di-gunung-jerai/": {
+          "id": 5950,
+          "title": "POKOK MENGKUNDOR BERUSIA 100 TAHUN MAMPU JADI TARIKAN PELANCONG DI GUNUNG JERAI",
+          "publishedAt": "2025-08-18T06:37:58Z",
+          "modifiedAt": "2025-08-25T07:19:06Z",
+          "sha256": "31851e7dbd9f8e6951c9ffa24da5eed27a750896b59bc929dcef243b5a6b858a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/19/ibu-bapa-keluarga-dan-masyarakat-juga-perlu-berperanan-mendidik-pelajar-mencapai-kecemerlangan-sultan-kedah/": {
+          "id": 5956,
+          "title": "‎IBU BAPA, KELUARGA DAN MASYARAKAT JUGA PERLU BERPERANAN MENDIDIK PELAJAR MENCAPAI KECEMERLANGAN – SULTAN KEDAH ‎",
+          "publishedAt": "2025-08-19T07:20:42Z",
+          "modifiedAt": "2025-08-25T07:35:03Z",
+          "sha256": "43910666d6cab688683602e0480f2f523729830d21b559e2402c212ddf156d0a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/19/usahasama-malaysia-thailand-beri-impak-pembangunan-ekonomi-pelancongan-dan-diplomatik-sanusi/": {
+          "id": 5961,
+          "title": "USAHASAMA MALAYSIA-THAILAND BERI IMPAK PEMBANGUNAN EKONOMI, PELANCONGAN DAN DIPLOMATIK – SANUSI",
+          "publishedAt": "2025-08-19T07:36:22Z",
+          "modifiedAt": "2025-08-25T07:46:10Z",
+          "sha256": "e3154bd266566ddd0f0a3ad93444667ea449f44522459ab89221caa6629c4995",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/20/kerajaan-negeri-cakna-dan-sentiasa-membantu-keperluan-rakyat-memiliki-rumah-sendiri/": {
+          "id": 5966,
+          "title": "KERAJAAN NEGERI CAKNA DAN SENTIASA MEMBANTU KEPERLUAN RAKYAT MEMILIKI RUMAH SENDIRI",
+          "publishedAt": "2025-08-20T07:51:47Z",
+          "modifiedAt": "2025-08-25T07:56:19Z",
+          "sha256": "65ab75f83c7a7844ca9046d9f3a57ba0a5eac931fd8b9cb9d7727e1742360839",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/20/pakej-menarik-melalui-platform-digital-mampu-rancakkan-produk-eko-pelancongan-di-kedah/": {
+          "id": 5969,
+          "title": "‎PAKEJ MENARIK MELALUI PLATFORM DIGITAL MAMPU RANCAKKAN PRODUK EKO-PELANCONGAN DI KEDAH",
+          "publishedAt": "2025-08-20T07:58:07Z",
+          "modifiedAt": "2025-08-25T08:02:14Z",
+          "sha256": "b17ba42a99af2cdccba4609e05503940427254b921ff6f42fd9f68c9a9d02c19",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/21/pelbagai-inisiatif-pemuliharaan-alam-sekitar-diadakan-untuk-kebaikan-generasi-akan-datang/": {
+          "id": 5975,
+          "title": "PELBAGAI INISIATIF PEMULIHARAAN ALAM SEKITAR DIADAKAN UNTUK KEBAIKAN GENERASI AKAN DATANG",
+          "publishedAt": "2025-08-21T01:42:22Z",
+          "modifiedAt": "2025-08-26T01:44:20Z",
+          "sha256": "09251581ff0e83f4de4fbbd737ac6acfe24e944d1a6483c8b785587529c038c8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/21/dun-kedah-lulus-dua-usul-berkenaan-cukai-sst-dan-benih-padi/": {
+          "id": 5978,
+          "title": "‎DUN KEDAH LULUS DUA USUL BERKENAAN CUKAI SST DAN BENIH PADI ‎",
+          "publishedAt": "2025-08-21T03:35:52Z",
+          "modifiedAt": "2025-08-26T03:43:22Z",
+          "sha256": "c89a4f00adf189ddde56761192fff36ea360a729860ba37bad8d6087e6493a69",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/26/%f0%9d%90%8c%f0%9d%90%80%f0%9d%90%8a%f0%9d%90%8b%f0%9d%90%94%f0%9d%90%8c%f0%9d%90%80%f0%9d%90%8d-berita-baik-buat-penduduk-negeri-kedah-hari-peladang-penternak-dan-nelayan-negeri-kedah/": {
+          "id": 5984,
+          "title": "MAKLUMAN — BERITA BAIK BUAT PENDUDUK NEGERI KEDAH – HARI PELADANG, PENTERNAK DAN NELAYAN NEGERI KEDAH DARUL AMAN TAHUN 2025",
+          "publishedAt": "2025-08-26T04:24:14Z",
+          "modifiedAt": "2025-08-26T08:04:13Z",
+          "sha256": "91482f60dd0be66c6300b064efe41b13930db2cee8d7092949a500aa4af34091",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/26/makluman-hebahan-buat-penduduk-negeri-kedah-om-pakat-pakat-mai-istiadat-perbarisan-dan-perarakan-sempena-sambutan-hari-kebangsaan-peringkat-negeri-kedah-darul-aman-yang-ke-68-tahun-2025/": {
+          "id": 6021,
+          "title": "MAKLUMAN — HEBAHAN BUAT PENDUDUK NEGERI KEDAH – JOM PAKAT-PAKAT MAI ISTIADAT PERBARISAN DAN PERARAKAN SEMPENA SAMBUTAN HARI KEBANGSAAN PERINGKAT NEGERI KEDAH DARUL AMAN YANG KE-68 TAHUN 2025",
+          "publishedAt": "2025-08-26T08:10:47Z",
+          "modifiedAt": "2025-08-26T08:22:49Z",
+          "sha256": "b24037cba31f4ef1aec0ca154308861b0b6d6460e7ef953e022bd0087f4d034b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/29/jom-pakat-mai-sambutan-ambang-merdeka-peringkat-negeri-kedah-darul-aman-2025/": {
+          "id": 6026,
+          "title": "JOM PAKAT MAI SAMBUTAN AMBANG MERDEKA PERINGKAT NEGERI KEDAH DARUL AMAN 2025",
+          "publishedAt": "2025-08-29T14:28:31Z",
+          "modifiedAt": "2025-09-08T03:38:51Z",
+          "sha256": "7ccba247c3b33bff058118cd57f458e8be3e3d23b2a8269f9bf61ee1f8d6ed13",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/27/1500-mahasiswa-anak-kedah-seluruh-negara-sertai-program-bakti-siswa-perdana-kedah-2025/": {
+          "id": 6031,
+          "title": "‎1,500 MAHASISWA ANAK KEDAH SELURUH NEGARA SERTAI PROGRAM BAKTI SISWA PERDANA KEDAH 2025 ‎",
+          "publishedAt": "2025-08-27T14:36:00Z",
+          "modifiedAt": "2025-08-30T14:38:38Z",
+          "sha256": "1d8b35c53d22f7c10e5fe269444dfe8c8259c1699b357c8f08ca4c30ca81ac3b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/28/anak-muda-disaran-menceburi-bidang-keusahawanan-tani-secara-besar-besaran-sanusi/": {
+          "id": 6038,
+          "title": "‎ANAK MUDA DISARAN MENCEBURI BIDANG KEUSAHAWANAN TANI SECARA BESAR-BESARAN – SANUSI",
+          "publishedAt": "2025-08-28T14:42:28Z",
+          "modifiedAt": "2025-08-30T14:46:34Z",
+          "sha256": "99c9d5393b43119a10818bf01990ebb743f21e2341e80a69ccae9523f27a9faa",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/01/jom-pakat-mai-sambutan-ambang-merdeka-peringkat-negeri-kedah-darul-aman-2025-2/": {
+          "id": 6048,
+          "title": "PEMAKLUMAN TALIAN ALTERNATIF MAJLIS BANDARAYA ALOR SETAR",
+          "publishedAt": "2025-09-01T01:51:18Z",
+          "modifiedAt": "2025-09-01T01:57:43Z",
+          "sha256": "d9c66268e4d57bc9c4180b95bbd7b47ae18a36ae0499cdd3b0c084f8b439be9b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/28/sultan-kedah-perkenan-berangkat-hadir-majlis-bacaan-yasin-dan-doa-sempena-sambutan-hari-kebangsaan-ke-68/": {
+          "id": 6066,
+          "title": "SULTAN KEDAH PERKENAN BERANGKAT HADIR MAJLIS BACAAN YASIN DAN DOA SEMPENA SAMBUTAN HARI KEBANGSAAN KE-68",
+          "publishedAt": "2025-08-28T20:22:06Z",
+          "modifiedAt": "2025-09-01T02:23:21Z",
+          "sha256": "08b94aaf4cab5f688f427ec1f5942269bd875143f5997a5c67daec87c224ac27",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/30/100-buah-bot-nelayan-menghiasi-sungai-kedah-sempena-sambutan-hari-kemerdekaan-ke-68/": {
+          "id": 6088,
+          "title": "100 BUAH BOT NELAYAN MENGHIASI SUNGAI KEDAH SEMPENA SAMBUTAN HARI KEMERDEKAAN KE-68",
+          "publishedAt": "2025-08-30T02:49:51Z",
+          "modifiedAt": "2025-09-01T02:50:54Z",
+          "sha256": "4cbf2b7609b0ab2d0e006445d7b45b9d63e8da64c5bd984f6c6cf68af3bde507",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/30/merdekakan-jiwa-untuk-menghayati-erti-kemerdekaan-sebenar-sanusi/": {
+          "id": 6098,
+          "title": "‎MERDEKAKAN JIWA UNTUK MENGHAYATI ERTI KEMERDEKAAN SEBENAR – SANUSI",
+          "publishedAt": "2025-08-30T02:56:50Z",
+          "modifiedAt": "2025-09-01T03:04:59Z",
+          "sha256": "0f21d99fc699d623a0cf5cdafa4b079b451f6967762be14f4cb4661a4e5e5833",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/31/lebih-40-ribu-rakyat-kedah-banjiri-dataran-medan-bandar-sempena-sambutan-hari-kebangsaan-ke-68/": {
+          "id": 6116,
+          "title": "‎LEBIH 40 RIBU RAKYAT KEDAH BANJIRI DATARAN MEDAN BANDAR SEMPENA SAMBUTAN HARI KEBANGSAAN KE-68",
+          "publishedAt": "2025-08-31T03:15:59Z",
+          "modifiedAt": "2025-09-01T03:23:12Z",
+          "sha256": "96f8ea05cbaf32bebb67163dde08b0c602dca7807a618b17458143083ddad642",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/31/lebih-40-ribu-rakyat-kedah-banjiri-dataran-medan-bandar-sempena-sambutan-hari-kebangsaan-ke-68-2/": {
+          "id": 6126,
+          "title": "PANCARAGAM SMK CHE TOM MUNCUL JUARA ANTARA JUARA",
+          "publishedAt": "2025-08-31T03:34:10Z",
+          "modifiedAt": "2025-09-01T03:39:14Z",
+          "sha256": "f7de0b1631d33c3da0c8af0be373b1447c6663e89365f6e3b81db05c1b3c997a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/08/31/kerajaan-negeri-komited-menyokong-pembangunan-agro-makanan-melalui-dasar-progresif/": {
+          "id": 6129,
+          "title": "‎KERAJAAN NEGERI KOMITED MENYOKONG PEMBANGUNAN AGRO MAKANAN MELALUI DASAR PROGRESIF",
+          "publishedAt": "2025-08-31T03:42:15Z",
+          "modifiedAt": "2025-09-01T03:47:14Z",
+          "sha256": "51b264a9ade870f1383b453b5e11a550fc50738134bd0bed1156ee3f42ef7457",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/02/rakyat-kedah-diseru-menanam-pokok-bagi-mencukupi-kempen-penanaman-2-2-juta-pokok/": {
+          "id": 6154,
+          "title": "RAKYAT KEDAH DISERU MENANAM POKOK BAGI MENCUKUPI KEMPEN PENANAMAN 2.2 JUTA POKOK.",
+          "publishedAt": "2025-09-02T07:03:47Z",
+          "modifiedAt": "2025-09-08T08:08:44Z",
+          "sha256": "7f35eb4cebd6f5eedc749539d6a05fdd48795d6f65a287ae588ee847c0ac7485",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/03/lznk-agih-rm1-55-juta-kepada-341-institusi-pendidikan-islam-negeri-kedah/": {
+          "id": 6162,
+          "title": "LZNK AGIH RM1.55 JUTA KEPADA 341 INSTITUSI PENDIDIKAN ISLAM NEGERI KEDAH",
+          "publishedAt": "2025-09-03T07:38:51Z",
+          "modifiedAt": "2025-09-08T08:12:35Z",
+          "sha256": "2ed151776f4083851638f4e43c1a4df8e3294cc373c6df6b65fc42c72d42c8cd",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/16/selamat-hari-malaysia-16-september-2025/": {
+          "id": 6172,
+          "title": "SELAMAT HARI MALAYSIA — 16 SEPTEMBER 2025",
+          "publishedAt": "2025-09-16T00:38:20Z",
+          "modifiedAt": "2025-09-22T01:10:58Z",
+          "sha256": "e49ccb58137cab1262334f4f077656dc5141feac772e14449031d84bc36868b1",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/18/cadangan-bajet-negeri-kedah-2026/": {
+          "id": 6183,
+          "title": "📣 CADANGAN BAJET NEGERI KEDAH 2026",
+          "publishedAt": "2025-09-18T06:58:08Z",
+          "modifiedAt": "2026-01-11T00:59:39Z",
+          "sha256": "3afeeaf5a6ded9374936bf8ab86396661dedec1c05b4d04b3d2840b7e270c98c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/22/hebahan-permohonan-pelelong-baharu-negeri-kedah/": {
+          "id": 6186,
+          "title": "📣 HEBAHAN PERMOHONAN PELELONG BAHARU NEGERI KEDAH",
+          "publishedAt": "2025-09-22T01:10:24Z",
+          "modifiedAt": "2025-09-23T02:26:38Z",
+          "sha256": "700d819e0c9c94deb58e78db31b3c94cacb42a90fb6fdb4dd2d9b71f80d66240",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/04/jadikan-amalan-bersukan-sebagai-penghubung-persaudaraan-selain-untuk-kecergasan-dan-kesihatan-sanusi/": {
+          "id": 6207,
+          "title": "‎JADIKAN AMALAN BERSUKAN SEBAGAI PENGHUBUNG PERSAUDARAAN SELAIN UNTUK KECERGASAN DAN KESIHATAN – SANUSI",
+          "publishedAt": "2025-09-04T01:42:16Z",
+          "modifiedAt": "2025-09-28T01:42:58Z",
+          "sha256": "142e8a0cd2a2e62c9dc3493cb705f681c66d258183848e2a620057d36c1fb43c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/04/slu-pasca-pembentangan-rmk13-kementerian-ekonomi-dan-kerajaan-negeri-kedah/": {
+          "id": 6215,
+          "title": "‎SLU PASCA PEMBENTANGAN RMK13 KEMENTERIAN EKONOMI DAN KERAJAAN NEGERI KEDAH.",
+          "publishedAt": "2025-09-04T01:59:08Z",
+          "modifiedAt": "2025-09-28T01:59:24Z",
+          "sha256": "2d3ca5a8e3915b5bde8a984c95148394f38d294d9eb701c7a3b78b44ce734376",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/05/istiqamah-teladani-rasulullah-s-a-w-dalam-setiap-aspek-kehidupan-sultan-kedah/": {
+          "id": 6226,
+          "title": "‎ISTIQAMAH TELADANI RASULULLAH S.A.W. DALAM SETIAP ASPEK KEHIDUPAN – SULTAN KEDAH",
+          "publishedAt": "2025-09-05T02:00:50Z",
+          "modifiedAt": "2025-09-28T02:08:39Z",
+          "sha256": "733d8219cca9750d87bad2435f0716eeb68effeac3d5a209e3d055ed25dd8de0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/05/anugerah-khas-sambutan-maulidur-rasul-s-a-w-peringkat-negeri-kedah-1447h/": {
+          "id": 6235,
+          "title": "‎ANUGERAH KHAS SAMBUTAN MAULIDUR RASUL S.A.W. PERINGKAT NEGERI KEDAH 1447H",
+          "publishedAt": "2025-09-05T02:15:36Z",
+          "modifiedAt": "2025-09-28T02:20:08Z",
+          "sha256": "39e9a48d58f556c9d1012558402094732e2d07d6e01cb397dcfe81bed957c07a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/06/semangat-federalisme-yang-adil-dapat-terjemah-perancangan-menyeluruh-bandar-dan-luar-bandar-sanusi/": {
+          "id": 6239,
+          "title": "‎SEMANGAT FEDERALISME YANG ADIL DAPAT TERJEMAH PERANCANGAN MENYELURUH BANDAR DAN LUAR BANDAR – SANUSI",
+          "publishedAt": "2025-09-06T02:21:13Z",
+          "modifiedAt": "2025-09-28T02:27:57Z",
+          "sha256": "0a96c2c069f7afc23e4574137dd4ebf8684bf196338f3f704e5700648100d74b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/10/mbas-terima-anugerah-khas-excellence-in-urban-environmental-management-recognition/": {
+          "id": 6247,
+          "title": "MBAS TERIMA ANUGERAH KHAS “EXCELLENCE IN URBAN ENVIRONMENTAL MANAGEMENT RECOGNITION”",
+          "publishedAt": "2025-09-10T02:31:10Z",
+          "modifiedAt": "2025-09-28T03:42:15Z",
+          "sha256": "085bbe84cd4ffd0a412622e28e277dcce9aa8565ec02e6bad7fa3a73c40316d4",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/10/mpkp-terima-raih-anugerah-khas-berprestij-di-persidangan-tahunan-wmam-2025/": {
+          "id": 6309,
+          "title": "MPKP TERIMA RAIH ANUGERAH KHAS BERPRESTIJ DI PERSIDANGAN TAHUNAN WMAM 2025",
+          "publishedAt": "2025-09-10T03:45:12Z",
+          "modifiedAt": "2025-09-28T03:55:28Z",
+          "sha256": "9be7ca1c031ac721c8ac3bf7ceb1809957d5b14a86e42825a684a81552b8b832",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/10/perasmian-operasi-bas-pemeriksaan-kesihatan-bergerak-ysb-nkf-kedua/": {
+          "id": 6315,
+          "title": "PERASMIAN OPERASI BAS PEMERIKSAAN KESIHATAN BERGERAK YSB – NKF KEDUA",
+          "publishedAt": "2025-09-10T04:02:33Z",
+          "modifiedAt": "2025-09-28T04:06:20Z",
+          "sha256": "45f3599884af784ab9a7a6a133865b1a1e8ffff1d56d303dd043d09283d4b3b8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/21/jkkn-kedah-anjur-pertandingan-gemersik-sogha-irama-malaysia-2025/": {
+          "id": 6323,
+          "title": "‎JKKN KEDAH ANJUR PERTANDINGAN GEMERSIK SOGHA IRAMA MALAYSIA 2025",
+          "publishedAt": "2025-09-21T01:29:05Z",
+          "modifiedAt": "2025-09-29T01:38:06Z",
+          "sha256": "02a1125c9ed057102a939fc4f2a2a23e29cb6b1d992e5628a5a6bfc2c719fa68",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/22/kunjungan-hormat-pengurus-besar-keda-negeri-kedah/": {
+          "id": 6333,
+          "title": "‎KUNJUNGAN HORMAT PENGURUS BESAR KEDA NEGERI KEDAH",
+          "publishedAt": "2025-09-22T01:49:26Z",
+          "modifiedAt": "2025-09-29T02:37:14Z",
+          "sha256": "bf7ce4431926ee68a367da74473136657f0073086e21fe0fa68dfe1643045c59",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/25/pbk-2025-wujudkan-budaya-membaca-dalam-suasana-yang-lebih-segar-inklusif-dan-mesra-masyarakat/": {
+          "id": 6342,
+          "title": "PBK-2025 WUJUDKAN BUDAYA MEMBACA DALAM SUASANA YANG LEBIH SEGAR, INKLUSIF DAN MESRA MASYARAKAT",
+          "publishedAt": "2025-09-25T02:52:48Z",
+          "modifiedAt": "2025-09-29T03:04:44Z",
+          "sha256": "b77fe103ce8a2b5adbe5e179e183dcc6482db7f42552fd7290bd1903c96907d3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/26/kerajaan-negeri-mengalukan-kerjasama-erat-dengan-jakim-dan-mki-dalam-usaha-memperkasa-institusi-agama-sanusi/": {
+          "id": 6353,
+          "title": "‎KERAJAAN NEGERI MENGALUKAN KERJASAMA ERAT DENGAN JAKIM DAN MKI DALAM USAHA MEMPERKASA INSTITUSI AGAMA – SANUSI",
+          "publishedAt": "2025-09-26T03:08:55Z",
+          "modifiedAt": "2025-09-29T03:24:19Z",
+          "sha256": "1be33da8ebcc983fa60992cc2a94498d45462d977d01622c7636de0a0bd987fd",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/27/hari-cuci-malaysia-bina-semangat-kerjasama-dan-toleransi-dalam-masyarakat/": {
+          "id": 6366,
+          "title": "‎HARI CUCI MALAYSIA BINA SEMANGAT KERJASAMA DAN TOLERANSI DALAM MASYARAKAT",
+          "publishedAt": "2025-09-27T03:29:08Z",
+          "modifiedAt": "2025-09-29T03:43:38Z",
+          "sha256": "f29bc6b348e825e24b084aae8320070df2076a8b9b3f6b95222da3106fbc5253",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/29/makluman-pertukaran-talian-telefon-jabatan/": {
+          "id": 6376,
+          "title": "MAKLUMAN PERTUKARAN TALIAN TELEFON JABATAN",
+          "publishedAt": "2025-09-29T08:49:46Z",
+          "modifiedAt": "2025-09-29T09:00:04Z",
+          "sha256": "ff3d649e21d7c69e7d593ed99225a05c6e14dc8fa2ef88d361486a41721abb9e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/09/29/nct-innosphere-bakal-menarik-pelabur-global-dan-industri-generasi-hadapan/": {
+          "id": 6386,
+          "title": "‎NCT INNOSPHERE BAKAL MENARIK PELABUR GLOBAL DAN INDUSTRI GENERASI HADAPAN",
+          "publishedAt": "2025-09-29T01:13:48Z",
+          "modifiedAt": "2025-09-30T01:25:43Z",
+          "sha256": "ad7b2de95bb1f8842f653e92de8988ac7edb6574f0f821140173f26e253cf996",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/10/13/pelaburan-rm47-juta-manuli-ryco-hydraulics-bukti-keyakinan-global-terhadap-kedah-sebagai-hab-perindustrian/": {
+          "id": 6426,
+          "title": "‎PELABURAN RM47 JUTA MANULI RYCO HYDRAULICS BUKTI KEYAKINAN GLOBAL TERHADAP KEDAH SEBAGAI HAB PERINDUSTRIAN",
+          "publishedAt": "2025-10-13T01:22:00Z",
+          "modifiedAt": "2025-10-13T01:27:27Z",
+          "sha256": "37603be207489f3c729d6773255fad662e403640b352b19cdec479962a7e38b0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/10/15/kerajaan-negeri-berhasrat-menubuhkan-kedah-science-centre/": {
+          "id": 6435,
+          "title": "KERAJAAN NEGERI BERHASRAT MENUBUHKAN KEDAH SCIENCE CENTRE",
+          "publishedAt": "2025-10-15T01:34:21Z",
+          "modifiedAt": "2025-10-15T01:34:52Z",
+          "sha256": "010fe5c626e2bb1bc7e72a644093468b7a9af6f0a5adf04342c0a9ebf32005ab",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/10/16/selamat-hari-deepavali-2025/": {
+          "id": 6451,
+          "title": "SELAMAT HARI DEEPAVALI 2025",
+          "publishedAt": "2025-10-16T07:35:36Z",
+          "modifiedAt": "2025-12-02T02:41:15Z",
+          "sha256": "6a714b21012f2a9b4bf3c9aeda356c9ef5667af76189abbad1c14dfc921b32a2",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/10/21/selamat-menyambut-ulang-tahun-hari-keputeraan-duli-yang-teramat-mulia-che-puan-muda-zaheeda-binti-mohamad-ariff-raja-puan-muda-kedah-pada-19-oktober-2025m-bersamaan-27-rabiulakhir-1447h/": {
+          "id": 6454,
+          "title": "SELAMAT MENYAMBUT ULANG TAHUN HARI KEPUTERAAN Duli Yang Teramat Mulia Raja Puan Muda Kedah",
+          "publishedAt": "2025-10-21T07:27:41Z",
+          "modifiedAt": "2025-10-21T07:28:35Z",
+          "sha256": "7a2031a7b77f94a7c6f79095da5794cc8e108682694a620c7ef168fd87917c04",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/11/12/tahun-melawat-malaysia-2026-beri-impak-besar-promosi-pelancongan-di-kedah/": {
+          "id": 6528,
+          "title": "TAHUN MELAWAT MALAYSIA 2026 BERI IMPAK BESAR PROMOSI PELANCONGAN DI KEDAH",
+          "publishedAt": "2025-11-12T00:50:50Z",
+          "modifiedAt": "2025-11-12T00:58:29Z",
+          "sha256": "38ece21fe1589dda170026cd80841d5a98865cea1b0a6675fb0828df783b583a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/11/12/kerajaan-negeri-buat-pemantauan-pastikan-projek-rtb-siap-pada-masa-ditetapkan/": {
+          "id": 6531,
+          "title": "‎KERAJAAN NEGERI BUAT PEMANTAUAN PASTIKAN PROJEK RTB SIAP PADA MASA DITETAPKAN",
+          "publishedAt": "2025-11-12T00:54:04Z",
+          "modifiedAt": "2025-11-12T00:57:02Z",
+          "sha256": "34955014a5756eb4df0aafd9e3143ab9e53a3391cab0ae9c97ae1bd7ea3ff9b3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/11/24/kerajaan-negeri-akan-terus-menyokong-pembangunan-sukan-melibatkan-golongan-belia-sanusi/": {
+          "id": 6594,
+          "title": "KERAJAAN NEGERI AKAN TERUS MENYOKONG PEMBANGUNAN SUKAN MELIBATKAN GOLONGAN BELIA – SANUSI",
+          "publishedAt": "2025-11-24T02:12:57Z",
+          "modifiedAt": "2025-11-24T02:12:57Z",
+          "sha256": "1f5c6e22d10297ec2c3eb6ac8ed83da08226500217c254cdfda68e1a5f293c06",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/12/08/pameran-ulama-dan-institusi-pondok-sumber-rujukan-keilmuan-islam-di-kedah-mufti-kedah/": {
+          "id": 6608,
+          "title": "PAMERAN ULAMA DAN INSTITUSI PONDOK SUMBER RUJUKAN KEILMUAN ISLAM DI KEDAH – MUFTI KEDAH",
+          "publishedAt": "2025-12-08T00:30:54Z",
+          "modifiedAt": "2025-12-08T01:41:07Z",
+          "sha256": "d323c153d8fbf1ab30bcdad6cbea5a2f8300b5468b9434a51a50fe6281c06632",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/12/09/kdbp-2025-dirangka-memandu-ke-arah-transformasi-digital-negeri-kedah/": {
+          "id": 6616,
+          "title": "KDBP 2025 DIRANGKA MEMANDU KE ARAH TRANSFORMASI DIGITAL NEGERI KEDAH",
+          "publishedAt": "2025-12-09T07:38:20Z",
+          "modifiedAt": "2025-12-10T01:01:57Z",
+          "sha256": "79db184766aade17caa477803becc23364468486d25ad0696e460f214546b55b",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/12/22/terengganu-kongsi-kepakaran-pembangunan-sukan-permotoran/": {
+          "id": 6645,
+          "title": "‎TERENGGANU KONGSI KEPAKARAN PEMBANGUNAN SUKAN PERMOTORAN",
+          "publishedAt": "2025-12-22T07:30:35Z",
+          "modifiedAt": "2025-12-22T07:30:35Z",
+          "sha256": "06584d12d532240240807679bbf27b81a8c002515e3f7800e83c15b2a09e9844",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/12/25/selamat-hari-natal-2025/": {
+          "id": 6649,
+          "title": "SELAMAT HARI NATAL 2025",
+          "publishedAt": "2025-12-25T00:01:07Z",
+          "modifiedAt": "2026-01-11T00:53:38Z",
+          "sha256": "ef3f93bc33a3bb55b8c802bd2cdd72b1bea73768f44a8137523a151a84663cfe",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2025/12/31/selamat-hari-natal-2025-2/": {
+          "id": 6672,
+          "title": "SELAMAT MENYAMBUT TAHUN BARU",
+          "publishedAt": "2025-12-31T04:28:08Z",
+          "modifiedAt": "2026-01-11T00:53:50Z",
+          "sha256": "3a187d02276e69e83e915618b53cc909350b904d9e845ecec37690bf726bbf04",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/01/hari-kelepasan-negeri-kedah-am-bagi-tahun-2026/": {
+          "id": 6677,
+          "title": "HARI KELEPASAN AM NEGERI KEDAH BAGI TAHUN 2026",
+          "publishedAt": "2026-01-01T08:14:07Z",
+          "modifiedAt": "2026-01-06T00:42:17Z",
+          "sha256": "e97ebc7ab90a47306bd368be7b194b2d83dbb8f714f36efc7f80018060bd2c5d",
+          "relevant": true,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/04/pegawai-tadbir-negeri-diseru-turun-padang-peka-cakna-dan-selesaikan-masalah-rakyat-norizan/": {
+          "id": 6680,
+          "title": "PEGAWAI TADBIR NEGERI DISERU TURUN PADANG, PEKA, CAKNA DAN SELESAIKAN MASALAH RAKYAT – NORIZAN",
+          "publishedAt": "2026-01-04T00:58:17Z",
+          "modifiedAt": "2026-01-04T00:59:48Z",
+          "sha256": "d18a48da3cfdb9a9a496a43d9842fcdc7e605336f3683934d468d83d2299209c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/06/penjawat-awam-negeri-perlu-jujur-amanah-dan-bertanggungjawab-norizan/": {
+          "id": 6690,
+          "title": "PENJAWAT AWAM NEGERI PERLU JUJUR, AMANAH DAN BERTANGGUNGJAWAB – NORIZAN",
+          "publishedAt": "2026-01-06T02:29:50Z",
+          "modifiedAt": "2026-01-06T02:29:50Z",
+          "sha256": "dd073c7e8f380b6c9a35361bc68141c25c2e9a7f33db7905f866095bb8ef832e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/07/kerajaan-negeri-catat-rekod-kutipan-hasil-tertinggi-sebanyak-103-sanusi/": {
+          "id": 6695,
+          "title": "KERAJAAN NEGERI CATAT REKOD KUTIPAN HASIL TERTINGGI SEBANYAK 103% – SANUSI",
+          "publishedAt": "2026-01-07T08:24:11Z",
+          "modifiedAt": "2026-01-07T08:34:50Z",
+          "sha256": "8e1dbfb61b766e896c77ffd58a6d05ba9d2125d3a38121db357454b4118b585a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/11/iklan-jawatan-kosong-majlis-sukan-negeri-kedah-darul-aman-msnk/": {
+          "id": 6706,
+          "title": "📣 IKLAN JAWATAN KOSONG 📣 MAJLIS SUKAN NEGERI KEDAH DARUL AMAN (MSNK)",
+          "publishedAt": "2026-01-11T00:50:04Z",
+          "modifiedAt": "2026-02-18T15:51:02Z",
+          "sha256": "4613465a907cba4c278734f6ee3982c2d430816c41d4f0d03333edeb440c111c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/11/warga-maik-diseru-pertahankan-tadbir-urus-yang-baik-agar-institusi-terus-relevan-dan-diyakini-raja-muda-kedah/": {
+          "id": 6710,
+          "title": "WARGA MAIK DISERU PERTAHANKAN TADBIR URUS YANG BAIK AGAR INSTITUSI TERUS RELEVAN DAN DIYAKINI – RAJA MUDA KEDAH",
+          "publishedAt": "2026-01-11T01:23:16Z",
+          "modifiedAt": "2026-01-11T01:23:16Z",
+          "sha256": "b7208a54561be13a5e9c8fd0ea579bfe7ffed178a85cbfd23c082a9eeede1fb7",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/12/pameran-kembara-utara-dibuka-secara-percuma-bermula-esok/": {
+          "id": 6720,
+          "title": "PAMERAN ‘KEMBARA UTARA’ DIBUKA SECARA PERCUMA BERMULA ESOK",
+          "publishedAt": "2026-01-12T01:45:38Z",
+          "modifiedAt": "2026-01-12T01:45:38Z",
+          "sha256": "a9021f428aa5437ab2b72200f633d42000d435b2aa1261ab8521157812c4bedb",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/12/semua-pihak-berkuasa-perlu-bendung-aktiviti-penjualan-lot-lidi-sanusi/": {
+          "id": 6725,
+          "title": "SEMUA PIHAK BERKUASA PERLU BENDUNG AKTIVITI PENJUALAN LOT LIDI – SANUSI",
+          "publishedAt": "2026-01-12T08:37:36Z",
+          "modifiedAt": "2026-01-12T08:37:36Z",
+          "sha256": "57319db6c108c4000fd9a94a72a31ec065a12b6f819dc5e95295c760dfdcd87d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/14/kaji-selidik-kepuasan-pelanggan-pejabat-menteri-besar-kedah-pejabat-setiausaha-kerajaan-negeri-kedah-bagi-tahun-2025/": {
+          "id": 6732,
+          "title": "KAJI SELIDIK KEPUASAN PELANGGAN PEJABAT MENTERI BESAR KEDAH & PEJABAT SETIAUSAHA KERAJAAN NEGERI KEDAH BAGI TAHUN 2025",
+          "publishedAt": "2026-01-14T01:35:44Z",
+          "modifiedAt": "2026-01-14T01:39:18Z",
+          "sha256": "ea0530f5c6832093e52c4f44e3243642fa5c8ceb8d53f373bb634e61817d4f73",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/21/penjawat-awam-perlu-mempunyai-azam-dan-iltizam-baharu-dalam-melaksanakan-tugas-yang-diamanahkan-norizan/": {
+          "id": 6745,
+          "title": "‎PENJAWAT AWAM PERLU MEMPUNYAI AZAM DAN ILTIZAM BAHARU DALAM MELAKSANAKAN TUGAS YANG DIAMANAHKAN – NORIZAN",
+          "publishedAt": "2026-01-21T03:46:48Z",
+          "modifiedAt": "2026-01-21T03:46:49Z",
+          "sha256": "5e52f8263a25dea3f1d986a255e3797c533e5141675fd3789e74f5a2e496ee46",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/21/perkasa-tadbir-urus-pentadbiran-awam-untuk-kesejahteraan-rakyat-norizan/": {
+          "id": 6750,
+          "title": "PERKASA TADBIR URUS PENTADBIRAN AWAM UNTUK KESEJAHTERAAN RAKYAT – NORIZAN ‎",
+          "publishedAt": "2026-01-21T03:51:56Z",
+          "modifiedAt": "2026-01-21T03:51:56Z",
+          "sha256": "b80cd016b11466395214add03e8ab93ea75eddc3603ad9df427db0b026fa5ad8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/21/mdp-lancar-aplikasi-gopendang-mudahkan-bayaran-tanpa-tunai/": {
+          "id": 6755,
+          "title": "MDP LANCAR APLIKASI ‘goPENDANG’ MUDAHKAN BAYARAN TANPA TUNAI",
+          "publishedAt": "2026-01-21T03:57:00Z",
+          "modifiedAt": "2026-01-21T03:57:00Z",
+          "sha256": "417796961296fc9de7daad7152a62d4b6df140b4a729b96da73c5a8965456188",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/21/hari-tahipusam-sebagai-cuti-peristiwa-di-negeri-kedah-darul-aman-tahun-2026/": {
+          "id": 6761,
+          "title": "HARI THAIPUSAM SEBAGAI CUTI PERISTIWA DI NEGERI KEDAH DARUL AMAN TAHUN 2026",
+          "publishedAt": "2026-01-21T01:36:49Z",
+          "modifiedAt": "2026-02-18T15:50:50Z",
+          "sha256": "6655878b3adc50d77168a5d62bef22652100b442756bc6fada627f79701474d2",
+          "relevant": true,
+          "pdfUrls": [
+            "https://www.kedah.gov.my/wp-content/uploads/2026/01/Cuti-Peristiwa-Thaipusam-Negeri-Kedah-Darul-Aman-2026.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/01/28/kadar-zakat-fitrah-1447h-negeri-kedah-ditetapkan-rm9-00-rm15-00-dan-rm23-00/": {
+          "id": 6768,
+          "title": "KADAR ZAKAT FITRAH 1447H NEGERI KEDAH DITETAPKAN RM9.00, RM15.00 DAN RM23.00",
+          "publishedAt": "2026-01-28T01:04:25Z",
+          "modifiedAt": "2026-01-28T01:04:25Z",
+          "sha256": "e0649e1638aea4c67e24ec0f936ad0a0675590d3b04a49c162626ebb8489e5b5",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/02/penganjuran-program-1-bulan-1-sukan-mengajak-rakyat-kedah-amal-gaya-hidup-sihat/": {
+          "id": 6778,
+          "title": "PENGANJURAN PROGRAM 1 BULAN 1 SUKAN MENGAJAK RAKYAT KEDAH AMAL GAYA HIDUP SIHAT",
+          "publishedAt": "2026-02-02T01:47:44Z",
+          "modifiedAt": "2026-02-02T01:47:44Z",
+          "sha256": "836d895f3d899e500d9856a97910cbe9c62e421ae16f4c1a2f19ccd909c78baf",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/01/selamat-hari-thaipusam/": {
+          "id": 6783,
+          "title": "Selamat Hari Thaipusam",
+          "publishedAt": "2026-02-01T01:30:59Z",
+          "modifiedAt": "2026-02-04T01:34:08Z",
+          "sha256": "7463972f21f5e2b6706cf9d7716cc891290d43d383e51d48922a4d2c33ae0da1",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/08/al-quran-sentiasa-membuka-ruang-rahmat-dan-peluang-kepada-mereka-yang-istiqamah-norizan/": {
+          "id": 6787,
+          "title": "‎AL-QURAN SENTIASA MEMBUKA RUANG RAHMAT DAN PELUANG KEPADA MEREKA YANG ISTIQAMAH – NORIZAN",
+          "publishedAt": "2026-02-08T06:48:32Z",
+          "modifiedAt": "2026-02-08T06:59:53Z",
+          "sha256": "7508d2ae27433dcbd9fb1fe30685d1fa1da967fb16f18938200eb3b6d70843b8",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/08/raja-muda-kedah-kurnia-agihan-fidyah-kepada-320-fakir-miskin/": {
+          "id": 6793,
+          "title": "RAJA MUDA KEDAH KURNIA AGIHAN FIDYAH KEPADA 320 FAKIR MISKIN",
+          "publishedAt": "2026-02-08T06:55:08Z",
+          "modifiedAt": "2026-02-08T06:55:08Z",
+          "sha256": "c92feaac6b8821d2102e971892a5e0af9a72266be273b284994c73bf09a53cca",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/09/task-telah-membelanjakan-rm2-04-juta-untuk-komuniti-di-kedah/": {
+          "id": 6799,
+          "title": "TASK TELAH MEMBELANJAKAN RM2.04 JUTA UNTUK KOMUNITI DI KEDAH",
+          "publishedAt": "2026-02-09T01:15:31Z",
+          "modifiedAt": "2026-02-09T01:15:31Z",
+          "sha256": "08872ee5c0b73a6c2c19660fcd69f2a127b4e2eb9709c83f8fdee14af5a38837",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/11/program-pementoran-pejabat-suk-berjaya-lahirkan-pegawai-terlatih-berkemahiran-dan-beretika/": {
+          "id": 6811,
+          "title": "PROGRAM PEMENTORAN PEJABAT SUK BERJAYA LAHIRKAN PEGAWAI TERLATIH, BERKEMAHIRAN DAN BERETIKA",
+          "publishedAt": "2026-02-11T07:22:40Z",
+          "modifiedAt": "2026-02-11T07:22:40Z",
+          "sha256": "be2b20feaf6634c5e797b2d8f434d29d663ca67f892cf75d8bb7632698693e8e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/17/selamat-tahun-baru-cina-2026/": {
+          "id": 6823,
+          "title": "Selamat Tahun Baru Cina 2026",
+          "publishedAt": "2026-02-17T15:47:10Z",
+          "modifiedAt": "2026-03-25T04:23:04Z",
+          "sha256": "36b8b73c7a560408523e9e4977f88047b7df9ede0793016184843fda017fb146",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/18/selamat-menyambut-ramadan-al-mubarak-1447-h/": {
+          "id": 6825,
+          "title": "Selamat Menyambut Ramadan Al-Mubarak 1447 H",
+          "publishedAt": "2026-02-18T15:49:57Z",
+          "modifiedAt": "2026-03-25T04:23:11Z",
+          "sha256": "93e349819d9b6f11e27d56f83ca67c0293e3d77a73ee35894f5d2ca83b7bdb8c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/22/keluarga-diraja-kedah-sumbang-1200-kotak-makanan-kepada-golongan-miskin-sempena-ramadan/": {
+          "id": 6828,
+          "title": "KELUARGA DIRAJA KEDAH SUMBANG 1,200 KOTAK MAKANAN KEPADA GOLONGAN MISKIN SEMPENA RAMADAN",
+          "publishedAt": "2026-02-22T01:08:09Z",
+          "modifiedAt": "2026-02-22T01:08:09Z",
+          "sha256": "b44fd49c2d456fd3666d40908813205e498b3b419d756a0e301a93e7fc9e496a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/23/pelaksanaan-waktu-bekerja-fleksi-bulan-ramadan-wbf-2026/": {
+          "id": 6838,
+          "title": "PELAKSANAAN WAKTU BEKERJA FLEKSI BULAN RAMADAN (WBF) 2026",
+          "publishedAt": "2026-02-23T02:35:35Z",
+          "modifiedAt": "2026-03-25T04:22:32Z",
+          "sha256": "53597ee93c065fa1c16bfc542ee6ccd25e1c44520890405eb78f8c36162fb0e9",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.kedah.gov.my/wp-content/uploads/2026/02/PELAKSANAAN-WAKTU-BEKERJA-FLEKSI-WBF-BULAN-RAMADAN-TAHUN-2026-1447-H-BAGI-PERKHIDMATAN-AWAM-NEGERI-KEDAH-.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/02/25/bulan-ramadan-mendidik-jiwa-bertaqwa-istiqamah-dan-insaf-dalam-menghadapi-bulan-bulan-yang-lain-sanusi/": {
+          "id": 6841,
+          "title": "‎BULAN RAMADAN MENDIDIK JIWA BERTAQWA, ISTIQAMAH DAN INSAF DALAM MENGHADAPI BULAN-BULAN YANG LAIN – SANUSI",
+          "publishedAt": "2026-02-25T06:43:49Z",
+          "modifiedAt": "2026-02-25T06:43:49Z",
+          "sha256": "36e7dda56018757f1dd3cba1b639d02a5d8b22cadbe780c715c97063fe648641",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/01/semua-kaum-di-negeri-ini-dilayan-sama-rata-tanpa-diskriminasi-sanusi/": {
+          "id": 6847,
+          "title": "SEMUA KAUM DI NEGERI INI DILAYAN SAMA RATA TANPA DISKRIMINASI – SANUSI ‎",
+          "publishedAt": "2026-03-01T01:40:23Z",
+          "modifiedAt": "2026-03-01T01:40:23Z",
+          "sha256": "309e67a7444772a5e2a27755e454947e775da2fb3076fa1ccf643f908b3c6c0a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/04/ketegasan-isu-sensitiviti-agama-harus-dititikberatkan-sanusi/": {
+          "id": 6853,
+          "title": "KETEGASAN ISU SENSITIVITI AGAMA HARUS DITITIKBERATKAN – SANUSI",
+          "publishedAt": "2026-03-04T01:57:24Z",
+          "modifiedAt": "2026-03-04T02:01:25Z",
+          "sha256": "5c1653d860c949b5b7ecc5a16b1aadbd4ade08f7ed3f4eec918ceb400e80bceb",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/16/hari-kelepasan-am-tambahan-cuti-hari-raya-aidilfitri-2026/": {
+          "id": 6880,
+          "title": "HARI KELEPASAN AM TAMBAHAN SEMPENA HARI RAYA AIDILFITRI 2026",
+          "publishedAt": "2026-03-16T08:07:40Z",
+          "modifiedAt": "2026-03-25T04:22:21Z",
+          "sha256": "3125285fe40b2ac6964fb9a59a735fc3807f7f0c7f17a085e910a3754f47f46a",
+          "relevant": true,
+          "pdfUrls": [
+            "https://www.kedah.gov.my/wp-content/uploads/2026/03/HARI-KELEPASAN-AM-TAMBAHAN-SEMPENA-HARI-RAYA-AIDILFITRI-TAHUN-2026.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/19/tahniah-dan-selamat-berkhidmat-pegawai-kewangan-negeri-kedah-darul-aman/": {
+          "id": 6889,
+          "title": "TAHNIAH DAN SELAMAT BERKHIDMAT PEGAWAI KEWANGAN NEGERI KEDAH DARUL AMAN",
+          "publishedAt": "2026-03-19T08:24:09Z",
+          "modifiedAt": "2026-03-19T15:28:17Z",
+          "sha256": "d42215483a843c79e60be012212267be296aaef5de03db181a901cf7cdaf4cff",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/19/selamat-bersara-kepada-yang-berhormat-dato-wira-haji-syed-khairol-anuar-bin-syed-abidin/": {
+          "id": 6893,
+          "title": "SELAMAT BERSARA KEPADA YANG BERHORMAT DATO’ WIRA HAJI SYED KHAIROL ANUAR BIN SYED ABIDIN",
+          "publishedAt": "2026-03-19T15:31:30Z",
+          "modifiedAt": "2026-03-19T15:31:30Z",
+          "sha256": "5fbd9a67bb6c2640081de976833f6f2806f3addf283bd81ba6e3caf1ad48b21a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/20/selamat-hari-raya-aidilifitri-maaf-zahir-batin-1447-h/": {
+          "id": 6904,
+          "title": "Selamat Hari Raya Aidilifitri Maaf Zahir Batin 1447 H",
+          "publishedAt": "2026-03-20T04:20:39Z",
+          "modifiedAt": "2026-03-25T04:21:03Z",
+          "sha256": "cfa96fe6aeefb0d645f5d90e9b8165df3eecd8615426a106e150d681bdce2ed0",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/03/30/projek-naiktaraf-lra-lubuk-buntar-lama-berjaya-menampung-sehingga-12000-akaun-penduduk-bandar-baharu-sanusi/": {
+          "id": 6909,
+          "title": "PROJEK NAIKTARAF LRA LUBUK BUNTAR LAMA BERJAYA MENAMPUNG SEHINGGA 12,000 AKAUN PENDUDUK BANDAR BAHARU – SANUSI",
+          "publishedAt": "2026-03-30T01:27:39Z",
+          "modifiedAt": "2026-03-30T01:27:39Z",
+          "sha256": "d75ae221203aed9b77d4dc5827e9cc803a492aafe67dfbb72d81451b0f92628d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/02/ucapan-tahniah-atas-pelantikan-timbalan-setiausaha-kerajaan-pengurusan/": {
+          "id": 6953,
+          "title": "UCAPAN TAHNIAH ATAS PELANTIKAN TIMBALAN SETIAUSAHA KERAJAAN (PENGURUSAN) BAHARU",
+          "publishedAt": "2026-04-02T07:18:55Z",
+          "modifiedAt": "2026-04-06T07:53:57Z",
+          "sha256": "f81bf23f89cdc3e53faf667eb0a8769708de478c20c3705f88063e3872c745ba",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/09/mkk-disaran-jangan-pilih-kasih-bantu-penduduk-kampung-sanusi/": {
+          "id": 6972,
+          "title": "MKK DISARAN JANGAN PILIH KASIH BANTU PENDUDUK KAMPUNG – SANUSI",
+          "publishedAt": "2026-04-09T01:00:45Z",
+          "modifiedAt": "2026-04-09T01:01:23Z",
+          "sha256": "7d365ac4abae9ed86c881a646f64252f57925671ad17f2544f9e62488801ff39",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/09/ribuan-rakyat-jitra-banjiri-rumah-terbuka-aidilfitri-dun-jitra-2026/": {
+          "id": 6978,
+          "title": "RIBUAN RAKYAT JITRA BANJIRI RUMAH TERBUKA AIDILFITRI DUN JITRA 2026",
+          "publishedAt": "2026-04-09T01:07:43Z",
+          "modifiedAt": "2026-04-09T01:07:43Z",
+          "sha256": "b41c0de9511f2da1470474524e92deaa39df0681ef67b28b19f890d7ef45ad38",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/13/kbok-2026-bakal-melahirkan-atlet-atlet-olimpik-negara-yang-gemilang-sanusi/": {
+          "id": 6987,
+          "title": "KBOK 2026 BAKAL MELAHIRKAN ATLET-ATLET OLIMPIK NEGARA YANG GEMILANG – SANUSI",
+          "publishedAt": "2026-04-13T01:15:07Z",
+          "modifiedAt": "2026-04-13T01:15:07Z",
+          "sha256": "3c1bd19bd7e08a198d123a1ecac47f4c28c27c5fec33a1f8f747ca6a09d9611d",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/13/kembalikan-langkawi-sebagai-pulau-bebas-cukai-dengan-keistimewaan-seperti-sebelum-ini-sultan-kedah/": {
+          "id": 6992,
+          "title": "KEMBALIKAN LANGKAWI SEBAGAI PULAU BEBAS CUKAI DENGAN KEISTIMEWAAN SEPERTI SEBELUM INI – SULTAN KEDAH",
+          "publishedAt": "2026-04-13T06:55:19Z",
+          "modifiedAt": "2026-04-13T06:55:19Z",
+          "sha256": "5a66ddfc4062349dd3d1095c5d568fce61b5653bd3c6f55071e62afce2514438",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/13/kekal-kawasan-padi-dan-tadahan-air-kerajaan-persekutuan-perlu-beri-insentif-kewangan-kepada-kerajaan-negeri-sultan-kedah/": {
+          "id": 6997,
+          "title": "KEKAL KAWASAN PADI DAN TADAHAN AIR : KERAJAAN PERSEKUTUAN PERLU BERI INSENTIF KEWANGAN KEPADA KERAJAAN NEGERI – SULTAN KEDAH",
+          "publishedAt": "2026-04-13T07:00:54Z",
+          "modifiedAt": "2026-04-13T07:00:54Z",
+          "sha256": "b3c8cf5451e6050f7bcc9100094dea1430a9e4fde965849494982f1ff6bc0e78",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/15/pelupusan-denda-lewat-bayar-cukai-tanah-dianggarkan-berjumlah-rm49-juta-sanusi/": {
+          "id": 7006,
+          "title": "‎PELUPUSAN DENDA LEWAT BAYAR CUKAI TANAH DIANGGARKAN BERJUMLAH RM49 JUTA – SANUSI",
+          "publishedAt": "2026-04-15T01:21:35Z",
+          "modifiedAt": "2026-04-15T01:21:35Z",
+          "sha256": "43612dcd9836222530bee4cde416966667d944b84cbcdf66de70e30a0dfa3825",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/19/kerajaan-negeri-mahu-pulau-langkawi-dikembalikan-sebagai-pulau-bebas-cukai-sepenuhnya/": {
+          "id": 7012,
+          "title": "‎KERAJAAN NEGERI MAHU PULAU LANGKAWI DIKEMBALIKAN SEBAGAI PULAU BEBAS CUKAI SEPENUHNYA",
+          "publishedAt": "2026-04-19T06:50:23Z",
+          "modifiedAt": "2026-04-19T06:50:23Z",
+          "sha256": "984e446b4edee822384664653bfb129284d5c1a82cd7ceb431507a9a0e3304b7",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/19/5000-masyarakat-siam-meraikan-perayaan-pesta-songkran-peringkat-negeri-kedah-2026/": {
+          "id": 7017,
+          "title": "5,000 MASYARAKAT SIAM MERAIKAN PERAYAAN PESTA SONGKRAN PERINGKAT NEGERI KEDAH 2026",
+          "publishedAt": "2026-04-19T06:57:04Z",
+          "modifiedAt": "2026-04-19T06:57:04Z",
+          "sha256": "5aa1367c9a6bf3dfa4659c2701e2db2850203d7d0e9c8477769cda9a0f0db338",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/23/jemaah-haji-kedah-disaran-mematuhi-peraturan-yang-ditetapkan-oleh-pihak-berkuasa-sultan-kedah/": {
+          "id": 7023,
+          "title": "JEMAAH HAJI KEDAH DISARAN MEMATUHI PERATURAN YANG DITETAPKAN OLEH PIHAK BERKUASA – SULTAN KEDAH",
+          "publishedAt": "2026-04-23T03:38:06Z",
+          "modifiedAt": "2026-04-23T03:40:27Z",
+          "sha256": "b895ce986120f4752be6a8e19902b568322038b1a0d9d424e60a173f1c6ebcde",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/26/budaya-membaca-memperkukuh-ilmu-dalam-kalangan-masyarakat/": {
+          "id": 7034,
+          "title": "BUDAYA MEMBACA MEMPERKUKUH ILMU DALAM KALANGAN MASYARAKAT",
+          "publishedAt": "2026-04-26T03:18:52Z",
+          "modifiedAt": "2026-04-26T03:41:02Z",
+          "sha256": "3c9a0aa4750613e5d941693ef0d6042b4edebf8686dd6d49d8b8d9a93878b2d4",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/26/kerajaan-negeri-lancar-program-tuisyen-rakyat-sejahtera-2026-di-36-dun-kedah/": {
+          "id": 7040,
+          "title": "KERAJAAN NEGERI LANCAR PROGRAM TUISYEN RAKYAT SEJAHTERA 2026 DI 36 DUN KEDAH",
+          "publishedAt": "2026-04-26T03:27:27Z",
+          "modifiedAt": "2026-04-26T03:40:29Z",
+          "sha256": "9ebf71a8995b263370e95b3e15b74165ee72536a5e429c05e35a4d2cb9017dc6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/04/26/membudayakan-kembali-gaya-hidup-sihat-di-kalangan-masyarakat-norizan/": {
+          "id": 7045,
+          "title": "‎MEMBUDAYAKAN KEMBALI GAYA HIDUP SIHAT DI KALANGAN MASYARAKAT – NORIZAN",
+          "publishedAt": "2026-04-26T03:35:27Z",
+          "modifiedAt": "2026-04-26T03:39:49Z",
+          "sha256": "9cd3014ade9bef8a0b5741aa8c375803d27844d9626fb0446a253bd8bed8acf3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/04/shas-2026-pupuk-kerjasama-dan-rasa-tanggungjawab-memelihara-sumber-air-negara-sanusi/": {
+          "id": 7072,
+          "title": "SHAS 2026 PUPUK KERJASAMA DAN RASA TANGGUNGJAWAB MEMELIHARA SUMBER AIR NEGARA – SANUSI",
+          "publishedAt": "2026-05-04T02:48:21Z",
+          "modifiedAt": "2026-05-04T02:48:21Z",
+          "sha256": "13f41012327b6021cb0a934df9568957e4ce1f377a6a4eb0df6d2607869e38bd",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/04/lebih-5000-peserta-memeriahkan-alor-setar-car-free-saturday/": {
+          "id": 7077,
+          "title": "‎LEBIH 5,000 PESERTA MEMERIAHKAN ALOR SETAR CAR FREE SATURDAY",
+          "publishedAt": "2026-05-04T02:54:34Z",
+          "modifiedAt": "2026-05-04T02:54:34Z",
+          "sha256": "c116d7abc6e3c2faa936233160dcaa9f0f3e9608d0026edf6ae197f30367de55",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/04/fmk-2026-mendekatkan-masyarakat-dengan-industri-penanaman-mempelam/": {
+          "id": 7082,
+          "title": "FMK 2026 MENDEKATKAN MASYARAKAT DENGAN INDUSTRI PENANAMAN MEMPELAM",
+          "publishedAt": "2026-05-04T03:00:28Z",
+          "modifiedAt": "2026-05-04T03:00:28Z",
+          "sha256": "dcc1bd89957070904e8001029fafd9cbf116d6dc0147c4b98305e94f55a0b638",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/01/selamat-hari-pekerja-2026/": {
+          "id": 7095,
+          "title": "SELAMAT HARI PEKERJA 2026",
+          "publishedAt": "2026-05-01T07:20:51Z",
+          "modifiedAt": "2026-05-04T07:22:15Z",
+          "sha256": "3570247e868f8e67334f703b212a5aca43f76e58366f805ec77c97cd8bc11606",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/06/masjid-perlu-berperanan-sebagai-pusat-pembangunan-ummah-yang-komprehensif-raja-muda-kedah/": {
+          "id": 7099,
+          "title": "MASJID PERLU BERPERANAN SEBAGAI PUSAT PEMBANGUNAN UMMAH YANG KOMPREHENSIF – RAJA MUDA KEDAH",
+          "publishedAt": "2026-05-06T01:22:48Z",
+          "modifiedAt": "2026-05-06T01:22:48Z",
+          "sha256": "3d03156d8b4196ea0f948354e21277507fef04c9cb2bede3a8c0190edd05ee8c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/07/pemakluman-pindaan-tarikh-ulang-tahun-hari-keputeraan-kebawah-duli-yang-maha-mulia-tuanku-sultan-kedah-darul-aman-bagi-tahun-2026/": {
+          "id": 7105,
+          "title": "PEMAKLUMAN PINDAAN TARIKH ULANG TAHUN HARI KEPUTERAAN KEBAWAH DULI YANG MAHA MULIA TUANKU SULTAN KEDAH DARUL AMAN BAGI TAHUN 2026",
+          "publishedAt": "2026-05-07T08:21:24Z",
+          "modifiedAt": "2026-05-07T08:21:56Z",
+          "sha256": "a4f0b7ed3fde91de6457da0758a23d6d6f5d359217f0a4018b3c1869bf1593f6",
+          "relevant": false,
+          "pdfUrls": [
+            "https://www.kedah.gov.my/wp-content/uploads/2026/05/DOC070526-07052026114442.pdf"
+          ],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/10/tanam-700-pokok-dalam-seminit-mpkk-lakar-nama-dalam-mbor/": {
+          "id": 7108,
+          "title": "TANAM 700 POKOK DALAM SEMINIT – MPKK LAKAR NAMA DALAM MBOR",
+          "publishedAt": "2026-05-10T06:57:44Z",
+          "modifiedAt": "2026-05-10T06:57:44Z",
+          "sha256": "dacc91bf55dbd3b6756a31b60e26aefea4f80b86244ec58471ce86fd1ca55a11",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/27/selamat-hari-raya-aidiladha-1447-h/": {
+          "id": 7128,
+          "title": "SELAMAT HARI RAYA AIDILADHA 1447 H",
+          "publishedAt": "2026-05-27T07:51:55Z",
+          "modifiedAt": "2026-06-01T23:25:30Z",
+          "sha256": "e1928a9e812ecef3eefbd5420510493864e7d84762db5bf844bb110eea2df459",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/31/selmat-hari-wesak-2026/": {
+          "id": 7130,
+          "title": "SELAMAT HARI WESAK 2026",
+          "publishedAt": "2026-05-31T07:53:56Z",
+          "modifiedAt": "2026-06-01T23:25:00Z",
+          "sha256": "64cf6b77612a46cc613fc0dbcbb73b805414fcedb24bab5c7a606e3d5715fc92",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/01/sambutan-ulang-tahun-hari-keputeraan-rasmi-kebawah-duli-yang-maha-mulia-seri-paduka-baginda-yang-di-pertuan-agong-sultan-ibrahim/": {
+          "id": 7133,
+          "title": "Sambutan Ulang Tahun Hari Keputeraan Rasmi Kebawah Duli Yang Maha Mulia Seri Paduka Baginda Yang Di-Pertuan Agong Sultan Ibrahim",
+          "publishedAt": "2026-06-01T07:23:46Z",
+          "modifiedAt": "2026-06-01T23:24:28Z",
+          "sha256": "e03ee760eededc82131eb9c47108570efc087f7f75d743c403b0e1d34959bbed",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/17/hari-raya-aidiladha-1447h-disambut-pada-27-mei-2026/": {
+          "id": 7138,
+          "title": "HARI RAYA AIDILADHA 1447H DISAMBUT PADA 27 MEI 2026 ‎",
+          "publishedAt": "2026-05-17T01:21:55Z",
+          "modifiedAt": "2026-06-08T01:39:10Z",
+          "sha256": "13527aa7067ff65b9c8bf7b29dd94c4d77695b8e024bd20abcb422222076da14",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/27/sultan-kedah-berkenan-berangkat-menunaikan-solat-sunat-aidiladha-1447h-2026m/": {
+          "id": 7148,
+          "title": "‎SULTAN KEDAH BERKENAN BERANGKAT MENUNAIKAN SOLAT SUNAT AIDILADHA 1447H/2026M",
+          "publishedAt": "2026-05-27T01:45:24Z",
+          "modifiedAt": "2026-06-08T01:50:41Z",
+          "sha256": "f124569afed7eb11abb7336ed4c173ebd1cac65c36b54b6d03e38e7dbde90fd6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/05/30/100-asnaf-terima-agihan-daging-korban-dan-wang-tunai-baitulmal-maik/": {
+          "id": 7154,
+          "title": "100 ASNAF TERIMA AGIHAN DAGING KORBAN DAN WANG TUNAI BAITULMAL MAIK",
+          "publishedAt": "2026-05-30T07:25:28Z",
+          "modifiedAt": "2026-06-08T07:39:16Z",
+          "sha256": "49cbe56764076780e52146f838728afda361d306dab1f959bf62a84c465dcbfb",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/01/3000-pengunjung-memeriahkan-sambutan-hari-wesak-peringkat-negeri-kedah-2026/": {
+          "id": 7160,
+          "title": "3,000 PENGUNJUNG MEMERIAHKAN SAMBUTAN HARI WESAK PERINGKAT NEGERI KEDAH 2026",
+          "publishedAt": "2026-06-01T07:43:04Z",
+          "modifiedAt": "2026-06-08T07:56:12Z",
+          "sha256": "efa8d883765e792f7145808d0ca8ee2370adcc8174b96ae9c52eb8c7dbf72764",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/06/1500-pengunjung-meriahkan-alor-setar-cfs-edisi-jun-2026/": {
+          "id": 7167,
+          "title": "‎1,500 PENGUNJUNG MERIAHKAN ALOR SETAR CFS EDISI JUN 2026",
+          "publishedAt": "2026-06-06T08:12:50Z",
+          "modifiedAt": "2026-06-08T08:36:58Z",
+          "sha256": "d954fc9a0f1c34518492350a2b86da477094b9c0b1d0fbd57c77d4610e044a9e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/07/sultan-kedah-rai-99-pelajar-maktab-mahmud-yang-cemerlang-dalam-spm-2025/": {
+          "id": 7173,
+          "title": "‎SULTAN KEDAH RAI 99 PELAJAR MAKTAB MAHMUD YANG CEMERLANG DALAM SPM 2025",
+          "publishedAt": "2026-06-07T08:46:02Z",
+          "modifiedAt": "2026-06-08T08:52:44Z",
+          "sha256": "e83c79b855e713ae2736d98ffa6ba54cfa57fc78ba35d7950e2cb68171465117",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/17/selamat-menyambut-awal-muharram-1448h/": {
+          "id": 7190,
+          "title": "Selamat Menyambut Awal Muharram 1448H",
+          "publishedAt": "2026-06-17T07:29:11Z",
+          "modifiedAt": "2026-06-17T09:30:16Z",
+          "sha256": "f8c9d8e956a6376ccabe173ca9491acafbf5c0afba77473e772b1a84dde52238",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/16/raja-muda-kedah-berangkat-hadir-ke-majlis-bacaan-yasin-dan-doa-sempena-sambutan-maal-hijrah-1448h/": {
+          "id": 7192,
+          "title": "‎RAJA MUDA KEDAH BERANGKAT HADIR KE MAJLIS BACAAN YASIN DAN DOA SEMPENA SAMBUTAN MAAL HIJRAH 1448H",
+          "publishedAt": "2026-06-16T02:49:12Z",
+          "modifiedAt": "2026-06-22T02:55:40Z",
+          "sha256": "0a74e4311565195e9edd7b9338542d45cb8836004a8e82d3001db67958587442",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/17/transformasi-jiwa-pemikiran-dan-akhlak-merupakan-erti-hijrah-yang-sebenar-raja-muda-kedah/": {
+          "id": 7197,
+          "title": "‎TRANSFORMASI JIWA, PEMIKIRAN DAN AKHLAK MERUPAKAN ERTI HIJRAH YANG SEBENAR – RAJA MUDA KEDAH",
+          "publishedAt": "2026-06-17T02:58:41Z",
+          "modifiedAt": "2026-06-22T04:47:55Z",
+          "sha256": "bae31e9c920e115b929750c556ce8944b995339563ec58087e362b77e7615778",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/20/citra-malaysia-com-siri-2-semarakkan-seni-budaya-pelbagai-kaum/": {
+          "id": 7203,
+          "title": "‎CITRA MALAYSIA ‘COM’ SIRI 2 SEMARAKKAN SENI BUDAYA PELBAGAI KAUM",
+          "publishedAt": "2026-06-20T07:23:34Z",
+          "modifiedAt": "2026-06-22T07:47:26Z",
+          "sha256": "c64112ce580383683b0709e68fed0496143dde02b750d82e733841c337ebaa34",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/10/tv-kedah-nadi-informasi-rasmi-negeri-kedah/": {
+          "id": 7251,
+          "title": "TV KEDAH: NADI INFORMASI RASMI NEGERI KEDAH",
+          "publishedAt": "2026-06-10T08:19:51Z",
+          "modifiedAt": "2026-06-24T08:22:16Z",
+          "sha256": "1e2ecfb648d35cc9f0210248973a1e7d43da975e6fd05ec1f564812ceec26f82",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/06/28/mbas-lancar-manual-nadi/": {
+          "id": 7255,
+          "title": "MBAS LANCAR MANUAL “NADI”",
+          "publishedAt": "2026-06-28T08:15:21Z",
+          "modifiedAt": "2026-06-28T08:15:21Z",
+          "sha256": "aa7dfc24a4a42382c135521734cf2626f85dd7eee00f995b82fd67ddb6c17702",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/01/kerajaan-negeri-unggul-terima-pengiktirafan-rkb/": {
+          "id": 7267,
+          "title": "KERAJAAN NEGERI UNGGUL TERIMA PENGIKTIRAFAN RKB",
+          "publishedAt": "2026-07-01T03:08:27Z",
+          "modifiedAt": "2026-07-01T03:08:27Z",
+          "sha256": "a9efb833654203a46961f54f099ba3bac19b2b09108a86fd0df65031e739f1cf",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/daulat-tuanku-sambutan-ulang-tahun-hari-keputeraan-tuanku-sultan-kedah/": {
+          "id": 7282,
+          "title": "DAULAT TUANKU — SAMBUTAN ULANG TAHUN HARI KEPUTERAAN TUANKU SULTAN KEDAH",
+          "publishedAt": "2026-07-05T04:27:13Z",
+          "modifiedAt": "2026-07-05T04:27:13Z",
+          "sha256": "dffbbd08123b81ce28d7bc021ce04154e47fb547f6f017aa4d3e7b3fbeb30d4e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/ucapan-tahniah-di-atas-penganugerahan-darjah-darjah-bintang-bintang-pingat-pingat-kebesaran-sempena-keputeraan-sultan-kedah-ke-84/": {
+          "id": 7289,
+          "title": "UCAPAN TAHNIAH DI ATAS PENGANUGERAHAN DARJAH-DARJAH, BINTANG-BINTANG & PINGAT-PINGAT KEBESARAN SEMPENA KEPUTERAAN SULTAN KEDAH KE-84",
+          "publishedAt": "2026-07-05T07:51:34Z",
+          "modifiedAt": "2026-07-05T23:26:56Z",
+          "sha256": "ff69ee0368f5df115ab50926b5fd6742c4ba7c6a07d791351dae2d460b8aa881",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/lebih-5000-rakyat-kedah-meraikan-istiadat-perbarisan-kehormatan-keputeraan-sultan-kedah-ke-84/": {
+          "id": 7298,
+          "title": "‎LEBIH 5,000 RAKYAT KEDAH MERAIKAN ISTIADAT PERBARISAN KEHORMATAN KEPUTERAAN SULTAN KEDAH KE-84",
+          "publishedAt": "2026-07-05T07:11:12Z",
+          "modifiedAt": "2026-07-05T23:14:44Z",
+          "sha256": "e5ae907cd596fc4c7868e3700e59c5fa29835c6798dcea8d0d359c8ecbfc5b9f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/daya-tarikan-kedah-mampu-memperkukuh-ekonomi-dan-pembangunan-negeri/": {
+          "id": 7300,
+          "title": "‎DAYA TARIKAN KEDAH MAMPU MEMPERKUKUH EKONOMI DAN PEMBANGUNAN NEGERI",
+          "publishedAt": "2026-07-05T07:17:36Z",
+          "modifiedAt": "2026-07-05T23:22:44Z",
+          "sha256": "5328716ecfb4e16fb178b8516cb86c727f1b206b602583701e23eba8a913cbef",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/seramai-34281-orang-terima-pelbagai-inisiatif-kerajaan-negeri/": {
+          "id": 7306,
+          "title": "‎SERAMAI 34,281 ORANG TERIMA PELBAGAI INISIATIF KERAJAAN NEGERI",
+          "publishedAt": "2026-07-05T07:31:10Z",
+          "modifiedAt": "2026-07-05T23:32:29Z",
+          "sha256": "727d738607c5fc4dd7f17956bb5d9653d727344e4a9cc79f417041bc5f2c69e6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/kasih-sayang-kesetiaan-dan-muafakat-asas-kepada-kestabilan-sesebuah-masyarakat-raja-muda-kedah/": {
+          "id": 7309,
+          "title": "KASIH SAYANG, KESETIAAN DAN MUAFAKAT ASAS KEPADA KESTABILAN SESEBUAH MASYARAKAT – RAJA MUDA KEDAH",
+          "publishedAt": "2026-07-05T07:32:50Z",
+          "modifiedAt": "2026-07-05T23:37:21Z",
+          "sha256": "98617ef5e7a14249da512c0526a92aa923c1cae84f735bcef093246fc941498f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/hak-dan-kedaulatan-negeri-kedah-perlu-dihormati-oleh-semua-pihak-sultan-kedah/": {
+          "id": 7313,
+          "title": "‎HAK DAN KEDAULATAN NEGERI KEDAH PERLU DIHORMATI OLEH SEMUA PIHAK – SULTAN KEDAH",
+          "publishedAt": "2026-07-05T23:45:48Z",
+          "modifiedAt": "2026-07-05T23:45:48Z",
+          "sha256": "810ecabfd69c78d9c8f0ef7a831959c10270dc80331bc1ea20b7c979942c3801",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/05/panglima-atm-ketuai-penerima-darjah-darjah-bintang-bintang-serta-pingat-pingat-kebesaran-sempena-keputeraan-sultan-kedah-ke-84/": {
+          "id": 7325,
+          "title": "‎PANGLIMA ATM KETUAI PENERIMA DARJAH-DARJAH, BINTANG-BINTANG SERTA PINGAT-PINGAT KEBESARAN SEMPENA KEPUTERAAN SULTAN KEDAH KE-84",
+          "publishedAt": "2026-07-05T07:45:24Z",
+          "modifiedAt": "2026-07-07T02:36:55Z",
+          "sha256": "5b42b43c238b8c13632bab948a15db70175953438add1930710486b48a7af494",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/06/raja-muda-kedah-berkenan-merasmikan-pejabat-task/": {
+          "id": 7331,
+          "title": "‎RAJA MUDA KEDAH BERKENAN MERASMIKAN PEJABAT TASK",
+          "publishedAt": "2026-07-06T02:43:33Z",
+          "modifiedAt": "2026-07-07T02:49:08Z",
+          "sha256": "1a03455112f4f60f75bba5c5b3ca0962904989b5d97855ed6c1b4b6d76fb75ad",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/07/majlis-jamuan-negeri-sempena-keputeraan-ke-84-tuanku-sultan-kedah/": {
+          "id": 7352,
+          "title": "MAJLIS JAMUAN NEGERI SEMPENA KEPUTERAAN KE-84 TUANKU SULTAN KEDAH",
+          "publishedAt": "2026-07-07T02:27:44Z",
+          "modifiedAt": "2026-07-28T03:21:47Z",
+          "sha256": "47a524f3f8dbd8e342c739b3eeabc92b4bbf8c25b08bc02439903e18fe989408",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/10/jajaran-jalan-baharu-icqs-bukit-kayu-hitam-ciq-sadao-tingkat-kelancaran-rentas-sempadan/": {
+          "id": 7357,
+          "title": "JAJARAN JALAN BAHARU ICQS BUKIT KAYU HITAM–CIQ SADAO TINGKAT KELANCARAN RENTAS SEMPADAN",
+          "publishedAt": "2026-07-10T06:53:42Z",
+          "modifiedAt": "2026-07-28T06:58:23Z",
+          "sha256": "4e5925e0f1eab2e76780652c1f6225a742993d2b2a2cf21b9a772c476f13c397",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/11/sultan-kedah-mencemar-duli-memeriahkan-program-alor-setar-car-free-saturday/": {
+          "id": 7362,
+          "title": "SULTAN KEDAH MENCEMAR DULI MEMERIAHKAN PROGRAM ALOR SETAR CAR FREE SATURDAY",
+          "publishedAt": "2026-07-11T04:11:18Z",
+          "modifiedAt": "2026-08-10T04:26:17Z",
+          "sha256": "6aade6788d524c6b3dac724adb88004f9c7a6481cc88c919d51664a9015e89f3",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/13/pelbagai-program-baharu-bakal-disajikan-sempena-temasya-orang-kedah-tok-2026/": {
+          "id": 7367,
+          "title": "PELBAGAI PROGRAM BAHARU BAKAL DISAJIKAN SEMPENA TEMASYA ORANG KEDAH (TOK) 2026",
+          "publishedAt": "2026-07-13T07:15:51Z",
+          "modifiedAt": "2026-08-10T07:23:32Z",
+          "sha256": "a761c496fd799aea352d0db20e7ae67925759d5c70d87dffb9763e28597ebb83",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/15/program-kacau-bubur-asyura-menjalinkan-ukhuwah-warga-pentadbiran-kerajaan-negeri/": {
+          "id": 7371,
+          "title": "PROGRAM KACAU BUBUR ASYURA MENJALINKAN UKHUWAH WARGA PENTADBIRAN KERAJAAN NEGERI",
+          "publishedAt": "2026-07-15T07:29:18Z",
+          "modifiedAt": "2026-08-11T08:22:25Z",
+          "sha256": "51603dbba3bdb03f835bee178b19e71de940d7067a617da48c5b035327b420a9",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/15/keluarga-diraja-kedah-dan-pahang-mengadakan-kunjungan-di-kompleks-pelancongan-sungai-merbok/": {
+          "id": 7376,
+          "title": "KELUARGA DIRAJA KEDAH DAN PAHANG MENGADAKAN KUNJUNGAN DI KOMPLEKS PELANCONGAN SUNGAI MERBOK",
+          "publishedAt": "2026-07-15T07:41:22Z",
+          "modifiedAt": "2026-08-11T08:21:41Z",
+          "sha256": "b6cc3b022ace767041a6524e9542993f4cf4dfd3b1400d71dfdf270e52abd8c9",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/17/sultan-kedah-rasmi-masjid-jamiul-khair-padang-terap/": {
+          "id": 7382,
+          "title": "‎SULTAN KEDAH RASMI MASJID JAMI’UL KHAIR, PADANG TERAP",
+          "publishedAt": "2026-07-17T08:05:01Z",
+          "modifiedAt": "2026-08-11T08:20:43Z",
+          "sha256": "3f6041af8f828299989028b69b919388607ba337c4c5dce3feb19d22ad550b34",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/18/pmck-terus-berkembang-sebagai-perkhidmatan-kesihatan-demi-kesejahteraan-rakyat-raja-puan-muda-kedah/": {
+          "id": 7389,
+          "title": "PMCK TERUS BERKEMBANG SEBAGAI PERKHIDMATAN KESIHATAN DEMI KESEJAHTERAAN RAKYAT – RAJA PUAN MUDA KEDAH",
+          "publishedAt": "2026-07-18T03:14:32Z",
+          "modifiedAt": "2026-08-11T08:19:50Z",
+          "sha256": "7d6e3c3c423bc4556ef6f1b593f606d5c8a9058439fa1c6983077e672bfc685e",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/19/program-pementoran-menerap-elemen-psikologi-secara-profesional/": {
+          "id": 7395,
+          "title": "PROGRAM PEMENTORAN MENERAP ELEMEN PSIKOLOGI SECARA PROFESIONAL",
+          "publishedAt": "2026-07-19T03:23:00Z",
+          "modifiedAt": "2026-08-11T08:18:57Z",
+          "sha256": "219c37eb72ec7ce5b0dba49a7e3e34aa1f3760e710566543240ce5327f5b7307",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/23/tmb100-dan-tour-geo-dkedah-2026-mendapat-sambutan-peserta-dalam-dan-luar-negara/": {
+          "id": 7398,
+          "title": "TMB100 DAN TOUR GEO D’KEDAH 2026 ‎MENDAPAT SAMBUTAN PESERTA DALAM DAN LUAR NEGARA",
+          "publishedAt": "2026-07-23T07:31:05Z",
+          "modifiedAt": "2026-08-11T08:18:28Z",
+          "sha256": "4c5defa0ff7a0f2946598c7c604aaf69244bc824fb2e0653f84907578b671af2",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/25/1300-peserta-dari-seluruh-negara-memeriahkan-program-kedah-esport-challenge-3-0/": {
+          "id": 7403,
+          "title": "‎1,300 PESERTA DARI SELURUH NEGARA MEMERIAHKAN PROGRAM KEDAH ESPORT CHALLENGE 3.0",
+          "publishedAt": "2026-07-25T07:38:43Z",
+          "modifiedAt": "2026-08-11T08:17:51Z",
+          "sha256": "763c51b97773978332a8688f5e030b863e3a8bd04fb480115112f2363f0b8ab9",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/27/the-greater-kedah-dapat-memacu-pembangunan-negeri-dengan-lebih-maju-dan-berdaya-saing/": {
+          "id": 7410,
+          "title": "‎THE GREATER KEDAH DAPAT MEMACU PEMBANGUNAN NEGERI DENGAN LEBIH MAJU DAN BERDAYA SAING",
+          "publishedAt": "2026-07-27T08:13:42Z",
+          "modifiedAt": "2026-08-11T08:17:04Z",
+          "sha256": "01034d10ead52be236e4fa6f89837422dcaeb356ce29241eefcff82a1f102d78",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/28/kedah-akan-menjadi-peneraju-hab-sekuriti-makanan-negara/": {
+          "id": 7422,
+          "title": "KEDAH AKAN MENJADI PENERAJU HAB SEKURITI MAKANAN NEGARA",
+          "publishedAt": "2026-07-28T08:23:35Z",
+          "modifiedAt": "2026-08-11T08:29:25Z",
+          "sha256": "c9ff7a0d1fa7e78bb707080c5ee3468283e8ecad1f596b4b9956a9cbf5e77a4c",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/08/25/salam-maulidur-rasul-1448-h/": {
+          "id": 7456,
+          "title": "Salam Maulidur Rasul 1448 H",
+          "publishedAt": "2026-08-25T03:35:45Z",
+          "modifiedAt": "2026-08-25T03:35:45Z",
+          "sha256": "a9a344a63d239223df204277fdb346bbeb23cd7dc117a34dde1beb4985cd6a9a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/29/sultan-kedah-berkenan-berangkat-ke-majlis-bacaan-yasin-sempena-sambutan-hari-pahlawan-3/": {
+          "id": 7459,
+          "title": "SULTAN KEDAH BERKENAN BERANGKAT KE MAJLIS BACAAN YASIN SEMPENA SAMBUTAN HARI PAHLAWAN",
+          "publishedAt": "2026-07-29T02:11:39Z",
+          "modifiedAt": "2026-08-26T02:15:47Z",
+          "sha256": "cc4543d9e3f4b65eefd89b3dde3304e43430f85a6576832edde46678a5d434b9",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/30/program-jelajah-aspirasi-bebas-dadah-perkukuh-komitmen-lahir-komuniti-sihat/": {
+          "id": 7464,
+          "title": "‎PROGRAM JELAJAH ASPIRASI BEBAS DADAH PERKUKUH KOMITMEN LAHIR KOMUNITI SIHAT",
+          "publishedAt": "2026-07-30T02:56:23Z",
+          "modifiedAt": "2026-08-26T03:39:53Z",
+          "sha256": "341f6c56024611b9e41ecbfe3969173e15f5db836c00657f15402da8c724aea4",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/31/istiadat-perbarisan-dan-meletak-kalungan-bunga-sempena-hari-pahlawan-2026/": {
+          "id": 7468,
+          "title": "‎ISTIADAT PERBARISAN DAN MELETAK KALUNGAN BUNGA SEMPENA HARI PAHLAWAN 2026 ‎",
+          "publishedAt": "2026-07-31T03:40:13Z",
+          "modifiedAt": "2026-08-26T03:47:59Z",
+          "sha256": "2f4e3f49a770b70aefb2709ef7415ac75a3691fbb48ff7addfedf9a4dd4d90ae",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/07/31/kedah-terus-pelihara-khazanah-hutan-melalui-ekspedisi-saintifik-siri-ke-5/": {
+          "id": 7475,
+          "title": "KEDAH TERUS PELIHARA KHAZANAH HUTAN MELALUI EKSPEDISI SAINTIFIK SIRI KE-5",
+          "publishedAt": "2026-07-31T03:51:40Z",
+          "modifiedAt": "2026-08-26T03:56:24Z",
+          "sha256": "fb2667dd83d9eeee3e5a0335bf38d93fca261dd8db3ded011e2b42a60741c5d5",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/08/30/selamat-menyambut-hari-kebangsaan-ke-69/": {
+          "id": 7485,
+          "title": "Selamat Menyambut Hari Kebangsaan Ke – 69",
+          "publishedAt": "2026-08-30T14:06:33Z",
+          "modifiedAt": "2026-08-30T14:06:33Z",
+          "sha256": "57639ab4364d7152faaced090b4ac68feffc731000e38c9b90c16f52f71589e6",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/09/08/hebahan-sesi-libat-urus-online-cadangan-bajet-kerajaan-negeri-kedah-tahun-2027/": {
+          "id": 7498,
+          "title": "HEBAHAN SESI LIBAT URUS ONLINE CADANGAN BAJET KERAJAAN NEGERI KEDAH TAHUN 2027",
+          "publishedAt": "2026-09-08T07:34:28Z",
+          "modifiedAt": "2026-09-08T07:34:28Z",
+          "sha256": "e112cdd6aee35b67486e08201a5ec8e4dcf3df8b948055b6b4b8ff038c575b5a",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/09/15/selamat-hari-malaysia-16-september-2026/": {
+          "id": 7515,
+          "title": "SELAMAT HARI MALAYSIA 16 SEPTEMBER 2026",
+          "publishedAt": "2026-09-15T15:22:13Z",
+          "modifiedAt": "2026-09-15T15:22:13Z",
+          "sha256": "7990ff3120bb7c11955f704140e0c1f8593b7724bcc534f77c8d0493ec17d039",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/08/01/temasya-orang-kedah-2026-angkat-identiti-dan-warisan-kedah-ke-peringkat-antarabangsa/": {
+          "id": 7517,
+          "title": "‎TEMASYA ORANG KEDAH 2026 ANGKAT IDENTITI DAN WARISAN KEDAH KE PERINGKAT ANTARABANGSA",
+          "publishedAt": "2026-08-01T02:52:30Z",
+          "modifiedAt": "2026-09-22T02:59:33Z",
+          "sha256": "aafd43e25ed4729427e23bda4389844c3e2a98a94e194e8ed9046163aced7b26",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/08/15/colours-of-malaysia-com-siri-3-serlah-kepelbagaian-seni-budaya-malaysia/": {
+          "id": 7523,
+          "title": "‎COLOURS OF MALAYSIA (COM’) SIRI 3 SERLAH KEPELBAGAIAN SENI BUDAYA MALAYSIA",
+          "publishedAt": "2026-08-15T03:02:14Z",
+          "modifiedAt": "2026-09-22T03:43:49Z",
+          "sha256": "f43751f5b12fec19795ce5ab79795cac7d8f2e441b9277abd7dd8c6a325289a4",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/08/17/kibar-jalur-gemilang-bangkitkan-semangat-patriotisme-dan-kecintaan-kepada-tanah-air/": {
+          "id": 7528,
+          "title": "KIBAR JALUR GEMILANG : BANGKITKAN SEMANGAT PATRIOTISME DAN KECINTAAN KEPADA TANAH AIR ‎",
+          "publishedAt": "2026-08-17T03:40:20Z",
+          "modifiedAt": "2026-09-22T03:42:51Z",
+          "sha256": "c35aeae82b981b62913917bd68b7d4e7495a6e15771b9617c0b1cbc4f1309e4f",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        },
+        "https://www.kedah.gov.my/index.php/2026/08/17/kerajaan-negeri-berjaya-melaksanakan-penstrukturan-semula-industri-air/": {
+          "id": 7531,
+          "title": "‎KERAJAAN NEGERI BERJAYA MELAKSANAKAN PENSTRUKTURAN SEMULA INDUSTRI AIR",
+          "publishedAt": "2026-08-17T06:59:03Z",
+          "modifiedAt": "2026-09-22T07:01:20Z",
+          "sha256": "6cb5b830f0ddff08f04182c319cda787362ba45234a766205753505bad0e67c1",
+          "relevant": false,
+          "pdfUrls": [],
+          "unverifiedPdfUrls": []
+        }
+      },
+      "documents": {
+        "https://www.kedah.gov.my/wp-content/uploads/2026/01/Cuti-Peristiwa-Thaipusam-Negeri-Kedah-Darul-Aman-2026.pdf": {
+          "sha256": "c4cf0a8cc3f9eef0d29a061b300c68ab5808762a211c12104834f19bc07cdd90",
+          "bytes": 676107
+        },
+        "https://www.kedah.gov.my/wp-content/uploads/2026/03/HARI-KELEPASAN-AM-TAMBAHAN-SEMPENA-HARI-RAYA-AIDILFITRI-TAHUN-2026.pdf": {
+          "sha256": "1cf6fecc0a0d53c098c9baad64a309158b25fcded3f7b71b6dd0c47ad6ae953c",
+          "bytes": 588391
+        }
+      },
+      "feedItemCount": 10,
+      "archivePostCount": 263,
+      "feedItems": [
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/09/15/selamat-hari-malaysia-16-september-2026/",
+          "guid": "https://www.kedah.gov.my/?p=7515"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/09/08/hebahan-sesi-libat-urus-online-cadangan-bajet-kerajaan-negeri-kedah-tahun-2027/",
+          "guid": "https://www.kedah.gov.my/?p=7498"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/08/30/selamat-menyambut-hari-kebangsaan-ke-69/",
+          "guid": "https://www.kedah.gov.my/?p=7485"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/08/25/salam-maulidur-rasul-1448-h/",
+          "guid": "https://www.kedah.gov.my/?p=7456"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/08/17/kerajaan-negeri-berjaya-melaksanakan-penstrukturan-semula-industri-air/",
+          "guid": "https://www.kedah.gov.my/?p=7531"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/08/17/kibar-jalur-gemilang-bangkitkan-semangat-patriotisme-dan-kecintaan-kepada-tanah-air/",
+          "guid": "https://www.kedah.gov.my/?p=7528"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/08/15/colours-of-malaysia-com-siri-3-serlah-kepelbagaian-seni-budaya-malaysia/",
+          "guid": "https://www.kedah.gov.my/?p=7523"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/08/01/temasya-orang-kedah-2026-angkat-identiti-dan-warisan-kedah-ke-peringkat-antarabangsa/",
+          "guid": "https://www.kedah.gov.my/?p=7517"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/07/31/kedah-terus-pelihara-khazanah-hutan-melalui-ekspedisi-saintifik-siri-ke-5/",
+          "guid": "https://www.kedah.gov.my/?p=7475"
+        },
+        {
+          "url": "https://www.kedah.gov.my/index.php/2026/07/31/istiadat-perbarisan-dan-meletak-kalungan-bunga-sempena-hari-pahlawan-2026/",
+          "guid": "https://www.kedah.gov.my/?p=7468"
+        }
+      ]
     }
   }
 }

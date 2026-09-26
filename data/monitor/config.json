@@ -31,5 +31,35 @@
       "includeTextPattern": "\\b(?:cuti|kelepasan\\s+am|public\\s+holidays?|special\\s+holidays?)\\b",
       "minimumDocumentLinks": 10
     }
+  },
+  {
+    "id": "johor-announcements",
+    "name": "Johor official RSS and announcement archive",
+    "url": "https://www.johor.gov.my/feed",
+    "allowedHosts": ["www.johor.gov.my", "johor.gov.my"],
+    "includeUrlPattern": "\\.pdf(?:$|\\?)",
+    "minimumLinks": 0,
+    "trustTier": 2,
+    "rss": {
+      "archiveUrl": "https://www.johor.gov.my/wp-json/wp/v2/posts",
+      "includeTextPattern": "\\b(?:cuti|kelepasan\\s+am|public\\s+holidays?|special\\s+holidays?)\\b",
+      "maxArchivePages": 10,
+      "minimumArchivePosts": 10
+    }
+  },
+  {
+    "id": "kedah-announcements",
+    "name": "Kedah official RSS and announcement archive",
+    "url": "https://www.kedah.gov.my/index.php/feed/",
+    "allowedHosts": ["www.kedah.gov.my", "kedah.gov.my"],
+    "includeUrlPattern": "\\.pdf(?:$|\\?)",
+    "minimumLinks": 0,
+    "trustTier": 2,
+    "rss": {
+      "archiveUrl": "https://www.kedah.gov.my/index.php/wp-json/wp/v2/posts",
+      "includeTextPattern": "\\b(?:cuti|kelepasan\\s+am|public\\s+holidays?|special\\s+holidays?)\\b",
+      "maxArchivePages": 10,
+      "minimumArchivePosts": 10
+    }
   }
 ]

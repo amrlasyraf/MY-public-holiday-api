@@ -1,6 +1,6 @@
 # Official announcement source research
 
-Checked: 26 September 2026. This is a research inventory. Subsequent implementation enabled the Perlis PDF-index pilot alongside the two BKPP indexes; see [monitoring](monitoring.md). All other expansion entries remain research candidates. No holiday records or publication rules were changed.
+Checked: 26 September 2026. This is a research inventory. Subsequent implementation enabled Perlis plus Johor and Kedah RSS/archive monitoring alongside the two BKPP indexes; see [monitoring](monitoring.md). Other expansion entries remain research candidates. No holiday records or publication rules were changed.
 
 ## Findings
 
@@ -49,7 +49,7 @@ These are source-discovery examples, not new accepted records or a completed lab
 ## Proposed rollout
 
 1. **Perlis PDF index pilot (implemented).** Extracts table-row context and monitors holiday-related PDF candidates. Measure unrelated alerts and missed candidates before expanding. Other ordinary press statements are counted for index health but not downloaded.
-2. **Johor and Kedah RSS discovery.** Add a feed/article adapter rather than forcing RSS through the PDF-only link extractor. Persist item identity and content hashes; retrieve linked documents. Both observed feeds contain only ten entries, so an outage requires archive reconciliation.
+2. **Johor and Kedah RSS discovery (implemented).** Reconcile the full public WordPress posts archive on every run, retain identities and article hashes, and fingerprint linked official PDFs. This catches posts outside the ten-entry feed window.
 3. **Kelantan and Selangor document indexes; Penang RSS.** Add category/embedded-index traversal and route-based downloads. Verify that retained article/table text contains the date and subject needed for review.
 4. **Sabah and Sarawak gazettes, then JWP and Pahang.** Add bounded pagination, year rollover and notice-level relevance filtering. Keep Sabah, Sarawak and Labuan applicability distinct. Many gazette issues concern unrelated matters.
 5. **Terengganu and retrieval gaps.** Establish holiday-announcement coverage beyond the current news archive. Recheck Melaka, Negeri Sembilan and Perak from the GitHub runner; the local errors were `UNABLE_TO_VERIFY_LEAF_SIGNATURE`. Investigate the certificate chain/runtime trust store without disabling certificate validation.
@@ -61,4 +61,4 @@ For each pilot, inspect the site's current robots/publishing conditions and esta
 - Direct probes recorded HTTP responses, feed item counts, page links and certificate errors on 26 September 2026. Local evidence: `output/source-research/access-probe.json`, `followup-probe.json`, and `index-probe.json` (ignored by Git). The counts above describe this snapshot and can change.
 - Search results were used to discover official sources; direct requests exposed a stale Terengganu URL that search still indexed. Search snippets alone must not establish monitor health or holiday legitimacy.
 - The GitHub workflow-runs API still returned 404 from this session. The earlier supplied artifact establishes a successful run before the PDF-content change; a successful post-change scheduled run remains unverified.
-- The research initially left configuration unchanged; the subsequent Perlis pilot added a third source to `data/monitor/config.json`. Current scope is the two BKPP indexes plus selected Perlis PDFs. This document does not authorize automatic holiday publication or claim complete ad-hoc coverage.
+- The research initially left configuration unchanged; subsequent pilots expanded `data/monitor/config.json` to five sources: two BKPP indexes, selected Perlis PDFs, and Johor/Kedah RSS with archive reconciliation. This document does not authorize automatic holiday publication or claim complete ad-hoc coverage.
