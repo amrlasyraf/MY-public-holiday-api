@@ -2,6 +2,8 @@
 
 ## What is monitored
 
+For researched expansion candidates across all states and federal territories, see [Official announcement source research](announcement-sources.md). Those candidates are not yet enabled.
+
 The first monitor set covers the two most important Tier 1 BKPP indexes:
 
 - annual federal and state holiday schedules;
