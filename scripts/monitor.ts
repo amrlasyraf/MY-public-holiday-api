@@ -14,12 +14,14 @@ export type MonitorConfig = {
 };
 
 export type MonitoredLink = { title: string; url: string };
+type DocumentFingerprint = { sha256: string; bytes: number };
 export type SourceSnapshot = {
   sourceId: string;
   sourceUrl: string;
   checkedAt: string;
   hash: string;
   links: MonitoredLink[];
+  documents?: Record<string, DocumentFingerprint>;
 };
 
 type Baseline = {
@@ -36,6 +38,7 @@ type SourceChange = {
   currentHash: string;
   added: MonitoredLink[];
   removed: MonitoredLink[];
+  contentChanged: { url: string; title: string; previousSha256: string; currentSha256: string }[];
 };
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
@@ -101,7 +104,6 @@ export function compareSnapshots(
   previous: SourceSnapshot | undefined,
   current: SourceSnapshot
 ): SourceChange | null {
-  if (previous?.hash === current.hash) return null;
   const previousByUrl = new Map((previous?.links ?? []).map((link) => [link.url, link]));
   const currentByUrl = new Map(current.links.map((link) => [link.url, link]));
   const added = current.links.filter((link) => {
@@ -112,6 +114,14 @@ export function compareSnapshots(
     const next = currentByUrl.get(link.url);
     return !next || next.title !== link.title;
   });
+  const contentChanged = current.links.flatMap((link) => {
+    const old = previous?.documents?.[link.url];
+    const next = current.documents?.[link.url];
+    return old && next && old.sha256 !== next.sha256
+      ? [{ ...link, previousSha256: old.sha256, currentSha256: next.sha256 }]
+      : [];
+  });
+  if (previous?.hash === current.hash && !contentChanged.length) return null;
   return {
     sourceId: config.id,
     sourceName: config.name,
@@ -119,8 +129,75 @@ export function compareSnapshots(
     previousHash: previous?.hash ?? null,
     currentHash: current.hash,
     added,
-    removed
+    removed,
+    contentChanged
   };
+}
+
+// Hash the actual bytes on every run; HTTP validators alone can miss replacements.
+export async function fetchPdfFingerprint(
+  url: string, config: MonitorConfig, fetcher: typeof fetch = fetch
+): Promise<DocumentFingerprint> {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 20_000);
+  const maxBytes = 25 * 1024 * 1024;
+  try {
+    let target = url;
+    for (let redirects = 0; redirects <= 5; redirects++) {
+      const parsed = new URL(target);
+      if (parsed.protocol !== "https:" || !config.allowedHosts.includes(parsed.hostname)) {
+        throw new Error("PDF URL or redirect is outside the allowed official hosts");
+      }
+      const response = await fetcher(target, {
+        headers: { "user-agent": "MalaysiaPublicHolidayAPI-Monitor/0.2", "cache-control": "no-cache" },
+        redirect: "manual", signal: controller.signal
+      });
+      if ([301, 302, 303, 307, 308].includes(response.status)) {
+        await response.body?.cancel();
+        const location = response.headers.get("location");
+        if (!location) throw new Error("PDF redirect has no location");
+        target = new URL(location, target).toString();
+        continue;
+      }
+      if (!response.ok || response.status === 206) {
+        await response.body?.cancel();
+        throw new Error(`PDF HTTP ${response.status}`);
+      }
+      if (Number(response.headers.get("content-length")) > maxBytes) {
+        await response.body?.cancel();
+        throw new Error("PDF exceeds 25 MiB limit");
+      }
+      if (!response.body) throw new Error("Empty PDF response");
+      const reader = response.body.getReader();
+      const hash = createHash("sha256");
+      let bytes = 0;
+      let prefix = Buffer.alloc(0);
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          bytes += value.byteLength;
+          if (bytes > maxBytes) throw new Error("PDF exceeds 25 MiB limit");
+          if (prefix.length < 1024) prefix = Buffer.concat([prefix, value.subarray(0, 1024 - prefix.length)]);
+          hash.update(value);
+        }
+        if (!prefix.includes(Buffer.from("%PDF-"))) throw new Error("Response is not a PDF");
+        return { sha256: hash.digest("hex"), bytes };
+      } finally {
+        await reader.cancel();
+        reader.releaseLock();
+      }
+    }
+    throw new Error("Too many PDF redirects");
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+export function changeSignature(changes: SourceChange[]): string {
+  return createHash("sha256")
+    .update(JSON.stringify(changes.map(({ sourceId, currentHash, contentChanged }) => ({ sourceId, currentHash, contentChanged }))))
+    .digest("hex").slice(0, 16);
 }
 
 async function fetchHtml(config: MonitorConfig): Promise<string> {
@@ -155,6 +232,10 @@ function markdownReport(checkedAt: string, signature: string, changes: SourceCha
     lines.push(...(change.added.length ? change.added.map((link) => `- [${link.title}](${link.url})`) : ["- None"]));
     lines.push("", "### Removed or retitled links", "");
     lines.push(...(change.removed.length ? change.removed.map((link) => `- [${link.title}](${link.url})`) : ["- None"]));
+    lines.push("", "### Changed PDF content", "");
+    lines.push(...(change.contentChanged.length ? change.contentChanged.map((document) =>
+      `- [${document.title}](${document.url}): SHA-256 ${document.previousSha256} → ${document.currentSha256}`
+    ) : ["- None"]));
     lines.push("");
   }
   if (errors.length) lines.push("## Errors", "", ...errors.map((error) => `- ${error}`), "");
@@ -163,6 +244,8 @@ function markdownReport(checkedAt: string, signature: string, changes: SourceCha
 
 async function run(): Promise<void> {
   const updateBaseline = process.argv.includes("--update-baseline");
+  const initializeContent = process.argv.includes("--initialize-content-baseline");
+  if (updateBaseline && initializeContent) throw new Error("Choose one baseline operation");
   const configs = JSON.parse(await readFile(configPath, "utf8")) as MonitorConfig[];
   let baseline: Baseline = { version: 1, updatedAt: "", sources: {} };
   try {
@@ -171,16 +254,42 @@ async function run(): Promise<void> {
     if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
   }
 
+  // Reuse accepted source checksums when migrating the older link-only baseline.
+  const sources = JSON.parse(await readFile(path.join(rootDirectory, "data", "sources.json"), "utf8")) as
+    { url: string; checksumAlgorithm?: string; checksum?: string }[];
+  for (const snapshot of Object.values(baseline.sources)) {
+    snapshot.documents ??= {};
+    for (const link of snapshot.links) {
+      const source = sources.find((source) => source.url === link.url && source.checksumAlgorithm === "sha256");
+      if (!snapshot.documents[link.url] && source?.checksum) {
+        snapshot.documents[link.url] = { sha256: source.checksum, bytes: 0 };
+      }
+    }
+  }
+
   const checkedAt = new Date().toISOString();
   const currentSources: Record<string, SourceSnapshot> = {};
   const changes: SourceChange[] = [];
   const errors: string[] = [];
+  const unbaselinedDocuments: string[] = [];
+  const downloads = new Map<string, DocumentFingerprint>();
 
   for (const config of configs) {
     try {
       const snapshot = snapshotFromHtml(config, await fetchHtml(config), checkedAt);
       if (snapshot.links.length < config.minimumLinks) {
         throw new Error(`Expected at least ${config.minimumLinks} official links, found ${snapshot.links.length}`);
+      }
+      snapshot.documents = {};
+      for (const link of snapshot.links) {
+        try {
+          const fingerprint = downloads.get(link.url) ?? await fetchPdfFingerprint(link.url, config);
+          downloads.set(link.url, fingerprint);
+          snapshot.documents[link.url] = fingerprint;
+          if (!baseline.sources[config.id]?.documents?.[link.url]) unbaselinedDocuments.push(link.url);
+        } catch (error) {
+          errors.push(`${config.id}: ${link.url}: ${error instanceof Error ? error.message : String(error)}`);
+        }
       }
       currentSources[config.id] = snapshot;
       const change = compareSnapshots(config, baseline.sources[config.id], snapshot);
@@ -190,15 +299,16 @@ async function run(): Promise<void> {
     }
   }
 
-  const signature = createHash("sha256")
-    .update(JSON.stringify(changes.map(({ sourceId, currentHash }) => ({ sourceId, currentHash }))))
-    .digest("hex")
-    .slice(0, 16);
+  const signature = changeSignature(changes);
 
   await mkdir(outputDirectory, { recursive: true });
-  const report = { version: 1, checkedAt, signature, changed: changes.length > 0, changes, errors };
+  const report = { version: 2, checkedAt, signature, changed: changes.length > 0, changes, errors,
+    unbaselinedDocuments, sources: currentSources };
   await writeFile(path.join(outputDirectory, "report.json"), `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  await writeFile(path.join(outputDirectory, "report.md"), markdownReport(checkedAt, signature, changes, errors), "utf8");
+  const initializationNote = unbaselinedDocuments.length
+    ? `\n## PDF fingerprints without a previous baseline\n\n${unbaselinedDocuments.map((url) => `- ${url}`).join("\n")}\n\nThese are first observations, not proof that content is unchanged.\n`
+    : "";
+  await writeFile(path.join(outputDirectory, "report.md"), markdownReport(checkedAt, signature, changes, errors) + initializationNote, "utf8");
 
   if (errors.length) {
     console.error(`Monitor failed for ${errors.length} source(s). See output/monitor/report.md.`);
@@ -206,7 +316,12 @@ async function run(): Promise<void> {
     return;
   }
 
-  if (updateBaseline) {
+  if (initializeContent && changes.length) {
+    console.error("Content baseline initialization refused: existing links or accepted PDF checksums changed. Review the report.");
+    process.exitCode = 2;
+    return;
+  }
+  if (updateBaseline || initializeContent) {
     const nextBaseline: Baseline = { version: 1, updatedAt: checkedAt, sources: currentSources };
     await writeFile(baselinePath, `${JSON.stringify(nextBaseline, null, 2)}\n`, "utf8");
     console.log(`Updated baseline for ${Object.keys(currentSources).length} sources.`);
@@ -216,8 +331,11 @@ async function run(): Promise<void> {
   if (changes.length) {
     console.log(`Detected ${changes.length} changed source(s); signature ${signature}.`);
     process.exitCode = 2;
+  } else if (unbaselinedDocuments.length) {
+    console.error("PDF content baseline is incomplete. Run npm run monitor:initialize-content after reviewing the report.");
+    process.exitCode = 1;
   } else {
-    console.log(`No meaningful changes across ${configs.length} official sources.`);
+    console.log(`No changes across ${configs.length} official sources and ${downloads.size} PDFs.`);
   }
 }
 

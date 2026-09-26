@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T13:14:05.547Z",
+  "updatedAt": "2026-09-26T13:59:03.212Z",
   "sources": {
     "bkpp-annual-holidays": {
       "sourceId": "bkpp-annual-holidays",
       "sourceUrl": "https://www.kabinet.gov.my/hari-kelepasan-am/",
-      "checkedAt": "2026-09-14T13:14:05.547Z",
+      "checkedAt": "2026-09-26T13:59:03.212Z",
       "hash": "6c95f4d42ba984d90b3d79d314d3ea61f9541f699733feba816677dce1ef660b",
       "links": [
         {
@@ -28,12 +28,34 @@
           "url": "https://www.kabinet.gov.my/storage/2026/08/HKA_2027.pdf",
           "title": "HKA_2027.pdf"
         }
-      ]
+      ],
+      "documents": {
+        "https://www.kabinet.gov.my/storage/2024/11/hka_2023.pdf": {
+          "sha256": "fa066468e5a05c19671623d9e2ab93ac8ef2c09bb911a9f9ad3c6ddd5e3992af",
+          "bytes": 133566
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/hka_2024.pdf": {
+          "sha256": "d99e22cfe3c64c1480065de253438e2d0fe448df9a820336f41f40e5bada43bc",
+          "bytes": 1022569
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/hka_2025.pdf": {
+          "sha256": "0f8ffdb10eef512e975abaa841e113189446466269b801756b8a555c3008e37a",
+          "bytes": 1676347
+        },
+        "https://www.kabinet.gov.my/storage/2025/08/HKA-2026.pdf": {
+          "sha256": "415023261014e30880b0fbb7a40c47a9655605183ef976204489d760fed769a3",
+          "bytes": 374698
+        },
+        "https://www.kabinet.gov.my/storage/2026/08/HKA_2027.pdf": {
+          "sha256": "4b13d6b956ebba64e8ca80209f838439b2956a193fa37957e6446531752f96f9",
+          "bytes": 153834
+        }
+      }
     },
     "bkpp-acts-gazettes": {
       "sourceId": "bkpp-acts-gazettes",
       "sourceUrl": "https://www.kabinet.gov.my/akta-dan-warta/",
-      "checkedAt": "2026-09-14T13:14:05.547Z",
+      "checkedAt": "2026-09-26T13:59:03.212Z",
       "hash": "666b657547d2f05d59327f70ae1702884181df676dd810150bf562e729f12cf5",
       "links": [
         {
@@ -148,7 +170,121 @@
           "url": "https://www.kabinet.gov.my/storage/2026/03/PUB-112_2026.pdf",
           "title": "PUB-112_2026.pdf"
         }
-      ]
+      ],
+      "documents": {
+        "https://www.kabinet.gov.my/storage/2024/11/10122020_eWarta_Persekutuan.pdf": {
+          "sha256": "6142a2d1e9d57d2647c4565e45ee93a305f7cc37d806f8d66c31eef600b89d29",
+          "bytes": 177069
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/1948_06_17_holidayordinance_sabahcap56.pdf": {
+          "sha256": "2636cf531789256dd7bca8025e6aa895069ec3aa5ebcb522f2e8e0ed045b3242",
+          "bytes": 96323
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/1951_12_31_act369.pdf": {
+          "sha256": "d2d42b9434e4959c8abfd79607f04672c663515c45504ef146081799a494b741",
+          "bytes": 16957
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/1951_12_31_akta369.pdf": {
+          "sha256": "da5a32cea816ad63e17e19e1391a5f32e2b35676a6d8e9fb59086fbc11c4ae3a",
+          "bytes": 107879
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/2005_12_18_labuan_pindaan2_1984.pdf": {
+          "sha256": "7803caaba825dccac6decda5e238ff7338db95f381a8979438cd27ff601852b1",
+          "bytes": 310433
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/2012_11_22_labuan_pindaan_no2_1984.pdf": {
+          "sha256": "f06fb8a5c37090e96157e07ce4c89262ac4bd081bf47960a32d438b66dcb1982",
+          "bytes": 185255
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/2013_11_28_pub474_475.pdf": {
+          "sha256": "9d9a338d180096c669c14b36e758b1fce3546cd4d1f47f133e8497bfc411dbcb",
+          "bytes": 338317
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20191220_warta_cuti_24_dis_sabah.pdf": {
+          "sha256": "95a63582afd86fe4e25db7a03b96eadd1dcdd009b12933bbbc9f4cea6252a345",
+          "bytes": 182071
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20200513_Warta_HKA_2020.pdf": {
+          "sha256": "c5f0c365c6f420e8cb0847d670338d2a1e0633cf6f4e2738eda1250259281c5c",
+          "bytes": 277687
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20200513_Warta_YdPA_2020.pdf": {
+          "sha256": "1baf84b19e031bac776cd2ee5a771944ac174bc1f4377498185b1bccf9c871e9",
+          "bytes": 164114
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20200709_warta_hka2021.pdf": {
+          "sha256": "5d85960ea4a83c5e4044beff07e53234581618eaabbeedbed890326089659fe9",
+          "bytes": 294727
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20210624_warta_hka2022.pdf": {
+          "sha256": "974acf709c2d79b9ff76fd636425c07d86f614cd61c4a4e4f4a851558d445b1e",
+          "bytes": 357348
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20211202_PUB_618.pdf": {
+          "sha256": "71e66373f2f87f4f31a645e70e9c27e0fc02a21916e8fb83212bd306da1e6122",
+          "bytes": 386400
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20211202_PUB_619.pdf": {
+          "sha256": "e81304a64259b14258f005bb177f2ad4077f19d6575e72095b378e5f6d76801c",
+          "bytes": 387410
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20220725_warta_hka2023.pdf": {
+          "sha256": "26f509000b41346bb0bd3fd4964b101a4fc121277a13949771a564957a2aa634",
+          "bytes": 563261
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20230420_PUB_154.pdf": {
+          "sha256": "be014d55e5d14e0f21bda972935b3c157c59bfb04552da62ec426a8d98e678cd",
+          "bytes": 389448
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20230420_PUB_155.pdf": {
+          "sha256": "6f4242bccd2bfc89a5c935ab1ed1c5920fdc6463c3cb5b30ba0815d2ad5f210b",
+          "bytes": 390983
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20230810_HARI_KELEPASAN_2024.pdf": {
+          "sha256": "d04c553cc442ed6f1a8f0a83b0d1f39550b10bc07393cd426dc10a9ecf3b5551",
+          "bytes": 449145
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20230929_hari_kelepasan_am.pdf": {
+          "sha256": "8ce28469fc7f1ae6b8d66b28d296829e2ffc5c565e756281d1a13fe8bf7379b1",
+          "bytes": 102129
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/20240812_WJW24.pdf": {
+          "sha256": "740cfef0261ecd3f7dcfcb7137f9cf8c22b25b5eade9ff62f377936612b6a1e9",
+          "bytes": 521259
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/sarawak_public_holidays_ord_chapter8.pdf": {
+          "sha256": "8b76a79bb101b423b737db7ada3efee5b47eb690b33dcf607c6f6fa377c3a3ba",
+          "bytes": 248490
+        },
+        "https://www.kabinet.gov.my/storage/2024/11/warta_hari_kemerdekaan_sarawak_2016.pdf": {
+          "sha256": "317a43ec5e6ce5a7dd2e14997dfb5a8d07235a601d62be13c93f564f5d836711",
+          "bytes": 67922
+        },
+        "https://www.kabinet.gov.my/storage/2025/03/20241218-warta-17853.pdf": {
+          "sha256": "03e64c48f31b0d240ba0c55741814400546be38f39dfeab15ae539a433dc7e08",
+          "bytes": 116662
+        },
+        "https://www.kabinet.gov.my/storage/2025/08/15082025-P.U.-B-305-2025-Semenanjung.pdf": {
+          "sha256": "78435a8eecbd9aa9bf38d33966eef42058890555dfbe7523cc595be23fefa3d0",
+          "bytes": 155435
+        },
+        "https://www.kabinet.gov.my/storage/2025/08/15082025-P.U.-B-306-2025-WP-Labuan.pdf": {
+          "sha256": "79a7c08ddb0e002addaa7c94a3a618e6974bf69614cceb3c555a47e2e838cf54",
+          "bytes": 157214
+        },
+        "https://www.kabinet.gov.my/storage/2025/09/GN-33499-GN-33501-TS-28-8-2025-JABATAN-PERDANA-MENTERIBHG-KABINETPERLEMBAGAAN-PERHUBUNGAN-ANTARA-KERAJAAN-AGJ971.pdf": {
+          "sha256": "18172de78b51744cf850553d0f00424ff85bae5c499d62586712a9f80679fc57",
+          "bytes": 448137
+        },
+        "https://www.kabinet.gov.my/storage/2026/03/PUB-111_2026.pdf": {
+          "sha256": "3ed630f9574fce4cbf0e4ba6303a3f071505fc99e886c59b36a1dac12cfeda07",
+          "bytes": 158741
+        },
+        "https://www.kabinet.gov.my/storage/2026/03/PUB-112_2026.pdf": {
+          "sha256": "75b4ff6b202c4827d70f5f313d5d772f5bde12ddc1bcce771d7de412a3a12bf5",
+          "bytes": 187163
+        }
+      }
     }
   }
 }

@@ -47,7 +47,7 @@ GET http://localhost:8787/health
 npm run monitor
 ```
 
-The monitor compares meaningful official PDF links with the reviewed baseline. It writes evidence under the ignored `output/monitor/` directory and never edits holiday data. Read [docs/monitoring.md](docs/monitoring.md) before accepting a detected change.
+The monitor compares official PDF links and downloaded PDF content checksums with the reviewed baseline, including revisions at unchanged URLs. It writes evidence under the ignored `output/monitor/` directory and never edits holiday data. Read [docs/monitoring.md](docs/monitoring.md) before accepting a detected change.
 
 ## Data principle
 
