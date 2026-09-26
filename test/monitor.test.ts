@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { describe, expect, it, vi } from "vitest";
 import { changeSignature, compareSnapshots, extractMeaningfulLinks, fetchPdfFingerprint, snapshotFromHtml, type MonitorConfig } from "../scripts/monitor";
+import monitorConfigs from "../data/monitor/config.json";
 
 const config: MonitorConfig = {
   id: "test-source",
@@ -97,5 +98,54 @@ describe("official source monitor", () => {
     }));
     await expect(fetchPdfFingerprint("https://www.kabinet.gov.my/a.pdf", config, blocked)).rejects.toThrow("allowed official hosts");
     expect(blocked).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe("Perlis holiday discovery pilot", () => {
+  const perlis = monitorConfigs.find((source) => source.id === "perlis-media-statements")!;
+  const testConfig: MonitorConfig = { ...perlis, tableRows: { ...perlis.tableRows!, minimumDocumentLinks: 1 } };
+  // Fictional notices with the live portal's two-column, nested-div structure.
+  const row = (title: string, date = "31&nbsp;Disember 2030", file = "notice.pdf") =>
+    `<tr><td><div class="sppb-addon"><div>${title}<a href="/phocadownload/kenyataanmedia/${file}">Muat turun</a></div></div></td><td><div><span>${date}</span></div></td></tr>`;
+
+  it("retains row title and publication date, downloads only holiday candidates", () => {
+    const snapshot = snapshotFromHtml(testConfig, `<table>${row("CUTI PERISTIWA 1 JANUARI 2031")}${row("Pelancaran program", "2 Januari 2031", "program.pdf")}</table>`, "now");
+    expect(snapshot.indexDocumentCount).toBe(2);
+    expect(snapshot.links).toEqual([{
+      title: "CUTI PERISTIWA 1 JANUARI 2031 Muat turun",
+      url: "https://www.perlis.gov.my/phocadownload/kenyataanmedia/notice.pdf",
+      publishedDateLabel: "31 Disember 2030"
+    }]);
+  });
+
+  it("ignores unrelated new statements and site-wide holiday navigation", () => {
+    const first = snapshotFromHtml(testConfig, row("Hari kelepasan am"), "first");
+    const next = snapshotFromHtml(testConfig, `<nav>Cuti umum</nav>${row("Hari kelepasan am")}${row("Pelantikan pegawai", "tomorrow", "other.pdf")}`, "next");
+    expect(next.indexDocumentCount).toBe(2);
+    expect(compareSnapshots(testConfig, first, next)).toBeNull();
+  });
+
+  it.each(["TIADA CUTI TAMBAHAN", "PEMBATALAN CUTI", "Public holiday clarification", "Special holiday notice"])("retains %s for human review", (title) => {
+    expect(snapshotFromHtml(testConfig, row(title), "now").links).toHaveLength(1);
+  });
+
+  it("accepts a healthy index with zero candidates, but fails on missing table structure", () => {
+    expect(snapshotFromHtml(testConfig, row("Pelantikan pegawai"), "now").links).toEqual([]);
+    expect(() => snapshotFromHtml(testConfig, '<a href="/phocadownload/kenyataanmedia/cuti.pdf">Cuti</a>', "now")).toThrow("table rows");
+    expect(() => snapshotFromHtml(perlis, row("Cuti"), "now")).toThrow("at least 10");
+  });
+
+  it("reports corrected publication dates and removal from candidate scope", () => {
+    const first = snapshotFromHtml(testConfig, row("Cuti peristiwa"), "first");
+    const correction = snapshotFromHtml(testConfig, row("Cuti peristiwa", "30 Disember 2030"), "next");
+    expect(compareSnapshots(testConfig, first, correction)?.added[0].publishedDateLabel).toBe("30 Disember 2030");
+    const noLongerRelevant = snapshotFromHtml(testConfig, row("Pelantikan pegawai"), "next");
+    expect(compareSnapshots(testConfig, first, noLongerRelevant)?.removed).toEqual(first.links);
+  });
+
+  it("finds holiday filenames with generic labels but excludes off-host documents", () => {
+    expect(snapshotFromHtml(testConfig, row("Kenyataan media", "today", "CUTI%20KHAS.pdf"), "now").links).toHaveLength(1);
+    const external = row("Cuti").replace('/phocadownload/kenyataanmedia/notice.pdf', 'https://example.org/cuti.pdf');
+    expect(snapshotFromHtml(testConfig, row("Unrelated") + external, "now").links).toEqual([]);
   });
 });

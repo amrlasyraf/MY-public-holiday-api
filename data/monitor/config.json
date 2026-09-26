@@ -16,5 +16,20 @@
     "includeUrlPattern": "\\.pdf(?:$|\\?)",
     "minimumLinks": 10,
     "trustTier": 1
+  },
+  {
+    "id": "perlis-media-statements",
+    "name": "Perlis official holiday-related media statements",
+    "url": "https://www.perlis.gov.my/index.php/suk-perlis/info-umum/media1/kenyataan-media",
+    "allowedHosts": ["www.perlis.gov.my", "perlis.gov.my"],
+    "includeUrlPattern": "\\/phocadownload\\/kenyataanmedia\\/.*\\.pdf(?:$|\\?)",
+    "minimumLinks": 0,
+    "trustTier": 2,
+    "tableRows": {
+      "titleCell": 0,
+      "dateCell": 1,
+      "includeTextPattern": "\\b(?:cuti|kelepasan\\s+am|public\\s+holidays?|special\\s+holidays?)\\b",
+      "minimumDocumentLinks": 10
+    }
   }
 ]

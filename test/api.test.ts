@@ -129,8 +129,8 @@ describe("holiday API", () => {
     const response = await app.request("/v1/status");
     const body = await response.json() as { publishingMode: string; monitoring: { caveat: string; baselineSnapshotCount: number; activeSourceCount: number } };
     expect(body.publishingMode).toBe("review-first");
-    expect(body.monitoring.baselineSnapshotCount).toBe(2);
-    expect(body.monitoring.activeSourceCount).toBe(2);
+    expect(body.monitoring.baselineSnapshotCount).toBe(3);
+    expect(body.monitoring.activeSourceCount).toBe(3);
     expect(body.monitoring.caveat).toContain("not the latest successful workflow run");
   });
 

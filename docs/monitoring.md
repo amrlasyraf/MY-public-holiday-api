@@ -2,12 +2,20 @@
 
 ## What is monitored
 
-For researched expansion candidates across all states and federal territories, see [Official announcement source research](announcement-sources.md). Those candidates are not yet enabled.
+For researched expansion candidates across all states and federal territories, see [Official announcement source research](announcement-sources.md). Perlis is now enabled as a pilot; the other expansion candidates remain unconfigured.
 
 The first monitor set covers the two most important Tier 1 BKPP indexes:
 
 - annual federal and state holiday schedules;
 - public-holiday acts, gazettes, amendments and special declarations.
+
+The third source is the [Perlis official media-statement index](https://www.perlis.gov.my/index.php/suk-perlis/info-umum/media1/kenyataan-media). Its two-column table supplies the statement title and publication-date label. The date label is preserved as source context, never interpreted as the holiday date. The discovery index is registered as Tier 2; each relevant declaration still needs document-level authority and scope review before publication.
+
+For Perlis, only official PDFs whose table title or filename contains `cuti`, `kelepasan am`, `public holiday(s)` or `special holiday(s)` are downloaded and compared. Denials and cancellations intentionally remain candidates. Unrelated statement additions do not create alerts. The report records `indexDocumentCount` before filtering; at least ten official document links must still be found in valid table rows, so a broken layout cannot silently look like an empty holiday list. Zero matching candidates is otherwise valid, and removal of an existing candidate still produces a review alert.
+
+This keyword pilot can miss an announcement whose title and filename contain none of those terms, including image-only notices or a holiday first announced elsewhere. It does not assess the legal meaning of PDF contents. Check the index manually during the pilot to measure missed candidates and unnecessary alerts. The Perlis robots file was checked on 26 September 2026; the index and selected `/phocadownload/kenyataanmedia/` document path were not disallowed. The existing hourly schedule applies.
+
+Initial Perlis observation: 14 unique eligible PDF URLs in table rows, of which one matched the holiday filter (the notice published 31 December 2024 about 1 January 2025). Its fingerprint establishes monitoring from onboarding; it does not add a 2025 holiday or change the API's supported years. See the baseline for the exact observation time.
 
 The monitor fingerprints normalized official PDF links and downloads each linked PDF to compare its SHA-256 checksum. It detects revised documents even when the URL and title stay the same. Visitor counters, timestamps, scripts, styling and unrelated index-page text do not affect the link fingerprint.
 

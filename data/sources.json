@@ -54,5 +54,15 @@
     "jurisdictions": ["peninsular-malaysia", "labuan"],
     "monitor": true,
     "expectedUpdate": "event-driven"
+  },
+  {
+    "id": "perlis-media-statements",
+    "name": "Perlis official media statements - holiday discovery pilot",
+    "authority": "Pejabat Setiausaha Kerajaan Negeri Perlis",
+    "url": "https://www.perlis.gov.my/index.php/suk-perlis/info-umum/media1/kenyataan-media",
+    "tier": 2,
+    "jurisdictions": ["perlis"],
+    "monitor": true,
+    "expectedUpdate": "event-driven"
   }
 ]

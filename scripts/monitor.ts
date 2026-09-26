@@ -11,9 +11,15 @@ export type MonitorConfig = {
   includeUrlPattern: string;
   minimumLinks: number;
   trustTier: number;
+  tableRows?: {
+    titleCell: number;
+    dateCell: number;
+    includeTextPattern: string;
+    minimumDocumentLinks: number;
+  };
 };
 
-export type MonitoredLink = { title: string; url: string };
+export type MonitoredLink = { title: string; url: string; publishedDateLabel?: string };
 type DocumentFingerprint = { sha256: string; bytes: number };
 export type SourceSnapshot = {
   sourceId: string;
@@ -22,6 +28,7 @@ export type SourceSnapshot = {
   hash: string;
   links: MonitoredLink[];
   documents?: Record<string, DocumentFingerprint>;
+  indexDocumentCount?: number;
 };
 
 type Baseline = {
@@ -57,8 +64,12 @@ function decodeHtml(value: string): string {
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCodePoint(Number.parseInt(code, 16)));
 }
 
+function plainText(html: string): string {
+  return decodeHtml(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+}
+
 function cleanTitle(html: string, fallbackUrl: string): string {
-  const text = decodeHtml(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+  const text = plainText(html);
   if (text) return text;
   const pathname = new URL(fallbackUrl).pathname;
   return decodeURIComponent(pathname.split("/").filter(Boolean).at(-1) ?? fallbackUrl);
@@ -94,9 +105,39 @@ export function extractMeaningfulLinks(html: string, config: MonitorConfig): Mon
 }
 
 export function snapshotFromHtml(config: MonitorConfig, html: string, checkedAt: string): SourceSnapshot {
-  const links = extractMeaningfulLinks(html, config);
+  const table = config.tableRows ? extractTableCandidates(html, config) : undefined;
+  const links = table?.links ?? extractMeaningfulLinks(html, config);
   const hash = createHash("sha256").update(JSON.stringify(links)).digest("hex");
-  return { sourceId: config.id, sourceUrl: config.url, checkedAt, hash, links };
+  return { sourceId: config.id, sourceUrl: config.url, checkedAt, hash, links,
+    ...(table ? { indexDocumentCount: table.indexDocumentCount } : {}) };
+}
+
+export function extractTableCandidates(html: string, config: MonitorConfig): {
+  links: MonitoredLink[]; indexDocumentCount: number;
+} {
+  const options = config.tableRows;
+  if (!options) throw new Error("Table extraction requires tableRows configuration");
+  const includeText = new RegExp(options.includeTextPattern, "i");
+  const discovered = new Set<string>();
+  const candidates = new Map<string, MonitoredLink>();
+  for (const row of html.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)) {
+    const cells = [...row[1].matchAll(/<td\b[^>]*>([\s\S]*?)<\/td>/gi)].map((cell) => cell[1]);
+    const titleCell = cells[options.titleCell];
+    const dateCell = cells[options.dateCell];
+    if (titleCell === undefined || dateCell === undefined) continue;
+    for (const link of extractMeaningfulLinks(titleCell, config)) {
+      discovered.add(link.url);
+      const title = cleanTitle(titleCell, link.url);
+      // The publication date is context, not the holiday's effective date.
+      const publishedDateLabel = plainText(dateCell);
+      if (!includeText.test(title + " " + decodeURIComponent(link.url))) continue;
+      candidates.set(link.url, { ...link, title, ...(publishedDateLabel ? { publishedDateLabel } : {}) });
+    }
+  }
+  if (discovered.size < options.minimumDocumentLinks) {
+    throw new Error(`Expected at least ${options.minimumDocumentLinks} official document links in table rows, found ${discovered.size}`);
+  }
+  return { links: [...candidates.values()].sort((a, b) => a.url.localeCompare(b.url)), indexDocumentCount: discovered.size };
 }
 
 export function compareSnapshots(
@@ -108,11 +149,11 @@ export function compareSnapshots(
   const currentByUrl = new Map(current.links.map((link) => [link.url, link]));
   const added = current.links.filter((link) => {
     const old = previousByUrl.get(link.url);
-    return !old || old.title !== link.title;
+    return !old || old.title !== link.title || old.publishedDateLabel !== link.publishedDateLabel;
   });
   const removed = (previous?.links ?? []).filter((link) => {
     const next = currentByUrl.get(link.url);
-    return !next || next.title !== link.title;
+    return !next || next.title !== link.title || next.publishedDateLabel !== link.publishedDateLabel;
   });
   const contentChanged = current.links.flatMap((link) => {
     const old = previous?.documents?.[link.url];
@@ -217,6 +258,8 @@ async function fetchHtml(config: MonitorConfig): Promise<string> {
 }
 
 function markdownReport(checkedAt: string, signature: string, changes: SourceChange[], errors: string[]): string {
+  const describeLink = (link: MonitoredLink) => `- [${link.title}](${link.url})` +
+    (link.publishedDateLabel ? ` (index publication date: ${link.publishedDateLabel})` : "");
   const lines = [
     "# Official holiday source monitor",
     "",
@@ -229,9 +272,9 @@ function markdownReport(checkedAt: string, signature: string, changes: SourceCha
   for (const change of changes) {
     lines.push(`## ${change.sourceName}`, "", `Source: ${change.sourceUrl}`, "");
     lines.push("### Added or changed links", "");
-    lines.push(...(change.added.length ? change.added.map((link) => `- [${link.title}](${link.url})`) : ["- None"]));
-    lines.push("", "### Removed or retitled links", "");
-    lines.push(...(change.removed.length ? change.removed.map((link) => `- [${link.title}](${link.url})`) : ["- None"]));
+    lines.push(...(change.added.length ? change.added.map(describeLink) : ["- None"]));
+    lines.push("", "### Removed links or previous metadata", "");
+    lines.push(...(change.removed.length ? change.removed.map(describeLink) : ["- None"]));
     lines.push("", "### Changed PDF content", "");
     lines.push(...(change.contentChanged.length ? change.contentChanged.map((document) =>
       `- [${document.title}](${document.url}): SHA-256 ${document.previousSha256} → ${document.currentSha256}`

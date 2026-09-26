@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-26T13:59:03.212Z",
+  "updatedAt": "2026-09-26T14:10:27.899Z",
   "sources": {
     "bkpp-annual-holidays": {
       "sourceId": "bkpp-annual-holidays",
@@ -283,6 +283,26 @@
         "https://www.kabinet.gov.my/storage/2026/03/PUB-112_2026.pdf": {
           "sha256": "75b4ff6b202c4827d70f5f313d5d772f5bde12ddc1bcce771d7de412a3a12bf5",
           "bytes": 187163
+        }
+      }
+    },
+    "perlis-media-statements": {
+      "sourceId": "perlis-media-statements",
+      "sourceUrl": "https://www.perlis.gov.my/index.php/suk-perlis/info-umum/media1/kenyataan-media",
+      "checkedAt": "2026-09-26T14:10:27.899Z",
+      "hash": "7934758ba6e2563c715d78717d7663ecb492ce13a090f4251fd7f0a3db0cc48a",
+      "links": [
+        {
+          "url": "https://www.perlis.gov.my/phocadownload/kenyataanmedia/KENYATAAN%20MEDIA%20YAB%20MB%20PERLIS_-%20CUTI%20PERISTIWA%20TAHUN%20BARU%202025.pdf",
+          "title": "PENGUMUMAN CUTI PERISTIWA PADA 1 JANUARI 2025 BERSAMAAN 1 REJAB 1446H (RABU) SEMPENA SAMBUTAN TAHUN BARU 2025",
+          "publishedDateLabel": "31 Disember 2024"
+        }
+      ],
+      "indexDocumentCount": 14,
+      "documents": {
+        "https://www.perlis.gov.my/phocadownload/kenyataanmedia/KENYATAAN%20MEDIA%20YAB%20MB%20PERLIS_-%20CUTI%20PERISTIWA%20TAHUN%20BARU%202025.pdf": {
+          "sha256": "9dc777febc138d77467e5b77b02dcc81b8c65ce6aaa3351ce886e93700ddc7d2",
+          "bytes": 291921
         }
       }
     }
