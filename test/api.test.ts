@@ -14,7 +14,7 @@ describe("holiday API", () => {
     expect(response.status).toBe(200);
     expect(response.headers.get("content-type")).toContain("text/html");
     expect(response.headers.get("content-security-policy")).toContain("default-src 'self'");
-    expect(await response.text()).toContain("When Malaysia's holiday calendar changes, your systems know.");
+    expect(await response.text()).toContain("Is it a public holiday?");
   });
 
   it("publishes an OpenAPI document", async () => {

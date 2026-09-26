@@ -3,65 +3,128 @@ export const siteHtml = `<!doctype html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A source-backed, state-aware public holiday API for Malaysia.">
-  <title>Malaysia Public Holiday API</title>
+  <meta name="description" content="Check Malaysian public holidays by state and date, with links to official sources.">
+  <title>Malaysia Public Holidays</title>
   <style>
-    :root{--ink:#102a24;--muted:#587069;--paper:#f5f4ed;--card:#fffef9;--line:#d9ded7;--green:#087f5b;--green-dark:#075d45;--lime:#c9f36a;--blue:#cce8ff;--amber:#f5c95d;--shadow:0 24px 70px rgba(16,42,36,.11)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,select{font:inherit}a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:-.02em}.mark{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:var(--ink);color:var(--lime);font-size:18px}.navlinks{display:flex;gap:28px;align-items:center}.navlinks a{text-decoration:none;color:var(--muted);font-weight:650;font-size:14px}.navlinks .github{padding:9px 14px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:rgba(255,255,255,.5)}
-    .hero{padding:72px 0 88px;display:grid;grid-template-columns:1.25fr .75fr;gap:64px;align-items:end}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border-radius:999px;background:#e4eddf;color:var(--green-dark);font-size:13px;font-weight:750}.pulse{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px rgba(8,127,91,.12)}h1{font-size:clamp(48px,7vw,82px);line-height:.98;letter-spacing:-.065em;margin:25px 0 25px;max-width:850px}.hero p{font-size:20px;color:var(--muted);max-width:680px;margin:0}.actions{display:flex;gap:12px;margin-top:34px}.btn{border:0;border-radius:12px;padding:13px 18px;font-weight:750;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:var(--ink);color:white}.btn.secondary{background:white;border:1px solid var(--line)}.hero-note{border-left:2px solid var(--green);padding-left:20px;color:var(--muted)}.hero-note strong{display:block;color:var(--ink);font-size:31px;letter-spacing:-.04em}.hero-note span{display:block;margin-top:5px}
-    .trust{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.5);overflow:hidden;margin-bottom:100px}.trust>div{padding:24px 26px;border-right:1px solid var(--line)}.trust>div:last-child{border:0}.trust small{display:block;color:var(--muted);text-transform:uppercase;letter-spacing:.11em;font-weight:750}.trust strong{display:block;margin-top:6px;font-size:18px}
-    section{scroll-margin-top:24px}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:28px}.kicker{color:var(--green);font-size:13px;text-transform:uppercase;letter-spacing:.13em;font-weight:800}.section-head h2{font-size:clamp(34px,5vw,52px);line-height:1.05;letter-spacing:-.05em;margin:7px 0 0}.section-head p{color:var(--muted);max-width:470px;margin:0}
-    .explorer{background:var(--card);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);overflow:hidden}.controls{padding:22px;display:grid;grid-template-columns:180px 1fr auto;gap:14px;border-bottom:1px solid var(--line);background:#fbfaf5}.field label{display:block;font-size:12px;color:var(--muted);font-weight:750;margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em}.field select{width:100%;padding:11px 38px 11px 12px;border:1px solid var(--line);border-radius:10px;background:white;color:var(--ink)}.load{align-self:end;background:var(--green);color:white;border:0;border-radius:10px;padding:12px 18px;font-weight:750;cursor:pointer}.result-head{display:flex;justify-content:space-between;gap:20px;padding:24px 26px 14px}.result-head h3{margin:0;font-size:22px}.result-actions{display:flex;gap:14px;align-items:center}.result-head span{color:var(--muted)}.calendar-link{color:var(--green-dark);font-size:13px;font-weight:800;text-decoration:none;border-bottom:1px solid currentColor}.holiday-list{padding:0 26px 26px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.holiday{display:grid;grid-template-columns:58px 1fr auto;align-items:center;gap:14px;padding:15px;border:1px solid var(--line);border-radius:14px;background:white}.datebox{text-align:center;background:var(--paper);border-radius:10px;padding:7px 4px}.datebox b{display:block;font-size:20px;line-height:1}.datebox small{text-transform:uppercase;font-size:10px;color:var(--muted);font-weight:800}.holiday h4{margin:0;font-size:15px}.holiday p{margin:2px 0 0;color:var(--muted);font-size:13px}.tag{font-size:10px;text-transform:uppercase;letter-spacing:.06em;font-weight:800;padding:5px 7px;border-radius:999px;background:#e8f5ef;color:var(--green-dark)}.tag.provisional{background:#fff3d1;color:#73560b}.empty{padding:40px;color:var(--muted)}
-    .api{padding:110px 0}.api-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px}.endpoint-list{display:grid;gap:10px}.endpoint{border:1px solid var(--line);border-radius:14px;padding:16px;background:rgba(255,255,255,.55)}.endpoint code{font-weight:750}.method{color:var(--green);font-size:11px;font-weight:900;margin-right:8px}.codecard{background:#0d211c;color:#d7e8e1;border-radius:20px;overflow:hidden;box-shadow:var(--shadow)}.codebar{display:flex;justify-content:space-between;align-items:center;padding:13px 18px;border-bottom:1px solid rgba(255,255,255,.12);font-size:12px;color:#96aaa3}.copy{border:1px solid rgba(255,255,255,.2);background:transparent;color:white;border-radius:7px;padding:5px 9px;cursor:pointer}.codecard pre{margin:0;padding:24px;overflow:auto;font-size:14px;line-height:1.7}.codecard .key{color:#7dd3fc}.codecard .str{color:#bef264}.codecard .num{color:#fcd34d}
-    .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:110px}.principle{padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.55)}.principle .num{font-size:12px;color:var(--green);font-weight:850}.principle h3{font-size:20px;margin:25px 0 8px}.principle p{color:var(--muted);margin:0;font-size:14px}.cta{display:flex;justify-content:space-between;gap:30px;align-items:center;background:var(--green-dark);color:white;border-radius:24px;padding:38px 42px;margin-bottom:70px}.cta h2{font-size:34px;letter-spacing:-.04em;margin:0}.cta p{color:#bed3cb;margin:8px 0 0}.cta .btn{background:var(--lime);color:var(--ink);white-space:nowrap}footer{border-top:1px solid var(--line);padding:28px 0 42px;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px}
-    @media(max-width:800px){.navlinks a:not(.github){display:none}.hero{grid-template-columns:1fr;padding:50px 0 60px;gap:38px}.trust,.principles{grid-template-columns:1fr}.trust>div{border-right:0;border-bottom:1px solid var(--line)}.controls{grid-template-columns:1fr}.holiday-list{grid-template-columns:1fr}.api-grid{grid-template-columns:1fr}.section-head,.cta{align-items:flex-start;flex-direction:column}.cta{padding:30px}.foot{flex-direction:column}.wrap{width:min(100% - 24px,1120px)}}
+    :root{--ink:#242b34;--muted:#626974;--line:#d9dde1;--blue:#224c80;--paper:#fff;--wash:#f4f6f8}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:var(--blue);text-underline-offset:3px}a:hover{color:#102f54}button,input,select{font:inherit}button,a,input,select{touch-action:manipulation}:focus-visible{outline:3px solid #bc7225;outline-offset:3px}.wrap{max-width:1100px;margin:auto;padding:0 30px}.skip{position:absolute;left:20px;top:-80px;background:white;padding:10px;z-index:2}.skip:focus{top:10px}
+    header{border-top:4px solid var(--blue);border-bottom:1px solid var(--line)}.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-size:17px;color:var(--ink);font-weight:650;text-decoration:none}.brand small{display:block;font-size:12px;font-weight:400;color:var(--muted)}nav{display:flex;gap:25px;font-size:13px}nav a{color:var(--ink);text-decoration:none}nav a:hover{text-decoration:underline}
+    .intro{padding:38px 0 24px}.eyebrow{margin:0 0 6px;color:var(--muted);font-size:12px;letter-spacing:.09em;text-transform:uppercase}h1,h2,h3,p{margin-top:0}h1{font:normal clamp(29px,4vw,40px)/1.2 Georgia,serif;margin-bottom:10px;letter-spacing:-.025em}.intro p:last-child{margin:0;color:var(--muted)}h2{font-size:19px;line-height:1.4;font-weight:650}h3{font-size:15px;font-weight:650}
+    .checker{border-top:2px solid var(--ink);background:var(--wash);padding:22px 24px;margin-bottom:34px}.checker form{display:grid;grid-template-columns:1.4fr 1fr auto;gap:18px;align-items:end}label{display:block;font-size:12px;font-weight:650;margin-bottom:5px}input,select{width:100%;min-width:0;border:1px solid #adb5bf;border-radius:3px;padding:9px 11px;min-height:44px;background:white;color:var(--ink)}button{cursor:pointer;border:1px solid var(--blue);background:var(--blue);color:white;border-radius:3px;min-height:44px;padding:9px 22px}button:hover{background:#173b68}button:disabled{opacity:.6;cursor:wait}.answer{padding-top:20px;margin-top:20px;border-top:1px solid var(--line)}.answer h2{font:normal 25px/1.3 Georgia,serif;margin-bottom:6px}.answer p{margin-bottom:4px}.note{font-size:12px;color:var(--muted)}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 255px;gap:48px;padding-bottom:48px}.section-top{display:flex;align-items:center;justify-content:space-between;gap:16px;border-bottom:1px solid var(--ink);padding-bottom:12px}.section-top h2{margin:0}.year-field{display:flex;align-items:center;gap:10px}.year-field label{margin:0}.year-field select{width:94px;min-height:36px;padding:4px 8px}.list-meta{display:flex;justify-content:space-between;gap:12px;margin:10px 0 22px;font-size:12px;color:var(--muted)}.month{margin:25px 0 0;color:var(--muted);font-size:11px;font-weight:650;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line);padding-bottom:7px}.holiday{display:grid;grid-template-columns:58px 1fr;gap:18px;padding:14px 0;border-bottom:1px solid #e9ecef}.date{font-variant-numeric:tabular-nums;font-size:20px;line-height:1.3}.date small{display:block;font-size:11px;color:var(--muted);margin-top:4px}.holiday h3{margin:0 0 2px;font-size:14px}.holiday p{margin:0;font-size:12px;color:var(--muted)}.record-note{margin-top:4px!important;display:flex;gap:10px;flex-wrap:wrap}.provisional{color:#845816}.cancelled{text-decoration:line-through}.next{border-left:3px solid var(--blue);padding-left:16px;margin:0 0 30px}.next h2{font-size:12px;color:var(--muted);font-weight:400;margin-bottom:8px}.next strong{font:normal 23px/1.3 Georgia,serif;display:block;margin-bottom:7px}.next p{font-size:13px;margin:0}.aside-section{border-top:1px solid var(--line);padding-top:20px;margin-top:24px}.aside-section h2{font-size:14px;margin-bottom:10px}.aside-section p,.aside-section li{font-size:12px;color:var(--muted)}.aside-section ul{padding-left:17px}.change{margin-bottom:16px}.change time{display:block;font-size:11px;color:var(--muted)}.change p{margin:4px 0}.aside-section a{font-size:12px}
+    .developer{border-top:1px solid var(--ink);padding:27px 0 42px;display:grid;grid-template-columns:1fr 1fr;gap:40px}.developer p{color:var(--muted);font-size:13px}.developer h2{margin-bottom:8px}pre{background:var(--wash);border:1px solid var(--line);padding:16px;margin:0;overflow:auto;font-size:12px;line-height:1.7}code{font-family:Consolas,monospace}.api-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;margin-top:14px}footer{border-top:1px solid var(--line);padding:22px 0 30px;font-size:11px;color:var(--muted)}.foot{display:flex;justify-content:space-between;gap:20px}.error{color:#9c2929}
+    @media(max-width:760px){.wrap{padding:0 20px}.nav{padding-top:16px;padding-bottom:16px;align-items:flex-start;flex-direction:column;gap:12px}nav{gap:23px}.intro{padding-top:28px}.checker{padding:18px}.checker form{grid-template-columns:1fr 1fr;gap:12px}.state-field{grid-column:1/-1}.checker button{padding:9px 12px}.layout{grid-template-columns:1fr;gap:28px}.developer{grid-template-columns:1fr;gap:12px}.foot{flex-direction:column;gap:5px}.list-meta{flex-wrap:wrap}.section-top h2{font-size:17px}.next{margin-bottom:22px}}
   </style>
 </head>
 <body>
-  <header class="wrap nav">
-    <a class="brand" href="/"><span class="mark">MY</span><span>Public Holiday API</span></a>
-    <nav class="navlinks"><a href="#explorer">Explorer</a><a href="#api">API</a><a href="#sources">Trust model</a><a class="github" href="https://github.com/amrlasyraf/malaysia-public-holiday-api">GitHub ↗</a></nav>
-  </header>
-  <main>
-    <section class="wrap hero">
-      <div><span class="eyebrow"><span class="pulse"></span> Official sources monitored hourly</span><h1>When Malaysia's holiday calendar changes, your systems know.</h1><p>A free, open-source holiday changefeed with official evidence, state-specific calendars, and explainable date checks.</p><div class="actions"><a class="btn primary" href="#explorer">Explore holidays →</a><a class="btn secondary" href="#api">Read the API docs</a></div></div>
-      <aside class="hero-note"><strong>16 jurisdictions</strong><span>13 states and 3 federal territories, with source-level applicability preserved.</span></aside>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><div class="wrap nav"><a class="brand" href="/">Malaysia Public Holidays<small>Cuti umum · A community reference</small></a><nav aria-label="Main navigation"><a href="#explorer">Calendar</a><a href="#api">For developers</a><a href="https://github.com/amrlasyraf/malaysia-public-holiday-api">GitHub ↗</a></nav></div></header>
+  <main class="wrap" id="main">
+    <section class="intro"><p class="eyebrow">13 states · 3 federal territories</p><h1>Is it a public holiday?</h1><p>Check a date, or browse the holidays in your state.</p></section>
+    <section class="checker" aria-label="Check a holiday">
+      <form id="check-form"><div class="state-field"><label for="state">State or federal territory</label><select id="state" disabled><option value="selangor">Loading states…</option></select></div><div><label for="check-date">Date</label><input id="check-date" type="date" required></div><button id="check-button" type="submit" disabled>Check date</button></form>
+      <div class="answer" id="answer" aria-live="polite"><p>Loading the calendar…</p></div>
+      <p class="note">Declared holiday dates only. Replacement days and employer-specific days off are not included.</p>
     </section>
-    <div class="wrap trust"><div><small>Change history</small><strong>Immutable release events</strong></div><div><small>Provenance</small><strong>Source, page, and checksum</strong></div><div><small>Calendar sync</small><strong>State-specific .ics feeds</strong></div></div>
-
-    <section class="wrap" id="explorer">
-      <div class="section-head"><div><span class="kicker">Holiday explorer</span><h2>See what applies where.</h2></div><p>Choose a jurisdiction to resolve federal exclusions and state-only holidays automatically.</p></div>
-      <div class="explorer">
-        <div class="controls"><div class="field"><label for="year">Year</label><select id="year"><option>2026</option><option>2027</option></select></div><div class="field"><label for="state">State or federal territory</label><select id="state"><option value="selangor">Loading jurisdictions…</option></select></div><button class="load" id="load">Load holidays</button></div>
-        <div class="result-head"><h3 id="result-title">Selangor · 2026</h3><div class="result-actions"><span id="result-count">Loading…</span><a class="calendar-link" id="calendar-link" href="/v1/calendars/selangor.ics?year=2026">Subscribe .ics</a></div></div><div class="holiday-list" id="holiday-list"><div class="empty">Loading official records…</div></div>
-      </div>
-    </section>
-
-    <section class="wrap api" id="api">
-      <div class="section-head"><div><span class="kicker">Developer API</span><h2>Built for change, not just lookup.</h2></div><p>Plain JSON, predictable filters, ISO subdivision codes, and no API key during the MVP.</p></div>
-      <div class="api-grid"><div class="endpoint-list"><div class="endpoint"><span class="method">GET</span><code>/v1/changes</code><p>Poll an immutable publication changefeed.</p></div><div class="endpoint"><span class="method">GET</span><code>/v1/holidays/check</code><p>Get an answer, evidence, and semantic warnings.</p></div><div class="endpoint"><span class="method">GET</span><code>/v1/calendars/{state}.ics</code><p>Subscribe by state with stable event IDs.</p></div><div class="endpoint"><span class="method">GET</span><code>/v1/status</code><p>Inspect monitor baselines and data releases.</p></div></div>
-        <div class="codecard"><div class="codebar"><span>JavaScript · fetch</span><button class="copy" data-copy="fetch('/v1/holidays?year=2027&state=selangor').then(r => r.json()).then(console.log)">Copy</button></div><pre><code><span class="key">const</span> response = <span class="key">await</span> fetch(
-  <span class="str">'/v1/holidays?year=2027&state=selangor'</span>
-);
-
-<span class="key">const</span> { data, meta } = <span class="key">await</span> response.json();
-
-console.log(data[<span class="num">0</span>].nameEn);
-console.log(meta.jurisdiction.code);</code></pre></div></div>
-    </section>
-
-    <section class="wrap" id="sources"><div class="section-head"><div><span class="kicker">Trust model</span><h2>Detection is not publication.</h2></div><p>Automation watches for official changes. People still decide what those changes legally and geographically mean.</p></div><div class="principles"><article class="principle"><span class="num">01 / PRIMARY</span><h3>Government first</h3><p>BKPP schedules, legislation, gazettes, and official state declarations anchor confirmed records.</p></article><article class="principle"><span class="num">02 / REVIEW</span><h3>No silent updates</h3><p>A changed source creates evidence for review. The monitor cannot rewrite the public holiday dataset.</p></article><article class="principle"><span class="num">03 / HISTORY</span><h3>Provenance retained</h3><p>Every record carries its source ID and page so corrections can be audited publicly.</p></article></div></section>
-    <section class="wrap cta"><div><h2>Built in public, for everyone.</h2><p>Use it, inspect it, or contribute a source-backed correction.</p></div><a class="btn" href="https://github.com/amrlasyraf/malaysia-public-holiday-api">View on GitHub →</a></section>
+    <div class="layout">
+      <section id="explorer" aria-label="Holiday calendar"><div class="section-top"><h2 id="result-title">Public holidays</h2><div class="year-field"><label for="year">Year</label><select id="year"><option>2026</option><option>2027</option></select></div></div><div class="list-meta"><span id="result-count">Loading…</span><a id="calendar-link" href="/v1/calendars/selangor.ics?year=2026">Download calendar (.ics)</a></div><div id="holiday-list" aria-live="polite">Loading holidays…</div></section>
+      <aside>
+        <section class="next" id="next-holiday" aria-live="polite"><h2>Next holiday · from today</h2><p>Loading…</p></section>
+        <section class="aside-section"><h2>Recent updates</h2><div id="changes">Loading published updates…</div><a href="/v1/changes">View change history ↗</a></section>
+        <section class="aside-section" id="sources"><h2>Where the dates come from</h2><p>Official federal and state schedules published by BKPP, Jabatan Perdana Menteri. Each holiday links to its source page.</p><p>Dates marked “Subject to change” remain provisional in the source schedule.</p><a href="/v1/sources">Source register ↗</a></section>
+        <section class="aside-section"><h2>Spotted a missing holiday?</h2><p>Special declarations need a source and a review before they appear here.</p><a href="https://github.com/amrlasyraf/malaysia-public-holiday-api/issues">Report a correction on GitHub ↗</a></section>
+      </aside>
+    </div>
+    <section class="developer" id="api"><div><h2>For developers</h2><p>The same records are available as JSON, with state filters, official source links, and a history of published changes. Free to use; no API key required.</p><div class="api-links"><a href="/openapi.json">OpenAPI specification</a><a href="/v1/status">Monitor status</a><a href="https://github.com/amrlasyraf/malaysia-public-holiday-api#readme">Documentation ↗</a></div></div><div><pre><code id="api-example">GET /v1/holidays?year=2026&amp;state=selangor</code></pre><p class="note">Use the calendar URL with “Subscribe by URL” in your calendar app to receive updates. Importing a downloaded file creates a one-time copy.</p></div></section>
   </main>
-  <footer><div class="wrap foot"><span>Malaysia Public Holiday API · Open-source software under MIT</span><span>Informational only—not legal or employment advice.</span></div></footer>
+  <footer><div class="wrap foot"><span>An independent, open-source project. Not an official government website.</span><span>MIT licensed software · Informational use</span></div></footer>
+  <noscript><p class="wrap">Enable JavaScript to use the checker, or <a href="/v1/holidays?year=2026">read the holiday records as JSON</a>.</p></noscript>
   <script>
-    const stateSelect=document.querySelector('#state'),yearSelect=document.querySelector('#year'),list=document.querySelector('#holiday-list'),title=document.querySelector('#result-title'),count=document.querySelector('#result-count'),calendarLink=document.querySelector('#calendar-link');
-    const month=new Intl.DateTimeFormat('en-MY',{month:'short'});
-    const esc=value=>String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
-    async function setup(){const r=await fetch('/v1/jurisdictions');const {data}=await r.json();stateSelect.innerHTML=data.map(x=>'<option value="'+esc(x.slug)+'"'+(x.slug==='selangor'?' selected':'')+'>'+esc(x.name)+' · '+esc(x.code)+'</option>').join('');await load()}
-    async function load(){const year=yearSelect.value,state=stateSelect.value;list.innerHTML='<div class="empty">Loading official records…</div>';calendarLink.href='/v1/calendars/'+encodeURIComponent(state)+'.ics?year='+encodeURIComponent(year);const r=await fetch('/v1/holidays?year='+encodeURIComponent(year)+'&state='+encodeURIComponent(state));const body=await r.json();if(!r.ok){list.innerHTML='<div class="empty">'+esc(body.error)+'</div>';return}title.textContent=body.meta.jurisdiction.name+' · '+year;count.textContent=body.data.length+' declared records';list.innerHTML=body.data.map(h=>{const d=new Date(h.date+'T00:00:00+08:00'),variant=h.status==='provisional'?' provisional':'';return '<article class="holiday"><div class="datebox"><b>'+d.getDate()+'</b><small>'+esc(month.format(d))+'</small></div><div><h4>'+esc(h.nameEn)+'</h4><p>'+esc(h.nameMs)+' · '+esc(h.classification)+'</p></div><span class="tag'+variant+'">'+esc(h.status)+'</span></article>'}).join('')||'<div class="empty">No records available.</div>'}
-    document.querySelector('#load').addEventListener('click',load);yearSelect.addEventListener('change',load);stateSelect.addEventListener('change',load);document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1200)}));setup().catch(()=>{list.innerHTML='<div class="empty">Could not load API data.</div>'});
+    const $ = id => document.getElementById(id);
+    const esc = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+    const today = new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Kuala_Lumpur',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+    const format = (value, options) => new Intl.DateTimeFormat('en-MY',{...options,timeZone:'UTC'}).format(new Date(value+'T12:00:00Z'));
+    const dateLabel = date => format(date,{day:'numeric',month:'long',year:'numeric'});
+    let calendarRequest = 0, checkRequest = 0, nextRequest = 0;
+    let states = [];
+    $('check-date').value = today;
+    if (['2026','2027'].includes(today.slice(0,4))) $('year').value = today.slice(0,4);
+    async function json(path) {
+      const response = await fetch(path);
+      const body = await response.json();
+      if (!response.ok) throw new Error(body.error || 'Could not load the records. Please try again.');
+      return body;
+    }
+    function sourceLink(h) {
+      if (!h.source || !h.source.url || !h.source.url.startsWith('https://')) return '';
+      return '<a href="'+esc(h.source.url)+'#page='+Number(h.sourcePage)+'" target="_blank" rel="noopener noreferrer">Source · p. '+Number(h.sourcePage)+' ↗</a>';
+    }
+    async function checkDate() {
+      const request = ++checkRequest;
+      const date = $('check-date').value, state = $('state').value;
+      if (!date) return;
+      $('answer').innerHTML = '<p>Checking date…</p>';
+      try {
+        const body = await json('/v1/holidays/check?date='+encodeURIComponent(date)+'&state='+encodeURIComponent(state));
+        if (request !== checkRequest) return;
+        const active = body.holidays.filter(h => h.status !== 'cancelled');
+        const tentative = active.length && active.every(h => h.status === 'provisional' || h.status === 'announced');
+        const heading = active.length ? (tentative ? 'A holiday is listed, subject to confirmation.' : 'Yes, a public holiday is listed.') : 'No declared holiday is listed.';
+        $('answer').innerHTML = '<h2>'+heading+'</h2><p>'+esc(dateLabel(date))+' · '+esc(body.jurisdiction.name)+'</p>'+active.map(h => '<p><strong>'+esc(h.nameMs)+'</strong> <span class="note">'+esc(h.nameEn)+'</span> '+sourceLink(h)+'</p>').join('');
+      } catch (error) { if (request === checkRequest) $('answer').innerHTML = '<h2>Unable to confirm this date.</h2><p class="error">'+esc(error.message)+'</p>'; }
+    }
+    async function loadCalendar() {
+      const request = ++calendarRequest;
+      const year = $('year').value, state = $('state').value;
+      $('holiday-list').textContent = 'Loading holidays…';
+      $('result-count').textContent = '';
+      $('result-title').textContent = (states.find(s => s.slug === state)?.name || 'Public')+' holidays';
+      $('calendar-link').href = '/v1/calendars/'+encodeURIComponent(state)+'.ics?year='+year;
+      $('api-example').textContent = 'GET /v1/holidays?year='+year+'&state='+state;
+      try {
+        const body = await json('/v1/holidays?year='+year+'&state='+encodeURIComponent(state));
+        if (request !== calendarRequest) return;
+        $('result-count').textContent = body.data.length+' declared records · '+year;
+        let month = '';
+        $('holiday-list').innerHTML = body.data.map(h => {
+          const key = h.date.slice(0,7);
+          const heading = key !== month ? '<h3 class="month">'+esc(format(h.date,{month:'long'}))+'</h3>' : '';
+          month = key;
+          const status = h.status === 'provisional' ? '<span class="provisional">Subject to change</span>' : h.status === 'announced' ? 'Announced' : h.status === 'cancelled' ? 'Cancelled' : '';
+          return heading+'<article class="holiday"><time class="date" datetime="'+esc(h.date)+'">'+Number(h.date.slice(8))+'<small>'+esc(format(h.date,{weekday:'short'}))+'</small></time><div><h3 class="'+(h.status === 'cancelled' ? 'cancelled' : '')+'">'+esc(h.nameMs)+'</h3><p>'+esc(h.nameEn)+'</p><p class="record-note">'+sourceLink(h)+status+'</p></div></article>';
+        }).join('') || '<p>No records available.</p>';
+      } catch (error) { if (request === calendarRequest) $('holiday-list').innerHTML = '<p class="error">'+esc(error.message)+'</p>'; }
+    }
+    async function loadNext() {
+      const request = ++nextRequest, state = $('state').value;
+      $('next-holiday').innerHTML = '<h2>Next holiday · from today</h2><p>Loading…</p>';
+      try {
+        const years = ['2026','2027'].filter(year => year >= today.slice(0,4));
+        const datasets = await Promise.all(years.map(year => json('/v1/holidays?year='+year+'&state='+encodeURIComponent(state))));
+        if (request !== nextRequest) return;
+        const upcoming = datasets.flatMap(d => d.data).filter(h => h.date >= today && h.status !== 'cancelled').sort((a,b) => a.date.localeCompare(b.date));
+        const next = upcoming[0];
+        $('next-holiday').innerHTML = '<h2>Next holiday · from today</h2>'+(next ? '<strong>'+esc(dateLabel(next.date))+'</strong>'+upcoming.filter(h => h.date === next.date).map(h => '<p>'+esc(h.nameMs)+(h.status === 'provisional' ? ' <span class="provisional">(subject to change)</span>' : '')+'</p>').join('') : '<p>No upcoming dates in the published calendars.</p>');
+      } catch { if (request === nextRequest) $('next-holiday').innerHTML = '<h2>Next holiday</h2><p>Could not load upcoming dates.</p>'; }
+    }
+    async function loadChanges() {
+      try {
+        const body = await json('/v1/changes');
+        $('changes').innerHTML = body.data.slice(0,3).map(change => '<div class="change"><time>'+esc(dateLabel(change.occurredAt.slice(0,10)))+'</time><p>'+esc(change.summary)+'</p></div>').join('') || '<p>No published changes yet.</p>';
+      } catch { $('changes').textContent = 'Could not load published updates.'; }
+    }
+    async function setup() {
+      const body = await json('/v1/jurisdictions');
+      states = body.data;
+      $('state').innerHTML = states.map(s => '<option value="'+esc(s.slug)+'"'+(s.slug === 'selangor' ? ' selected' : '')+'>'+esc(s.name)+'</option>').join('');
+      $('state').disabled = false; $('check-button').disabled = false;
+      await Promise.all([checkDate(),loadCalendar(),loadNext()]);
+    }
+    $('check-form').addEventListener('submit', event => { event.preventDefault(); checkDate(); });
+    $('state').addEventListener('change', () => { checkDate(); loadCalendar(); loadNext(); });
+    $('year').addEventListener('change', loadCalendar);
+    setup().catch(() => { $('answer').innerHTML = '<p class="error">Could not load states. Please reload to try again.</p>'; $('holiday-list').textContent = 'Calendar unavailable.'; $('next-holiday').textContent = 'Upcoming dates unavailable.'; });
+    loadChanges();
   </script>
 </body>
 </html>`;
