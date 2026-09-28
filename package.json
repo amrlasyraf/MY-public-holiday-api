@@ -9,6 +9,7 @@
     "monitor": "node --experimental-strip-types scripts/monitor.ts",
     "monitor:initialize-content": "node --experimental-strip-types scripts/monitor.ts --initialize-content-baseline",
     "monitor:update-baseline": "node --experimental-strip-types scripts/monitor.ts --update-baseline",
+    "jev:evaluate": "node --experimental-strip-types scripts/jev-evaluate.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
@@ -20,6 +21,7 @@
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "fast-xml-parser": "^5.11.1",
+    "pdfjs-dist": "^6.3.289",
     "typescript": "^5.9.2",
     "vitest": "^5.0.0",
     "wrangler": "^4.131.2"
