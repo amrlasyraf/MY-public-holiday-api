@@ -3,6 +3,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { collectRssSnapshot, type ArticleFingerprint } from "./rss-monitor.ts";
+import { retryTransient } from "./monitor-retry.ts";
 
 export type MonitorConfig = {
   id: string;
@@ -323,7 +324,7 @@ async function run(): Promise<void> {
   const unbaselinedDocuments: string[] = [];
   const downloads = new Map<string, DocumentFingerprint>();
   const fingerprintPdf = async (url: string, config: MonitorConfig) => {
-    const fingerprint = downloads.get(url) ?? await fetchPdfFingerprint(url, config);
+    const fingerprint = downloads.get(url) ?? await retryTransient(() => fetchPdfFingerprint(url, config), `${config.id}: ${url}`);
     downloads.set(url, fingerprint);
     return fingerprint;
   };
@@ -331,7 +332,7 @@ async function run(): Promise<void> {
   for (const config of configs) {
     try {
       if (config.rss) {
-        const snapshot = await collectRssSnapshot(config, checkedAt, fingerprintPdf);
+        const snapshot = await retryTransient(() => collectRssSnapshot(config, checkedAt, fingerprintPdf), config.id);
         currentSources[config.id] = snapshot;
         const change = compareSnapshots(config, baseline.sources[config.id], snapshot);
         if (change) changes.push(change);
@@ -340,7 +341,7 @@ async function run(): Promise<void> {
         }
         continue;
       }
-      const snapshot = snapshotFromHtml(config, await fetchHtml(config), checkedAt);
+      const snapshot = snapshotFromHtml(config, await retryTransient(() => fetchHtml(config), config.id), checkedAt);
       if (snapshot.links.length < config.minimumLinks) {
         throw new Error(`Expected at least ${config.minimumLinks} official links, found ${snapshot.links.length}`);
       }
@@ -381,6 +382,7 @@ async function run(): Promise<void> {
     (warnings.length ? `\n## Manual evidence retrieval needed\n\n${warnings.map((warning) => `- ${warning}`).join("\n")}\n` : ""), "utf8");
 
   if (errors.length) {
+    for (const error of errors) console.error(error);
     console.error(`Monitor failed for ${errors.length} source(s). See output/monitor/report.md.`);
     process.exitCode = 1;
     return;

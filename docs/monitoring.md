@@ -19,6 +19,8 @@ Initial Perlis observation: 14 unique eligible PDF URLs in table rows, of which 
 
 The monitor fingerprints normalized official PDF links and downloads each linked PDF to compare its SHA-256 checksum. It detects revised documents even when the URL and title stay the same. Visitor counters, timestamps, scripts, styling and unrelated index-page text do not affect the link fingerprint.
 
+Temporary network/server failures and malformed RSS responses are retried twice with a short backoff. A source that still fails is reported in the workflow log and evidence artifact; the run fails rather than treating a partial check as complete.
+
 PDF checks compare bytes, not meaning: metadata-only changes can also trigger review. They do not extract holiday details or automatically publish records. Downloads are sequential, deduplicated within a run, limited to 25 MiB per PDF and 20 seconds per request (including reading the body), and restricted to HTTPS on configured official hosts, including redirects. HTTP errors, partial responses, non-PDF bodies and incomplete downloads fail the run and prevent baseline updates. No document copies are committed or included in artifacts.
 
 ## Johor and Kedah RSS archives
