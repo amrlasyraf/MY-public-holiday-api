@@ -8,15 +8,28 @@ The Worker also serves a responsive website and interactive holiday explorer at 
 
 ## Current status
 
-This repository is an initial local MVP. It contains:
+Version 0.4.0. The API serves source-backed 2026 and 2027 federal and state holiday data for all 13 states and three federal territories, with:
 
-- a source trust policy;
-- an official-source registry;
-- visually verified 2026 and 2027 federal and state source records from BKPP, Jabatan Perdana Menteri;
-- a Cloudflare Worker API with change history, explainable checks, and state-specific iCalendar feeds;
-- schema and API tests.
+- a source trust policy and an official-source registry;
+- records verified against BKPP (Jabatan Perdana Menteri) schedules, each with its source, PDF page, checksum and revision;
+- a Cloudflare Worker API with change history, explainable date checks, and state-specific iCalendar feeds;
+- an hourly GitHub Actions monitor of official announcement sources (see below);
+- JSON Schema validation, API tests and monitor tests, run in CI.
 
-The source schedule is normalized for all 13 states and three federal territories. Declared dates are included; observed/replacement dates remain deliberately separate and are not inferred yet.
+Declared dates are included; observed/replacement dates remain deliberately separate and are not inferred yet.
+
+## How it works
+
+```text
+Official sources ──► Monitor (GitHub Actions, hourly) ──► Review issue ──► Human review ──► Holiday data ──► Worker API
+BKPP indexes         fingerprints pages + PDF SHA-256      deduplicated      verifies the     versioned,       /v1/holidays
+Perlis statements    Johor/Kedah RSS + full archive        by signature      official doc     with provenance  /v1/changes
+                     retries transient failures                                                               /v1/calendars/*.ics
+```
+
+- **Monitor, never auto-publish.** The monitor detects new or revised official documents, including edits at an unchanged URL, and opens one GitHub issue per unique change. It cannot edit holiday data.
+- **Provenance first.** Every holiday row keeps its source, page, checksum and revision. News reports alone never produce a `confirmed` record.
+- **Changefeed.** `/v1/changes` lets downstream systems learn when the calendar changes, not just what it is today.
 
 ## Run locally
 
