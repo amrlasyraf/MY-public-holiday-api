@@ -18,7 +18,7 @@ export const siteHtml = `<!doctype html>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header><div class="wrap nav"><a class="brand" href="/">Malaysia Public Holidays<small>Cuti umum · A community reference</small></a><nav aria-label="Main navigation"><a href="#explorer">Calendar</a><a href="#api">For developers</a><a href="https://github.com/amrlasyraf/malaysia-public-holiday-api">GitHub ↗</a></nav></div></header>
+  <header><div class="wrap nav"><a class="brand" href="/">Malaysia Public Holidays<small>Cuti umum · A community reference</small></a><nav aria-label="Main navigation"><a href="#explorer">Calendar</a><a href="#api">For developers</a><a href="https://github.com/amrlasyraf/MY-public-holiday-api">GitHub ↗</a></nav></div></header>
   <main class="wrap" id="main">
     <section class="intro"><p class="eyebrow">13 states · 3 federal territories</p><h1>Is it a public holiday?</h1><p>Check a date, or browse the holidays in your state.</p></section>
     <section class="checker" aria-label="Check a holiday">
@@ -32,10 +32,10 @@ export const siteHtml = `<!doctype html>
         <section class="next" id="next-holiday" aria-live="polite"><h2>Next holiday · from today</h2><p>Loading…</p></section>
         <section class="aside-section"><h2>Recent updates</h2><div id="changes">Loading published updates…</div><a href="/v1/changes">View change history ↗</a></section>
         <section class="aside-section" id="sources"><h2>Where the dates come from</h2><p>Official federal and state schedules published by BKPP, Jabatan Perdana Menteri. Each holiday links to its source page.</p><p>Dates marked “Subject to change” remain provisional in the source schedule.</p><a href="/v1/sources">Source register ↗</a></section>
-        <section class="aside-section"><h2>Spotted a missing holiday?</h2><p>Special declarations need a source and a review before they appear here.</p><a href="https://github.com/amrlasyraf/malaysia-public-holiday-api/issues">Report a correction on GitHub ↗</a></section>
+        <section class="aside-section"><h2>Spotted a missing holiday?</h2><p>Special declarations need a source and a review before they appear here.</p><a href="https://github.com/amrlasyraf/MY-public-holiday-api/issues">Report a correction on GitHub ↗</a></section>
       </aside>
     </div>
-    <section class="developer" id="api"><div><h2>For developers</h2><p>The same records are available as JSON, with state filters, official source links, and a history of published changes. Free to use; no API key required.</p><div class="api-links"><a href="/openapi.json">OpenAPI specification</a><a href="/v1/status">Monitor status</a><a href="https://github.com/amrlasyraf/malaysia-public-holiday-api#readme">Documentation ↗</a></div></div><div><pre><code id="api-example">GET /v1/holidays?year=2026&amp;state=selangor</code></pre><p class="note">Use the calendar URL with “Subscribe by URL” in your calendar app to receive updates. Importing a downloaded file creates a one-time copy.</p></div></section>
+    <section class="developer" id="api"><div><h2>For developers</h2><p>The same records are available as JSON, with state filters, official source links, and a history of published changes. Free to use; no API key required.</p><div class="api-links"><a href="/openapi.json">OpenAPI specification</a><a href="/v1/status">Monitor status</a><a href="https://github.com/amrlasyraf/MY-public-holiday-api#readme">Documentation ↗</a></div></div><div><pre><code id="api-example">GET /v1/holidays?year=2026&amp;state=selangor</code></pre><p class="note">Use the calendar URL with “Subscribe by URL” in your calendar app to receive updates. Importing a downloaded file creates a one-time copy.</p></div></section>
   </main>
   <footer><div class="wrap foot"><span>An independent, open-source project. Not an official government website.</span><span>MIT licensed software · Informational use</span></div></footer>
   <noscript><p class="wrap">Enable JavaScript to use the checker, or <a href="/v1/holidays?year=2026">read the holiday records as JSON</a>.</p></noscript>

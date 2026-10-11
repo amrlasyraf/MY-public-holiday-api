@@ -202,7 +202,7 @@ app.get("/v1/status", (c) => {
       snapshots: snapshots.map(({ sourceId, sourceUrl, hash, links }) => ({ sourceId, sourceUrl, sha256: hash, discoveredLinkCount: links.length })),
       caveat: "Baseline timestamps describe the accepted comparison state, not the latest successful workflow run. Detected changes require human review before publication."
     },
-    releases, workflow: "https://github.com/amrlasyraf/malaysia-public-holiday-api/actions/workflows/monitor.yml"
+    releases, workflow: "https://github.com/amrlasyraf/MY-public-holiday-api/actions/workflows/monitor.yml"
   });
 });
 
