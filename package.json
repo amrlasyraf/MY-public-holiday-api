@@ -24,6 +24,6 @@
     "pdfjs-dist": "^6.3.289",
     "typescript": "^5.9.2",
     "vitest": "^5.0.0",
-    "wrangler": "^4.149.0"
+    "wrangler": "^4.156.0"
   }
 }
